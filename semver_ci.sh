@@ -1,3 +1,4 @@
+
 # This script get Vika SemVer from Circle CI Environment Variables
 # Author: Kelly Peilin Chan<kelly@vikadata.com>
 # Created: 2022-05-17
