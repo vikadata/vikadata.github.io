@@ -1,7 +1,8 @@
-# This script get Vika SemVer from Circle CI Environment Variables
+# This script get Vika SemVer from Circle CI/Github Action Environment Variables
+# Git Flow Convention based
 # Author: Kelly Peilin Chan<kelly@vikadata.com>
 # Created: 2022-05-17
-# Modified: 2022-05-20
+# Modified: 2022-08-11
 
 # get the semver-cli
 wget https://raw.githubusercontent.com/fsaintjacques/semver-tool/3.3.0/src/semver -qO /tmp/semver
@@ -28,10 +29,27 @@ function env_nodejs {
 
 # Get SemVer from Circle CI Environment Variables 
 function _read_semver {
+  export CI_NAME=$(if [ "$CIRCLE_BUILD_NUM" ]; then echo "circleci"; \
+                      elif [ "$GITHUB_RUN_NUMBER" ]; then echo "githubaction"; \
+                      else echo "local"; fi)
 
-  local GIT_BRANCH=$CIRCLE_BRANCH
-  local GIT_TAG=$CIRCLE_TAG
-  local BUILD_NUM=$CIRCLE_BUILD_NUM
+  export GIT_BRANCH=$(if [ "$CI_NAME" = "circleci" ]; then echo "$CIRCLE_BRANCH"; \
+                      elif [ "$CI_NAME" = "githubaction" ]; then echo "$GITHUB_REF_NAME"; \
+                      else echo "local"; fi)
+
+  export GIT_TAG=$(if [ "$CI_NAME" = "circleci" ]; then echo "$CIRCLE_TAG"; \
+                      elif [ "$CI_NAME" = "githubaction" ]; then \
+                        if [ "$GITHUB_REF_TYPE" = "tag" ]; then \
+                          echo "$GITHUB_REF_NAME"; \
+                        else echo ""; fi \
+                      else echo ""; fi)
+
+  export BUILD_NUM=$(if [ "$CI_NAME" = "circleci" ]; then echo "$CIRCLE_BUILD_NUM"; \
+                      elif [ "$CI_NAME" = "githubaction" ]; then echo "$GITHUB_RUN_NUMBER"; \
+                      else echo "0"; fi)
+
+  export SEMVER_NUMBER=$(if [ "$SEMVER_NUMBER" ]; then echo "$SEMVER_NUMBER"; \
+                        else echo "0.0.1"; fi)
 
   if [ -z "$SEMVER_EDITION" ]; then
     # default
@@ -40,10 +58,9 @@ function _read_semver {
 
   if [ -z "$GIT_TAG" ]; then
       # Git Branch
-      export SEMVER_TYPE=$(if [ "$GIT_BRANCH" = "integration" ]; then echo "alpha"; elif [ "$GIT_BRANCH" = "staging" ]; then echo "beta"; else echo $GIT_BRANCH ; fi)
+      export SEMVER_TYPE="alpha"
       export SEMVER_PRERELEASE=$SEMVER_TYPE
       export SEMVER="v$SEMVER_NUMBER-$SEMVER_TYPE"
-      export DEPLOY_ENV=$CIRCLE_BRANCH
   else
       local SEMVER_FROM_TAG=$GIT_TAG
 
@@ -59,7 +76,6 @@ function _read_semver {
       export SEMVER_PRERELEASE=$(bash /tmp/semver get prerel $SEMVER_FROM_TAG)
       export SEMVER_TYPE=$SEMVER_PRERELEASE
       export SEMVER="$SEMVER_FROM_TAG"
-      export DEPLOY_ENV="production"
   fi;
 
   export SEMVER_METADATA="$SEMVER_EDITION.build$BUILD_NUM"
@@ -67,7 +83,7 @@ function _read_semver {
 }
 
 # Build the Docker with Docker Image Name
-function build_docker {
+function _build_docker {
   if [[ -z "$1" ]]; then
     echo "[ERROR] Need Arugment#1 for \$DOCKER_IMAGE_NAME Define..."
     exit 1
@@ -78,14 +94,17 @@ function build_docker {
   fi
 
   if [[ -z "${CR_PAT}" ]]; then
-    echo "[ERROR] Need \$CR_PAT Github Package Personal Access Token Define..."
-    exit 1
+    echo "[WARNING] Need \$CR_PAT Github Package Personal Access Token Define..."
+    read -p "Please enter CR_PAT: " CR_PAT
   else
     echo "Found \$CR_PAT. "
   fi
 
+  # login
+  echo $CR_PAT | docker login ghcr.io -u vikadata --password-stdin
+
   # staging 构建多平台镜像
-  if [[ "$CIRCLE_BRANCH" = "staging" ]]; then
+  if [[ "$GIT_BRANCH" = "staging" ]]; then
     # 准备 docker buildx
     docker run --rm --privileged tonistiigi/binfmt:latest --install all
 
@@ -106,15 +125,14 @@ function build_docker {
   fi
 
   _on_build_success
-  _on_build_success_apitable
 }
 
 
 # On Build Success Event
 # Request to devops Github Action to Deploy Image 
 function _on_build_success {
-   DOCKER_IMAGE=${DOCKER_IMAGE_NAME_FULL}:${DOCKER_IMAGE_TAG}_build${CIRCLE_BUILD_NUM}
-   echo "_on_build_success -> $DOCKER_IMAGE"
+   DOCKER_IMAGE=${DOCKER_IMAGE_NAME_FULL}:${DOCKER_IMAGE_TAG}_build${BUILD_NUM}
+   echo "_on_build_success -> $DOCKER_IMAGE , SEMVER_FULL -> ${SEMVER_FULL}"
    curl --location --request POST 'https://api.github.com/repos/vikadata/devops/dispatches' \
         --header 'Authorization: token '${CR_PAT}'' \
         --header 'Accept: application/vnd.github.everest-preview+json' \
@@ -122,29 +140,7 @@ function _on_build_success {
 	--data '{
     	"event_type": "deploy",
 	    "client_payload":{
-        	"edition":"vika",
-       		 "env": "'${DEPLOY_ENV}'",
-       		 "app": "'${DOCKER_IMAGE_NAME}'",
-       		 "containerName": "'${DOCKER_IMAGE_NAME}'",
-       		 "image": "'${DOCKER_IMAGE}'"
-   		 }
-	}'
-}
-
-# On Build Success Event
-# Request to devops Github Action to Deploy Image 
-function _on_build_success_apitable {
-   DOCKER_IMAGE=${DOCKER_IMAGE_NAME_FULL}:${DOCKER_IMAGE_TAG}_build${CIRCLE_BUILD_NUM}
-   echo "_on_build_success_apitable -> $DOCKER_IMAGE"
-   curl --location --request POST 'https://api.github.com/repos/vikadata/devops/dispatches' \
-        --header 'Authorization: token '${CR_PAT}'' \
-        --header 'Accept: application/vnd.github.everest-preview+json' \
-	--header 'Content-Type: application/json' \
-	--data '{
-    	"event_type": "deploy",
-	    "client_payload":{
-        	"edition":"apitable",
-       		 "env": "'${DEPLOY_ENV}'",
+        	 "SEMVER_FULL":"'${SEMVER_FULL}'",
        		 "app": "'${DOCKER_IMAGE_NAME}'",
        		 "containerName": "'${DOCKER_IMAGE_NAME}'",
        		 "image": "'${DOCKER_IMAGE}'"
@@ -161,18 +157,17 @@ function _tag_and_push_docker {
 
   echo $CR_PAT | docker login $DOCKER_REGISTRY -u vikadata --password-stdin
 
-  # docker pull "$DOCKER_IMAGE_NAME_FULL:latest-$SEMVER_TYPE" || true
   docker tag $TEMP_TAG_NAME "$DOCKER_IMAGE_NAME_FULL:latest-$SEMVER_TYPE" || exit 1
   docker tag $TEMP_TAG_NAME "$DOCKER_IMAGE_NAME_FULL:$DOCKER_IMAGE_TAG" || exit 1
   docker tag $TEMP_TAG_NAME "$DOCKER_IMAGE_NAME_FULL:latest" || exit 1
-  docker tag $TEMP_TAG_NAME "$DOCKER_IMAGE_NAME_FULL:build$CIRCLE_BUILD_NUM" || exit 1
-  docker tag $TEMP_TAG_NAME "$DOCKER_IMAGE_NAME_FULL:${DOCKER_IMAGE_TAG}_build$CIRCLE_BUILD_NUM" || exit 1
+  docker tag $TEMP_TAG_NAME "$DOCKER_IMAGE_NAME_FULL:build$BUILD_NUM" || exit 1
+  docker tag $TEMP_TAG_NAME "$DOCKER_IMAGE_NAME_FULL:${DOCKER_IMAGE_TAG}_build$BUILD_NUM" || exit 1
 
   docker push "$DOCKER_IMAGE_NAME_FULL:latest-$SEMVER_TYPE"  || exit 1
   docker push "$DOCKER_IMAGE_NAME_FULL:$DOCKER_IMAGE_TAG"  || exit 1
   docker push "$DOCKER_IMAGE_NAME_FULL:latest"  || exit 1
-  docker push "$DOCKER_IMAGE_NAME_FULL:build$CIRCLE_BUILD_NUM"  || exit 1
-  docker push "$DOCKER_IMAGE_NAME_FULL:${DOCKER_IMAGE_TAG}_build$CIRCLE_BUILD_NUM"  || exit 1
+  docker push "$DOCKER_IMAGE_NAME_FULL:build$BUILD_NUM"  || exit 1
+  docker push "$DOCKER_IMAGE_NAME_FULL:${DOCKER_IMAGE_TAG}_build$BUILD_NUM"  || exit 1
 }
 
 function _build_and_push_multiple_platform_docker {
@@ -187,27 +182,32 @@ function _build_and_push_multiple_platform_docker {
   local TAG1="$DOCKER_IMAGE_NAME_FULL:latest-$SEMVER_TYPE"
   local TAG2="$DOCKER_IMAGE_NAME_FULL:$DOCKER_IMAGE_TAG"
   local TAG3="$DOCKER_IMAGE_NAME_FULL:latest"
-  local TAG4="$DOCKER_IMAGE_NAME_FULL:build$CIRCLE_BUILD_NUM"
-  local TAG5="$DOCKER_IMAGE_NAME_FULL:${DOCKER_IMAGE_TAG}_build$CIRCLE_BUILD_NUM"
+  local TAG4="$DOCKER_IMAGE_NAME_FULL:build$BUILD_NUM"
+  local TAG5="$DOCKER_IMAGE_NAME_FULL:${DOCKER_IMAGE_TAG}_build$BUILD_NUM"
 
   docker buildx build -f ${DOCKERFILE:=Dockerfile} --platform linux/arm64,linux/amd64 --tag $TAG1 --tag $TAG2 --tag $TAG3 --tag $TAG4 --tag $TAG5 . --push
 }
 
+function build_docker {
+  env_dotversion
+  _build_docker $1
+}
+
 function build_docker_dotversion {
   env_dotversion
-  build_docker $1
+  _build_docker $1
 }
 function build_docker_java {
   env_java
-  build_docker $1
+  _build_docker $1
 }
 function build_docker_nodejs {
   env_nodejs
-  build_docker $1
+  _build_docker $1
 }
 function build_docker_webserver {
   env_nodejs
-  build_docker $1
+  _build_docker $1
 }
 
 
@@ -227,16 +227,26 @@ function assert_eq {
 
 # print all export outputs variables
 function exports_info {
+  echo ""
+  echo "[Information Exports]"
+
+  echo "\$CI_NAME: $CI_NAME"
+  echo "\$GIT_BRANCH: $GIT_BRANCH"
+  echo "\$GIT_TAG: $GIT_TAG"
+  echo "\$BUILD_NUM: $BUILD_NUM"
   echo "\$SEMVER: $SEMVER"
   echo "\$SEMVER_PRERELEASE: $SEMVER_PRERELEASE"
   echo "\$SEMVER_TYPE: $SEMVER_TYPE"
   echo "\$SEMVER_EDITION: $SEMVER_EDITION"
   echo "\$SEMVER_METADATA: $SEMVER_METADATA"
   echo "\$SEMVER_FULL: $SEMVER_FULL"
+  echo ""
 }
 
 # testing
 function _test {
+  _test_github_action
+
   _test_alpha
 
   _test_tag_with_edition
@@ -244,14 +254,53 @@ function _test {
 
 }
 
+function _test_gitflow {
+  local SEMVER_NUMBER=7.0.8
+  local CIRCLE_BUILD_NUM=123
+  local CIRCLE_BRANCH=develop
+  local BUILD_NUM=1234 # non sense
+  local GIT_TAG=""
+  local SEMVER_EDITION="vika"
+ 
+  _read_semver 
+
+  assert_eq $SEMVER v7.0.8-alpha "ERROR"
+  assert_eq $SEMVER_FULL v7.0.8-alpha+vika.build123 "ERROR"
+  assert_eq $SEMVER_PRERELEASE alpha "ERROR"
+  assert_eq $CI_NAME "circleci" "ERROR"
+
+  exports_info 
+}
+
+
+function _test_github_action() {
+
+  local GITHUB_RUN_NUMBER=321
+  local GITHUB_REF_NAME=develop
+
+  _read_semver
+
+  assert_eq $CI_NAME "githubaction" "ERROR"
+  assert_eq $BUILD_NUM 321 "ERROR"
+
+  exports_info
+}
+
+# function _test_drone_ci {
+#   assert_eq $CI_NAME "drone" "ERROR"
+#   assert_eq $BUILD_NUM 321 "ERROR"
+# }
+
 function _test_alpha {
   local SEMVER_NUMBER=1.0.3
   local CIRCLE_BRANCH=integration
   local CIRCLE_BUILD_NUM=1234
-  local CIRCLE_TAG=""
+  local GIT_TAG=""
   local SEMVER_EDITION="vika"
   
   _read_semver 
+
+  assert_eq $CI_NAME "circleci" "ERROR"
   assert_eq $SEMVER v1.0.3-alpha "ERROR"
   assert_eq $SEMVER_FULL v1.0.3-alpha+vika.build1234 "ERROR"
   assert_eq $SEMVER_PRERELEASE alpha "ERROR"
@@ -260,9 +309,11 @@ function _test_alpha {
 }
 
 function _test_tag_with_edition {
+  # sim Circle CI
   local CIRCLE_BUILD_NUM=4321
   # if tag with EDITION
   local CIRCLE_TAG="vika-op/v2.0.1-release.2"
+
   _read_semver 
   assert_eq $SEMVER v2.0.1-release.2 "ERROR"
   assert_eq $SEMVER_FULL v2.0.1-release.2+vika-op.build4321 "ERROR"
@@ -278,6 +329,7 @@ function _test_tag_without_edition {
   local CIRCLE_BUILD_NUM=3333
   local CIRCLE_TAG=v3.0.1-release.2
   local SEMVER_EDITION="apitable"
+
   _read_semver 
   assert_eq $SEMVER v3.0.1-release.2 "ERROR"
   assert_eq $SEMVER_FULL v3.0.1-release.2+apitable.build3333 "ERROR"
@@ -287,6 +339,6 @@ function _test_tag_without_edition {
 }
 
 function _test_build_docker_dotversion {
- local APP=webhook-server
- build_docker_dotversion $APP
+  local APP=webhook-server
+  build_docker_dotversion $APP
 }
