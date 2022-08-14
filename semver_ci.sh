@@ -51,14 +51,31 @@ function _read_semver {
   export SEMVER_NUMBER=$(if [ "$SEMVER_NUMBER" ]; then echo "$SEMVER_NUMBER"; \
                         else echo "0.0.1"; fi)
 
-  if [ -z "$SEMVER_EDITION" ]; then
-    # default
-    export SEMVER_EDITION="vika"
-  fi;
+  # default
+  local DEFUALT_SEMVER_EDITION="vika"
+  export SEMVER_EDITION=$DEFUALT_SEMVER_EDITION
 
   if [ -z "$GIT_TAG" ]; then
+      # Release Branch
+      # split git branch into   EDITION + SEMVER_NUMBER
+      # etc.   release/1.0.0  ->    "abc" & "1.0.0"
+      if [[ $GIT_BRANCH == *"/"* ]]; then
+        arr=(${GIT_BRANCH//\// })
+
+        local BRANCH_EDITION=${arr[0]}   
+
+        # special handle for non `release/`
+        if [ "$BRANCH_EDITION" != "release" ]; then
+          export SEMVER_EDITION=$BRANCH_EDITION
+        fi
+
+        export SEMVER_NUMBER=${arr[1]}
+        export SEMVER_TYPE="beta"
+      else
+        export SEMVER_TYPE="alpha"
+      fi
+
       # Git Branch
-      export SEMVER_TYPE="alpha"
       export SEMVER_PRERELEASE=$SEMVER_TYPE
       export SEMVER="v$SEMVER_NUMBER-$SEMVER_TYPE"
   else
@@ -68,6 +85,7 @@ function _read_semver {
       # etc.   abc/v1.0.0-release  ->    "abc" & "v1.0.0-release"
       if [[ $GIT_TAG == *"/"* ]]; then
         arr=(${GIT_TAG//\// })
+
         export SEMVER_EDITION=${arr[0]}   
         SEMVER_FROM_TAG=${arr[1]}
       fi
@@ -246,21 +264,48 @@ function exports_info {
 # testing
 function _test {
   _test_github_action
+  _test_release_branch
+  _test_gitflow
 
   _test_alpha
 
   _test_tag_with_edition
   _test_tag_without_edition
 
+  exports_info 
 }
 
+function _test_release_branch {
+  local CIRCLE_TAG=""
+  local CIRCLE_BUILD_NUM=""
+
+  local GITHUB_RUN_NUMBER=789
+  local GITHUB_REF_NAME=release/1.2.3
+  local GITHUB_REF_TYPE="branch"
+
+  _read_semver
+
+  assert_eq $GIT_TAG "" "ERROR_GITTAG"
+  assert_eq $CI_NAME "githubaction" "ERROR"
+  assert_eq $BUILD_NUM 789 "ERROR"
+  assert_eq $SEMVER_EDITION "vika" "ERROR_EDITION"
+
+  local GITHUB_RUN_NUMBER=788
+  local GITHUB_REF_NAME=customers/1.2.3
+
+  _read_semver
+
+  assert_eq $GIT_TAG "" "ERROR_GITTAG"
+  assert_eq $CI_NAME "githubaction" "ERROR"
+  assert_eq $BUILD_NUM 788 "ERROR"
+  assert_eq $SEMVER_EDITION "customers" "ERROR"
+}
 function _test_gitflow {
   local SEMVER_NUMBER=7.0.8
   local CIRCLE_BUILD_NUM=123
   local CIRCLE_BRANCH=develop
   local BUILD_NUM=1234 # non sense
   local GIT_TAG=""
-  local SEMVER_EDITION="vika"
  
   _read_semver 
 
@@ -269,7 +314,6 @@ function _test_gitflow {
   assert_eq $SEMVER_PRERELEASE alpha "ERROR"
   assert_eq $CI_NAME "circleci" "ERROR"
 
-  exports_info 
 }
 
 
@@ -283,7 +327,6 @@ function _test_github_action() {
   assert_eq $CI_NAME "githubaction" "ERROR"
   assert_eq $BUILD_NUM 321 "ERROR"
 
-  exports_info
 }
 
 # function _test_drone_ci {
@@ -296,7 +339,6 @@ function _test_alpha {
   local CIRCLE_BRANCH=integration
   local CIRCLE_BUILD_NUM=1234
   local GIT_TAG=""
-  local SEMVER_EDITION="vika"
   
   _read_semver 
 
@@ -305,7 +347,6 @@ function _test_alpha {
   assert_eq $SEMVER_FULL v1.0.3-alpha+vika.build1234 "ERROR"
   assert_eq $SEMVER_PRERELEASE alpha "ERROR"
 
-  exports_info
 }
 
 function _test_tag_with_edition {
@@ -315,27 +356,25 @@ function _test_tag_with_edition {
   local CIRCLE_TAG="vika-op/v2.0.1-release.2"
 
   _read_semver 
+  assert_eq $CI_NAME "circleci"
   assert_eq $SEMVER v2.0.1-release.2 "ERROR"
   assert_eq $SEMVER_FULL v2.0.1-release.2+vika-op.build4321 "ERROR"
   assert_eq $SEMVER_PRERELEASE release.2 "ERROR"
   assert_eq $SEMVER_EDITION vika-op "ERROR"
 
-  exports_info
 
 }
 
 function _test_tag_without_edition {
   # if TAG without EDITION
   local CIRCLE_BUILD_NUM=3333
-  local CIRCLE_TAG=v3.0.1-release.2
-  local SEMVER_EDITION="apitable"
+  local CIRCLE_TAG=apitable/v3.0.1-release.2
 
   _read_semver 
   assert_eq $SEMVER v3.0.1-release.2 "ERROR"
   assert_eq $SEMVER_FULL v3.0.1-release.2+apitable.build3333 "ERROR"
   assert_eq $SEMVER_PRERELEASE release.2 "ERROR"
 
-  exports_info
 }
 
 function _test_build_docker_dotversion {
