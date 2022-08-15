@@ -135,7 +135,7 @@ function _build_docker {
   else
     TEMP_TAG_NAME="vikadata/$SEMVER_EDITION/$DOCKER_IMAGE_NAME:latest"
     # 构建第一个镜像
-    docker build --tag $TEMP_TAG_NAME . -f ${DOCKERFILE:=Dockerfile} || exit 1
+    docker build $BUILD_ARG --tag $TEMP_TAG_NAME . -f ${DOCKERFILE:=Dockerfile} || exit 1
 
     # 给镜像打 tag
     _tag_and_push_docker "ghcr.io" $TEMP_TAG_NAME
