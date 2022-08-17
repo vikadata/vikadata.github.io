@@ -27,7 +27,7 @@ function env_nodejs {
   _read_semver
 }
 
-# Get SemVer from Circle CI Environment Variables 
+# Get SemVer from Circle CI Environment Variables
 function _read_semver {
   export CI_NAME=$(if [ "$CIRCLE_BUILD_NUM" ]; then echo "circleci"; \
                       elif [ "$GITHUB_RUN_NUMBER" ]; then echo "githubaction"; \
@@ -62,7 +62,7 @@ function _read_semver {
       if [[ $GIT_BRANCH == *"/"* ]]; then
         arr=(${GIT_BRANCH//\// })
 
-        local BRANCH_EDITION=${arr[0]}   
+        local BRANCH_EDITION=${arr[0]}
 
         # special handle for non `release/`
         if [ "$BRANCH_EDITION" != "release" ]; then
@@ -86,7 +86,7 @@ function _read_semver {
       if [[ $GIT_TAG == *"/"* ]]; then
         arr=(${GIT_TAG//\// })
 
-        export SEMVER_EDITION=${arr[0]}   
+        export SEMVER_EDITION=${arr[0]}
         SEMVER_FROM_TAG=${arr[1]}
       fi
 
@@ -102,13 +102,30 @@ function _read_semver {
 
 # Build the Docker with Docker Image Name
 function _build_docker {
-  if [[ -z "$1" ]]; then
+  #By default, the success callback is automatically called
+  manual_call_success=false
+
+  #parse commandline options
+  while getopts "n:m" arg; do
+    case $arg in
+    n)
+      export DOCKER_IMAGE_NAME=$OPTARG
+      echo "\$DOCKER_IMAGE_NAME:$DOCKER_IMAGE_NAME"
+      ;;
+    m)
+      manual_call_success=true
+      echo "[WARNING] Need to call the method manually [_on_build_success]!"
+      ;;
+    ?)
+      echo "unknown argument"
+      exit 1
+      ;;
+    esac
+  done
+
+  if [[ -z "$DOCKER_IMAGE_NAME" ]]; then
     echo "[ERROR] Need Arugment#1 for \$DOCKER_IMAGE_NAME Define..."
     exit 1
-  else
-    export DOCKER_IMAGE_NAME=$1
-    echo "\$DOCKER_IMAGE_NAME:$DOCKER_IMAGE_NAME"
-
   fi
 
   if [[ -z "${CR_PAT}" ]]; then
@@ -142,12 +159,13 @@ function _build_docker {
     _tag_and_push_docker "docker.vika.ltd" $TEMP_TAG_NAME
   fi
 
-  _on_build_success
+  if ! $manual_call_success; then
+    _on_build_success
+  fi
 }
 
-
 # On Build Success Event
-# Request to devops Github Action to Deploy Image 
+# Request to devops Github Action to Deploy Image
 function _on_build_success {
    DOCKER_IMAGE=${DOCKER_IMAGE_NAME_FULL}:${DOCKER_IMAGE_TAG}_build${BUILD_NUM}
    echo "_on_build_success -> $DOCKER_IMAGE , SEMVER_FULL -> ${SEMVER_FULL}"
@@ -208,26 +226,40 @@ function _build_and_push_multiple_platform_docker {
 
 function build_docker {
   env_dotversion
-  _build_docker $1
+  _build_docker -n $1
 }
 
 function build_docker_dotversion {
   env_dotversion
-  _build_docker $1
+  _build_docker -n $1
 }
 function build_docker_java {
   env_java
-  _build_docker $1
+  _build_docker -n $1
 }
 function build_docker_nodejs {
   env_nodejs
-  _build_docker $1
+  _build_docker -n $1
 }
 function build_docker_webserver {
   env_nodejs
-  _build_docker $1
+  _build_docker -n $1
 }
+# Unable to confirm, the method of calling the "success callback" timing
+# requires the caller to call the "success callback" at the appropriate timing
+function build_docker_unableack {
+  case "$1" in
+  java) env_java ;;
+  node) env_nodejs ;;
+  dotversion) env_dotversion ;;
+  *)
+    echo "unknown env，support list: [java, node, dotversion]"
+    exit 1
+    ;;
+  esac
 
+  _build_docker -n "$2" -m
+}
 
 # assert equals
 function assert_eq {
@@ -272,7 +304,7 @@ function _test {
   _test_tag_with_edition
   _test_tag_without_edition
 
-  exports_info 
+  exports_info
 }
 
 function _test_release_branch {
@@ -306,8 +338,8 @@ function _test_gitflow {
   local CIRCLE_BRANCH=develop
   local BUILD_NUM=1234 # non sense
   local GIT_TAG=""
- 
-  _read_semver 
+
+  _read_semver
 
   assert_eq $SEMVER v7.0.8-alpha "ERROR"
   assert_eq $SEMVER_FULL v7.0.8-alpha+vika.build123 "ERROR"
@@ -339,8 +371,8 @@ function _test_alpha {
   local CIRCLE_BRANCH=integration
   local CIRCLE_BUILD_NUM=1234
   local GIT_TAG=""
-  
-  _read_semver 
+
+  _read_semver
 
   assert_eq $CI_NAME "circleci" "ERROR"
   assert_eq $SEMVER v1.0.3-alpha "ERROR"
@@ -355,7 +387,7 @@ function _test_tag_with_edition {
   # if tag with EDITION
   local CIRCLE_TAG="vika-op/v2.0.1-release.2"
 
-  _read_semver 
+  _read_semver
   assert_eq $CI_NAME "circleci"
   assert_eq $SEMVER v2.0.1-release.2 "ERROR"
   assert_eq $SEMVER_FULL v2.0.1-release.2+vika-op.build4321 "ERROR"
@@ -370,7 +402,7 @@ function _test_tag_without_edition {
   local CIRCLE_BUILD_NUM=3333
   local CIRCLE_TAG=apitable/v3.0.1-release.2
 
-  _read_semver 
+  _read_semver
   assert_eq $SEMVER v3.0.1-release.2 "ERROR"
   assert_eq $SEMVER_FULL v3.0.1-release.2+apitable.build3333 "ERROR"
   assert_eq $SEMVER_PRERELEASE release.2 "ERROR"
