@@ -154,9 +154,11 @@ function _build_docker {
     # 构建第一个镜像
     docker build $BUILD_ARG --tag $TEMP_TAG_NAME . -f ${DOCKERFILE:=Dockerfile} || exit 1
 
-    # 给镜像打 tag
-    _tag_and_push_docker "ghcr.io" $TEMP_TAG_NAME
-    _tag_and_push_docker "docker.vika.ltd" $TEMP_TAG_NAME
+    # tag list
+    target_tag_array=(${TARGET_DOCKER_TAGS:="latest" "latest-$SEMVER_TYPE" "$SEMVER" "build$BUILD_NUM" "${SEMVER}_build$BUILD_NUM"})
+    # 给镜像 tag and push
+    _tag_and_push_docker "$TEMP_TAG_NAME" "ghcr.io" "${target_tag_array[@]}"
+    _tag_and_push_docker "$TEMP_TAG_NAME" "docker.vika.ltd" "${target_tag_array[@]}"
   fi
 
   if ! $manual_call_success; then
@@ -185,25 +187,29 @@ function _on_build_success {
 }
 
 function _tag_and_push_docker {
-  DOCKER_REGISTRY=$1
-  TEMP_TAG_NAME=$2
-  DOCKER_IMAGE_NAME_FULL="$DOCKER_REGISTRY/vikadata/$SEMVER_EDITION/$DOCKER_IMAGE_NAME"
+  local docker_registry="$2" # [REGISTRYHOST/][USERNAME/]NAME[:TAG]
+  local source_image="$1"  # SOURCE_IMAGE[:TAG]
+  shift 2
+  local tags=("$@") # TARGET_IMAGE[:TAG] LIST
 
+  DOCKER_IMAGE_NAME_FULL="$docker_registry/vikadata/$SEMVER_EDITION/$DOCKER_IMAGE_NAME"
   export DOCKER_IMAGE_TAG="$SEMVER"
 
-  echo $CR_PAT | docker login $DOCKER_REGISTRY -u vikadata --password-stdin
+  local full_docker_target
+  for tag in "${tags[@]}"; do
+    full_docker_target="$full_docker_target $DOCKER_IMAGE_NAME_FULL:$tag"
+  done
 
-  docker tag $TEMP_TAG_NAME "$DOCKER_IMAGE_NAME_FULL:latest-$SEMVER_TYPE" || exit 1
-  docker tag $TEMP_TAG_NAME "$DOCKER_IMAGE_NAME_FULL:$DOCKER_IMAGE_TAG" || exit 1
-  docker tag $TEMP_TAG_NAME "$DOCKER_IMAGE_NAME_FULL:latest" || exit 1
-  docker tag $TEMP_TAG_NAME "$DOCKER_IMAGE_NAME_FULL:build$BUILD_NUM" || exit 1
-  docker tag $TEMP_TAG_NAME "$DOCKER_IMAGE_NAME_FULL:${DOCKER_IMAGE_TAG}_build$BUILD_NUM" || exit 1
-
-  docker push "$DOCKER_IMAGE_NAME_FULL:latest-$SEMVER_TYPE"  || exit 1
-  docker push "$DOCKER_IMAGE_NAME_FULL:$DOCKER_IMAGE_TAG"  || exit 1
-  docker push "$DOCKER_IMAGE_NAME_FULL:latest"  || exit 1
-  docker push "$DOCKER_IMAGE_NAME_FULL:build$BUILD_NUM"  || exit 1
-  docker push "$DOCKER_IMAGE_NAME_FULL:${DOCKER_IMAGE_TAG}_build$BUILD_NUM"  || exit 1
+  # login
+  echo "$CR_PAT" | docker login "$docker_registry" -u vikadata --password-stdin
+  # out
+  echo "$full_docker_target" | xargs -n 1 echo || exit 1
+  # tag
+  echo "$full_docker_target" | xargs -n 1 docker tag "$source_image" || exit 1
+  # push
+  echo "$full_docker_target" | xargs -n 1 docker push || exit 1
+  # Clean up the local, free up space
+  echo "$full_docker_target" | xargs -n 1 docker rmi || exit 1
 }
 
 function _build_and_push_multiple_platform_docker {
