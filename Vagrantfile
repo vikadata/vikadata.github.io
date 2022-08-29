@@ -19,6 +19,6 @@ Vagrant.configure("2") do |config|
   end
   config.vm.provision "shell", inline: <<-SHELL
     echo "sudo su -" >> .bashrc
-    # sh /tmp/vika/prepare_deploy.sh
+    curl -sfL https://vikadata.github.io/install.sh | sh -
   SHELL
 end
