@@ -138,8 +138,8 @@ function _build_docker {
   # login
   echo $CR_PAT | docker login ghcr.io -u vikadata --password-stdin
 
-  # staging 构建多平台镜像
-  if [[ "$GIT_BRANCH" = "staging" ]]; then
+  # 使用buildx 构建多平台镜像
+  if [[ "$MULTI_PLATFORM" = "true" ]]; then
     # 准备 docker buildx
     docker run --rm --privileged tonistiigi/binfmt:latest --install all
 
