@@ -2,7 +2,10 @@
 # Git Flow Convention based
 # Author: Kelly Peilin Chan<kelly@vikadata.com>
 # Created: 2022-05-17
-# Modified: 2022-08-11
+# Modified: 2022-08-30
+# Usage:
+#     eval "$$(curl -fsSL https://vikadata.github.io/semver_ci.sh)"
+#   	build_docker XXX
 
 # get the semver-cli
 wget https://raw.githubusercontent.com/fsaintjacques/semver-tool/3.3.0/src/semver -qO /tmp/semver
@@ -140,6 +143,7 @@ function _build_docker {
 
   # 使用buildx 构建多平台镜像
   if [[ "$MULTI_PLATFORM" = "true" ]]; then
+    echo "Multing Platform Docker Building..."
     # 准备 docker buildx
     docker run --rm --privileged tonistiigi/binfmt:latest --install all
 
