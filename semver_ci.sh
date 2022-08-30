@@ -142,7 +142,7 @@ function _build_docker {
   echo $CR_PAT | docker login ghcr.io -u vikadata --password-stdin
 
   # 使用buildx 构建多平台镜像
-  if [[ "$MULTI_PLATFORM" = "true" ]]; then
+  if [[ "$MULTI_PLATFORM" == "true" ]]; then
     echo "Multing Platform Docker Building..."
     # 准备 docker buildx
     docker run --rm --privileged tonistiigi/binfmt:latest --install all
