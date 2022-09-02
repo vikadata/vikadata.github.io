@@ -231,7 +231,7 @@ function _build_and_push_multiple_platform_docker {
   local TAG4="$DOCKER_IMAGE_NAME_FULL:build$BUILD_NUM"
   local TAG5="$DOCKER_IMAGE_NAME_FULL:${DOCKER_IMAGE_TAG}_build$BUILD_NUM"
 
-  docker buildx build -f ${DOCKERFILE:=Dockerfile} --platform linux/arm64,linux/amd64 --tag $TAG1 --tag $TAG2 --tag $TAG3 --tag $TAG4 --tag $TAG5 . --push
+  docker buildx build $BUILD_ARG -f ${DOCKERFILE:=Dockerfile} --platform linux/arm64,linux/amd64 --tag $TAG1 --tag $TAG2 --tag $TAG3 --tag $TAG4 --tag $TAG5 . --push
 }
 
 function build_docker {
