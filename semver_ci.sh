@@ -141,25 +141,27 @@ function _build_docker {
   # login
   echo $CR_PAT | docker login ghcr.io -u vikadata --password-stdin
 
+  # tag list
+  local target_tag_array=(${TARGET_DOCKER_TAGS:="latest" "latest-$SEMVER_TYPE" "$SEMVER" "build$BUILD_NUM" "${SEMVER}_build$BUILD_NUM"})
+
   # 使用buildx 构建多平台镜像
   if [[ "$MULTI_PLATFORM" == "true" ]]; then
-    echo "Multing Platform Docker Building..."
-    # 准备 docker buildx
+    echo "Multi Platform Docker Building..."
+    # install docker buildx environment
     docker run --rm --privileged tonistiigi/binfmt:latest --install all
 
-    docker context create buildx-build
-    docker buildx create --use buildx-build
+    # create and use instances，ignore duplicate error warnings
+    docker buildx create --use --name=builder-"$(uname -n)" --driver docker-container --driver-opt env.BUILDKIT_STEP_LOG_MAX_SIZE=-1 --driver-opt env.BUILDKIT_STEP_LOG_MAX_SPEED=-1 || true
 
     # 打包并推送多平台镜像
-    _build_and_push_multiple_platform_docker "ghcr.io"
-    _build_and_push_multiple_platform_docker "docker.vika.ltd"
+    _build_and_push_multiple_platform_docker "ghcr.io" "${target_tag_array[@]}"
+    _build_and_push_multiple_platform_docker "docker.vika.ltd" "${target_tag_array[@]}"
   else
+    echo "Docker Building..."
     TEMP_TAG_NAME="vikadata/$SEMVER_EDITION/$DOCKER_IMAGE_NAME:latest"
     # 构建第一个镜像
     docker build $BUILD_ARG --tag $TEMP_TAG_NAME . -f ${DOCKERFILE:=Dockerfile} || exit 1
 
-    # tag list
-    target_tag_array=(${TARGET_DOCKER_TAGS:="latest" "latest-$SEMVER_TYPE" "$SEMVER" "build$BUILD_NUM" "${SEMVER}_build$BUILD_NUM"})
     # 给镜像 tag and push
     _tag_and_push_docker "$TEMP_TAG_NAME" "ghcr.io" "${target_tag_array[@]}"
     _tag_and_push_docker "$TEMP_TAG_NAME" "docker.vika.ltd" "${target_tag_array[@]}"
@@ -217,21 +219,23 @@ function _tag_and_push_docker {
 }
 
 function _build_and_push_multiple_platform_docker {
-  DOCKER_REGISTRY=$1
+  local docker_registry="$1" # [REGISTRYHOST/][USERNAME/]NAME[:TAG]
+  shift
+  local tags=("$@") # TARGET_IMAGE[:TAG] LIST
 
-  DOCKER_IMAGE_NAME_FULL="$DOCKER_REGISTRY/vikadata/$SEMVER_EDITION/$DOCKER_IMAGE_NAME"
-
+  DOCKER_IMAGE_NAME_FULL="$docker_registry/vikadata/$SEMVER_EDITION/$DOCKER_IMAGE_NAME"
   export DOCKER_IMAGE_TAG="$SEMVER"
 
-  echo $CR_PAT | docker login $DOCKER_REGISTRY -u vikadata --password-stdin
+  local full_docker_target
+  for tag in "${tags[@]}"; do
+    full_docker_target="$full_docker_target --tag $DOCKER_IMAGE_NAME_FULL:$tag"
+  done
 
-  local TAG1="$DOCKER_IMAGE_NAME_FULL:latest-$SEMVER_TYPE"
-  local TAG2="$DOCKER_IMAGE_NAME_FULL:$DOCKER_IMAGE_TAG"
-  local TAG3="$DOCKER_IMAGE_NAME_FULL:latest"
-  local TAG4="$DOCKER_IMAGE_NAME_FULL:build$BUILD_NUM"
-  local TAG5="$DOCKER_IMAGE_NAME_FULL:${DOCKER_IMAGE_TAG}_build$BUILD_NUM"
+  # out
+  echo "$full_docker_target" | xargs -n 2 echo || exit 1
 
-  docker buildx build $BUILD_ARG -f ${DOCKERFILE:=Dockerfile} --platform linux/arm64,linux/amd64 --tag $TAG1 --tag $TAG2 --tag $TAG3 --tag $TAG4 --tag $TAG5 . --push
+  # build and push
+  docker buildx build $BUILD_ARG -f ${DOCKERFILE:=Dockerfile} --platform linux/arm64,linux/amd64 $full_docker_target . --push
 }
 
 function build_docker {
