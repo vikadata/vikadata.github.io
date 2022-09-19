@@ -231,9 +231,10 @@ function _build_and_push_multiple_platform_docker {
     full_docker_target="$full_docker_target --tag $DOCKER_IMAGE_NAME_FULL:$tag"
   done
 
+  # login
+  echo "$CR_PAT" | docker login "$docker_registry" -u vikadata --password-stdin
   # out
   echo "$full_docker_target" | xargs -n 2 echo || exit 1
-
   # build and push
   docker buildx build $BUILD_ARG -f ${DOCKERFILE:=Dockerfile} --platform linux/arm64,linux/amd64 $full_docker_target . --push
 }
