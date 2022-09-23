@@ -5,7 +5,7 @@
 # Modified: 2022-08-30
 # Usage:
 #     eval "$$(curl -fsSL https://vikadata.github.io/semver_ci.sh)"
-#   	build_docker XXX
+#   	build_docker XXX 
 
 # get the semver-cli
 wget https://raw.githubusercontent.com/fsaintjacques/semver-tool/3.3.0/src/semver -qO /tmp/semver
