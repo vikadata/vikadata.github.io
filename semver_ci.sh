@@ -428,5 +428,3 @@ function _test_build_docker_dotversion {
   local APP=webhook-server
   build_docker_dotversion $APP
 }
-
-_read_semver
