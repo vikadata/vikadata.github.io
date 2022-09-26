@@ -98,7 +98,9 @@ function _read_semver {
       export SEMVER_TYPE=$SEMVER_PRERELEASE
       export SEMVER="$SEMVER_FROM_TAG"
   fi;
-
+  
+  #lower case EDITION
+  export SEMVER_EDITION=${SEMVER_EDITION,,}
   export SEMVER_METADATA="$SEMVER_EDITION.build$BUILD_NUM"
   export SEMVER_FULL="$SEMVER+$SEMVER_METADATA"
 }
