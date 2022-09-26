@@ -55,8 +55,8 @@ function _read_semver {
                         else echo "0.0.1"; fi)
 
   # default
-  local DEFUALT_SEMVER_EDITION="vika"
-  export SEMVER_EDITION=$DEFUALT_SEMVER_EDITION
+  #local DEFUALT_SEMVER_EDITION=${:-vika}
+  export SEMVER_EDITION=${DEFUALT_SEMVER_EDITION:-vika}
 
   if [ -z "$GIT_TAG" ]; then
       # Release Branch
@@ -428,3 +428,5 @@ function _test_build_docker_dotversion {
   local APP=webhook-server
   build_docker_dotversion $APP
 }
+
+_read_semver
