@@ -160,7 +160,8 @@ function _build_docker {
     _build_and_push_multiple_platform_docker "docker.vika.ltd" "${target_tag_array[@]}"
   else
     echo "Docker Building..."
-    TEMP_TAG_NAME="vikadata/$SEMVER_EDITION/$DOCKER_IMAGE_NAME:latest"
+    RANDOM_SUM=$(echo $RANDOM |cksum |cut -c 1-8)
+    TEMP_TAG_NAME="vikadata/$SEMVER_EDITION/$DOCKER_IMAGE_NAME:$RANDOM_SUM"
     # 构建第一个镜像
     docker build $BUILD_ARG --tag $TEMP_TAG_NAME . -f ${DOCKERFILE:=Dockerfile} || exit 1
 
