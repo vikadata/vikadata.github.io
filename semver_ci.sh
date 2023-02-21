@@ -208,7 +208,7 @@ function _tag_and_push_docker {
   done
 
   # login
-  echo "$CR_PAT" | docker login "$docker_registry" -u vikadata --password-stdin
+  echo "$CR_PAT" | docker login ghcr.io -u vikadata --password-stdin
   # out
   echo "$full_docker_target" | xargs -n 1 echo || exit 1
   # tag
@@ -233,7 +233,7 @@ function _build_and_push_multiple_platform_docker {
   done
 
   # login
-  echo "$CR_PAT" | docker login "$docker_registry" -u vikadata --password-stdin
+  echo "$CR_PAT" | docker login ghcr.io -u vikadata --password-stdin
   # out
   echo "$full_docker_target" | xargs -n 2 echo || exit 1
   # build and push
