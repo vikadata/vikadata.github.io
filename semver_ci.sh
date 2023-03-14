@@ -139,7 +139,11 @@ function _build_docker {
   fi
 
   # login
-  echo $CR_PAT | docker login ghcr.io -u vikadata --password-stdin
+  echo "${CR_PAT}" | docker login ghcr.io -u vikadata --password-stdin
+
+  if [[ -n "${REGISTRY_SERVER}" && -n "${REGISTRY_USERNAME}" && -n "${REGISTRY_PASSWORD}" ]]; then
+    echo "${REGISTRY_PASSWORD}" | docker login "${REGISTRY_SERVER}" -u "${REGISTRY_USERNAME}" --password-stdin
+  fi
 
   # tag list
   local target_tag_array=(${TARGET_DOCKER_TAGS:="latest" "latest-$SEMVER_TYPE" "$SEMVER" "build$BUILD_NUM" "${SEMVER}_build$BUILD_NUM"})
@@ -207,8 +211,6 @@ function _tag_and_push_docker {
     full_docker_target="$full_docker_target $DOCKER_IMAGE_NAME_FULL:$tag"
   done
 
-  # login
-  echo "$CR_PAT" | docker login ghcr.io -u vikadata --password-stdin
   # out
   echo "$full_docker_target" | xargs -n 1 echo || exit 1
   # tag
@@ -232,8 +234,6 @@ function _build_and_push_multiple_platform_docker {
     full_docker_target="$full_docker_target --tag $DOCKER_IMAGE_NAME_FULL:$tag"
   done
 
-  # login
-  echo "$CR_PAT" | docker login ghcr.io -u vikadata --password-stdin
   # out
   echo "$full_docker_target" | xargs -n 2 echo || exit 1
   # build and push
