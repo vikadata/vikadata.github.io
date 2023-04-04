@@ -155,7 +155,8 @@ function _build_docker {
     docker run --rm --privileged tonistiigi/binfmt:latest --install all
 
     # create and use instances，ignore duplicate error warnings
-    docker buildx create --use --name=builder-"$(uname -n)" --driver docker-container --driver-opt env.BUILDKIT_STEP_LOG_MAX_SIZE=-1 --driver-opt env.BUILDKIT_STEP_LOG_MAX_SPEED=-1 || true
+    docker context create github-action
+    docker buildx create github-action --use --name=builder-"$(uname -n)" --driver docker-container --driver-opt env.BUILDKIT_STEP_LOG_MAX_SIZE=-1 --driver-opt env.BUILDKIT_STEP_LOG_MAX_SPEED=-1 || true
 
     # 打包并推送多平台镜像
     _build_and_push_multiple_platform_docker "ghcr.io" "${target_tag_array[@]}"
