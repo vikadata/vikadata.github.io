@@ -193,7 +193,8 @@ function _on_build_success {
         	 "SEMVER_FULL":"'${SEMVER_FULL}'",
        		 "app": "'${DOCKER_IMAGE_NAME}'",
        		 "containerName": "'${DOCKER_IMAGE_NAME}'",
-       		 "image": "'${DOCKER_IMAGE}'"
+       		 "image": "'${DOCKER_IMAGE}'",
+           "arch": "'$(uname -m)'"
    		 }
 	}'
 }
