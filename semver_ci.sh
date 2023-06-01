@@ -7,6 +7,8 @@
 #     eval "$$(curl -fsSL https://vikadata.github.io/semver_ci.sh)"
 #   	build_docker XXX
 
+REGISTRY_NAMESPACE=${REGISTRY_NAMESPACE:-vikadata}
+
 # get the semver-cli
 wget https://raw.githubusercontent.com/fsaintjacques/semver-tool/3.3.0/src/semver -qO /tmp/semver
 
@@ -131,18 +133,29 @@ function _build_docker {
     exit 1
   fi
 
-  if [[ -z "${CR_PAT}" ]]; then
-    echo "[WARNING] Need \$CR_PAT Github Package Personal Access Token Define..."
-    read -p "Please enter CR_PAT: " CR_PAT
-  else
-    echo "Found \$CR_PAT. "
+  # login
+  if [[ -n "${CR_PAT}" ]]; then
+    for i in {1..15}; do
+      if echo "${CR_PAT}" | docker login ghcr.io -u "${REGISTRY_NAMESPACE}" --password-stdin; then
+        break
+      fi
+      if (( i == 15 )); then
+          exit 1
+      fi
+      sleep 3
+    done
   fi
 
-  # login
-  echo "${CR_PAT}" | docker login ghcr.io -u vikadata --password-stdin
-
   if [[ -n "${REGISTRY_SERVER}" && -n "${REGISTRY_USERNAME}" && -n "${REGISTRY_PASSWORD}" ]]; then
-    echo "${REGISTRY_PASSWORD}" | docker login "${REGISTRY_SERVER}" -u "${REGISTRY_USERNAME}" --password-stdin
+    for i in {1..15}; do
+      if echo "${REGISTRY_PASSWORD}" | docker login "${REGISTRY_SERVER}" -u "${REGISTRY_USERNAME}" --password-stdin; then
+        break
+      fi
+      if (( i == 15 )); then
+          exit 1
+      fi
+      sleep 3
+    done
   fi
 
   # tag list
@@ -159,18 +172,22 @@ function _build_docker {
     docker buildx create github-action --use --name=builder-"$(uname -n)" --driver docker-container --driver-opt env.BUILDKIT_STEP_LOG_MAX_SIZE=-1 --driver-opt env.BUILDKIT_STEP_LOG_MAX_SPEED=-1 || true
 
     # 打包并推送多平台镜像
-    _build_and_push_multiple_platform_docker "ghcr.io" "${target_tag_array[@]}"
-    _build_and_push_multiple_platform_docker "docker.vika.ltd" "${target_tag_array[@]}"
+    if [[ -n "${CR_PAT}" ]]; then
+      _build_and_push_multiple_platform_docker "ghcr.io" "${target_tag_array[@]}"
+    fi
+    _build_and_push_multiple_platform_docker "${REGISTRY_SERVER}" "${target_tag_array[@]}"
   else
     echo "Docker Building..."
     RANDOM_SUM=$(echo $RANDOM |cksum |cut -c 1-8)
-    TEMP_TAG_NAME="vikadata/$SEMVER_EDITION/$DOCKER_IMAGE_NAME:$RANDOM_SUM"
+    TEMP_TAG_NAME="${REGISTRY_NAMESPACE}/$SEMVER_EDITION/$DOCKER_IMAGE_NAME:$RANDOM_SUM"
     # 构建第一个镜像
     docker build $BUILD_ARG --tag $TEMP_TAG_NAME . -f ${DOCKERFILE:=Dockerfile} || exit 1
 
     # 给镜像 tag and push
-    _tag_and_push_docker "$TEMP_TAG_NAME" "ghcr.io" "${target_tag_array[@]}"
-    _tag_and_push_docker "$TEMP_TAG_NAME" "docker.vika.ltd" "${target_tag_array[@]}"
+    if [[ -n "${CR_PAT}" ]]; then
+      _tag_and_push_docker "$TEMP_TAG_NAME" "ghcr.io" "${target_tag_array[@]}"
+    fi
+    _tag_and_push_docker "$TEMP_TAG_NAME" "${REGISTRY_SERVER}" "${target_tag_array[@]}"
   fi
 
   if ! $manual_call_success; then
@@ -181,9 +198,10 @@ function _build_docker {
 # On Build Success Event
 # Request to devops Github Action to Deploy Image
 function _on_build_success {
+  if [[ -n "${CR_PAT}" ]]; then
    DOCKER_IMAGE=${DOCKER_IMAGE_NAME_FULL}:${DOCKER_IMAGE_TAG}_build${BUILD_NUM}
    echo "_on_build_success -> $DOCKER_IMAGE , SEMVER_FULL -> ${SEMVER_FULL}"
-   curl --location --request POST 'https://api.github.com/repos/vikadata/devops/dispatches' \
+   curl --location --request POST "https://api.github.com/repos/${REGISTRY_NAMESPACE}/devops/dispatches" \
         --header 'Authorization: token '${CR_PAT}'' \
         --header 'Accept: application/vnd.github.everest-preview+json' \
 	--header 'Content-Type: application/json' \
@@ -197,6 +215,7 @@ function _on_build_success {
            "arch": "'$(uname -m)'"
    		 }
 	}'
+  fi
 }
 
 function _tag_and_push_docker {
@@ -205,7 +224,7 @@ function _tag_and_push_docker {
   shift 2
   local tags=("$@") # TARGET_IMAGE[:TAG] LIST
 
-  DOCKER_IMAGE_NAME_FULL="$docker_registry/vikadata/$SEMVER_EDITION/$DOCKER_IMAGE_NAME"
+  DOCKER_IMAGE_NAME_FULL="$docker_registry/${REGISTRY_NAMESPACE}/$SEMVER_EDITION/$DOCKER_IMAGE_NAME"
   export DOCKER_IMAGE_TAG="$SEMVER"
 
   local full_docker_target
@@ -218,9 +237,15 @@ function _tag_and_push_docker {
   # tag
   echo "$full_docker_target" | xargs -n 1 docker tag "$source_image" || exit 1
   # push
-  echo "$full_docker_target" | xargs -n 1 docker push || exit 1
-  # Clean up the local, free up space
-  echo "$full_docker_target" | xargs -n 1 docker rmi || exit 1
+  for i in {1..15}; do
+    if echo "$full_docker_target" | xargs -n 1 docker push; then
+      break
+    fi
+    if (( i == 15 )); then
+        exit 1
+    fi
+    sleep 3
+  done
 }
 
 function _build_and_push_multiple_platform_docker {
@@ -228,7 +253,7 @@ function _build_and_push_multiple_platform_docker {
   shift
   local tags=("$@") # TARGET_IMAGE[:TAG] LIST
 
-  DOCKER_IMAGE_NAME_FULL="$docker_registry/vikadata/$SEMVER_EDITION/$DOCKER_IMAGE_NAME"
+  DOCKER_IMAGE_NAME_FULL="$docker_registry/${REGISTRY_NAMESPACE}/$SEMVER_EDITION/$DOCKER_IMAGE_NAME"
   export DOCKER_IMAGE_TAG="$SEMVER"
 
   local full_docker_target
