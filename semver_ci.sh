@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # This script get Vika SemVer from Circle CI/Github Action Environment Variables
 # Git Flow Convention based
 # Author: Kelly Peilin Chan<kelly@vikadata.com>
@@ -7,7 +9,14 @@
 #     eval "$$(curl -fsSL https://vikadata.github.io/semver_ci.sh)"
 #   	build_docker XXX
 
+NO_SEMVER_EDITION=${NO_SEMVER_EDITION:-false}
 REGISTRY_NAMESPACE=${REGISTRY_NAMESPACE:-vikadata}
+
+if [[ "$(uname -m)" = "aarch64" ]]; then
+  TAG_SUFFIX=_arm64
+else
+  TAG_SUFFIX=
+fi
 
 # get the semver-cli
 wget https://raw.githubusercontent.com/fsaintjacques/semver-tool/3.3.0/src/semver -qO /tmp/semver
@@ -159,7 +168,7 @@ function _build_docker {
   fi
 
   # tag list
-  local target_tag_array=(${TARGET_DOCKER_TAGS:="latest" "latest-$SEMVER_TYPE" "$SEMVER" "build$BUILD_NUM" "${SEMVER}_build$BUILD_NUM"})
+  local target_tag_array=(${TARGET_DOCKER_TAGS:="latest${TAG_SUFFIX}" "latest-$SEMVER_TYPE${TAG_SUFFIX}" "$SEMVER${TAG_SUFFIX}" "build$BUILD_NUM${TAG_SUFFIX}" "${SEMVER}_build$BUILD_NUM${TAG_SUFFIX}"})
 
   # 使用buildx 构建多平台镜像
   if [[ "$MULTI_PLATFORM" == "true" ]]; then
@@ -224,7 +233,11 @@ function _tag_and_push_docker {
   shift 2
   local tags=("$@") # TARGET_IMAGE[:TAG] LIST
 
-  DOCKER_IMAGE_NAME_FULL="$docker_registry/${REGISTRY_NAMESPACE}/$SEMVER_EDITION/$DOCKER_IMAGE_NAME"
+  if [[ "${NO_SEMVER_EDITION}" = "true" ]]; then
+    DOCKER_IMAGE_NAME_FULL="$docker_registry/${REGISTRY_NAMESPACE}/$DOCKER_IMAGE_NAME"
+  else
+    DOCKER_IMAGE_NAME_FULL="$docker_registry/${REGISTRY_NAMESPACE}/$SEMVER_EDITION/$DOCKER_IMAGE_NAME"
+  fi
   export DOCKER_IMAGE_TAG="$SEMVER"
 
   local full_docker_target
@@ -253,7 +266,11 @@ function _build_and_push_multiple_platform_docker {
   shift
   local tags=("$@") # TARGET_IMAGE[:TAG] LIST
 
-  DOCKER_IMAGE_NAME_FULL="$docker_registry/${REGISTRY_NAMESPACE}/$SEMVER_EDITION/$DOCKER_IMAGE_NAME"
+  if [[ "${NO_SEMVER_EDITION}" = "true" ]]; then
+    DOCKER_IMAGE_NAME_FULL="$docker_registry/${REGISTRY_NAMESPACE}/$DOCKER_IMAGE_NAME"
+  else
+    DOCKER_IMAGE_NAME_FULL="$docker_registry/${REGISTRY_NAMESPACE}/$SEMVER_EDITION/$DOCKER_IMAGE_NAME"
+  fi
   export DOCKER_IMAGE_TAG="$SEMVER"
 
   local full_docker_target
