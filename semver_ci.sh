@@ -11,6 +11,7 @@
 
 NO_SEMVER_EDITION=${NO_SEMVER_EDITION:-false}
 REGISTRY_NAMESPACE=${REGISTRY_NAMESPACE:-vikadata}
+REGISTRY_SERVER=${REGISTRY_SERVER:-registry.local}
 
 if [[ "$(uname -m)" = "aarch64" ]]; then
   TAG_SUFFIX=_arm64
@@ -168,7 +169,7 @@ function _build_docker {
   fi
 
   # tag list
-  local target_tag_array=(${TARGET_DOCKER_TAGS:="latest${TAG_SUFFIX}" "latest-$SEMVER_TYPE${TAG_SUFFIX}" "$SEMVER${TAG_SUFFIX}" "build$BUILD_NUM${TAG_SUFFIX}" "${SEMVER}_build$BUILD_NUM${TAG_SUFFIX}"})
+  local target_tag_array=(${TARGET_DOCKER_TAGS:="latest" "latest-$SEMVER_TYPE" "$SEMVER" "build$BUILD_NUM" "${SEMVER}_build$BUILD_NUM"})
 
   # 使用buildx 构建多平台镜像
   if [[ "$MULTI_PLATFORM" == "true" ]]; then
@@ -187,8 +188,7 @@ function _build_docker {
     _build_and_push_multiple_platform_docker "${REGISTRY_SERVER}" "${target_tag_array[@]}"
   else
     echo "Docker Building..."
-    RANDOM_SUM=$(echo $RANDOM |cksum |cut -c 1-8)
-    TEMP_TAG_NAME="${REGISTRY_NAMESPACE}/$SEMVER_EDITION/$DOCKER_IMAGE_NAME:$RANDOM_SUM"
+    TEMP_TAG_NAME="${REGISTRY_NAMESPACE}/$SEMVER_EDITION/$DOCKER_IMAGE_NAME:${RANDOM}"
     # 构建第一个镜像
     docker build $BUILD_ARG --tag $TEMP_TAG_NAME . -f ${DOCKERFILE:=Dockerfile} || exit 1
 
@@ -242,7 +242,7 @@ function _tag_and_push_docker {
 
   local full_docker_target
   for tag in "${tags[@]}"; do
-    full_docker_target="$full_docker_target $DOCKER_IMAGE_NAME_FULL:$tag"
+    full_docker_target="$full_docker_target $DOCKER_IMAGE_NAME_FULL:${tag}${TAG_SUFFIX}"
   done
 
   # out
