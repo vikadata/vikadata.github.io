@@ -218,6 +218,7 @@ function _on_build_success {
     	"event_type": "deploy",
 	    "client_payload":{
         	 "SEMVER_FULL":"'${SEMVER_FULL}'",
+       		 "edition": "'${SEMVER_EDITION}'",
        		 "app": "'${DOCKER_IMAGE_NAME}'",
        		 "containerName": "'${DOCKER_IMAGE_NAME}'",
        		 "image": "'${DOCKER_IMAGE}'",
