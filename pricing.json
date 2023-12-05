@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "123",
+      "name": "123",
+      "description": "123",
+      "type": "base",
+      "suggestion": true,
+      "prices": [
+        {
+          "id": "123",
+          "productId": "123",
+          "name": "123",
+          "description": "123",
+          "type": "recurring",
+          "interval": "month",
+          "interval_count": 1,
+          "currency": "usd",
+          "unitAmount": 2000
+        }
+      ]
+    },
+    {
+      "id": "123",
+      "name": "123",
+      "description": "123",
+      "type": "addon",
+      "suggestion": false,
+      "prices": [
+        {
+          "id": "123",
+          "productId": "123",
+          "name": "123",
+          "description": "123",
+          "type": "recurring",
+          "interval": "month",
+          "interval_count": 1,
+          "currency": "usd",
+          "unitAmount": 2000
+        }
+      ]
+    }
+  ]
+}
