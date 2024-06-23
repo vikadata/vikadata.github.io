@@ -552,6 +552,30 @@
         "path": "/apis/us/2024-06-10-unlockingthepowerofaitable.airevolutionizingproductivitytoolswithai.md"
     },
     {
+        "name": "The Science of Chatbot Names: How to Name Your Bot, with Examples",
+        "description": "<img alt=\"Chatbot Names\" src=\"https://www.example.com/image.jpg\" />",
+        "language": "ca",
+        "path": "/apis/ca/2024-06-23-thescienceofchatbotnameshowtonameyourbotwithexamples.md"
+    },
+    {
+        "name": "\u4ece\u7ade\u4e89\u5bf9\u624b\u7684\u535a\u5ba2\u6587\u7ae0\u4e2d\u83b7\u5f97\u7075\u611f\uff1aAITable.ai\u7684\u7efc\u5408\u6307\u5357",
+        "description": "<img alt=\"AITable.ai\" src=\"https://www.example.com/aitable.jpg\" />",
+        "language": "cn",
+        "path": "/apis/cn/2024-06-23-cong-jing-zheng-dui-shou-de-bo-ke-wen-zhang-zhong-huo-de-ling-gan-aitable.ai-de-zong-he-zhi-nan.md"
+    },
+    {
+        "name": "\u5982\u4f55\u900f\u904eAITable.ai\u63d0\u9ad8\u4f01\u696d\u6548\u7387\u8207\u5275\u9020\u66f4\u597d\u7684\u5de5\u4f5c\u6d41\u7a0b",
+        "description": "\u5728\u7576\u4eca\u7684\u6578\u5b57\u5316\u6642\u4ee3\uff0c\u4f01\u696d\u9700\u8981\u4e0d\u65b7\u5c0b\u6c42\u5275\u65b0\u7684\u65b9\u5f0f\u4f86\u63d0\u9ad8\u6548\u7387\u3001\u964d\u4f4e\u6210\u672c\u4e26\u63d0\u4f9b\u66f4\u597d\u7684\u5ba2\u6236\u9ad4\u9a57\u3002AI\u6280\u8853\u7684\u5feb\u901f\u767c\u5c55\u70ba\u4f01\u696d\u5e36\u4f86\u4e86\u8a31\u591a\u6a5f\u6703\uff0c\u7279\u5225\u662f\u5728\u81ea\u52d5\u5316\u548c\u6578\u64da\u8655\u7406\u65b9\u9762\u3002AITable.ai\u4f5c\u70ba\u4e00\u500b\u5275\u65b0\u7684AI\u5de5\u5177\uff0c\u53ef\u4ee5\u5e6b\u52a9\u4f01\u696d\u4e3b\u548c\u958b\u767c\u4eba\u54e1\u66f4\u8f15\u9b06\u5730\u5efa\u7acb\u81ea\u5b9a\u7fa9\u7684ChatGPT\u548cAI\u4ee3\u7406\uff0c\u4ee5\u63d0\u9ad8\u5de5\u4f5c\u6548\u7387\u548c\u5275\u9020\u66f4\u597d\u7684\u5de5\u4f5c\u6d41\u7a0b\u3002",
+        "language": "hk",
+        "path": "/apis/hk/2024-06-23-ru-he-tou-guo-aitable.ai-ti-gao-qi-ye-xiao-lv-yu-chuang-zao-geng-hao-de-gong-zuo-liu-cheng.md"
+    },
+    {
+        "name": "The Best Large Language Models Available Today",
+        "description": "<img alt=\"The Best Large Language Models Available Today\" src=\"https://assets-global.website-files.com/637e5037f3ef83b76dcfc8f9/651af0bd35afecde8e977aef_The%20Best%20Large%20Language%20Models%20Available%20Today.png\" />",
+        "language": "us",
+        "path": "/apis/us/2024-06-23-thebestlargelanguagemodelsavailabletoday.md"
+    },
+    {
         "name": "Title: Unlocking the Power of AITable.ai: Boosting Productivity with AI-Powered Custom ChatGPT",
         "description": "In today's fast-paced business environment, organizations are constantly looking for ways to enhance productivity and streamline their operations. One tool that has gained significant attention is AITable.ai, a powerful productivity tool that combines the functionality of popular platforms like Airtable, Smartsheet, and Excel with the ability to build AI Agents and Custom ChatGPT with just one click. In this article, we will explore the benefits of AITable.ai and how it can revolutionize the way businesses manage their data and engage with customers.",
         "language": "ca",
