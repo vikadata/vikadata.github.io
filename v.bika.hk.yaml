@@ -25,6 +25,16 @@ proxies:
   #   port: 30251
   #   uuid: 9e88a10b-655c-5120-89d0-408634169561
   - type: vmess
+    name: gcp-hk.bika.hk
+    server: 34.92.64.162
+    port: 30251
+    uuid: 9e88a10b-655c-5120-89d0-408634169561
+  - type: vmess
+    name: gcp-ja.bika.hk
+    server: 34.97.75.50
+    port: 30251
+    uuid: 9e88a10b-655c-5120-89d0-408634169561
+  - type: vmess
     name: hkt2.bika.hk
     server: hkt2.bika.hk
     port: 30251
@@ -398,6 +408,8 @@ proxy-groups:
     proxies:
       - v.bika.hk
       # - hkt1.bika.hk
+      - gcp-ja.bika.hk
+      - gcp-hk.bika.hk
       - hkt2.bika.hk
       - icable.bika.hk
       - 中转•香港301•高速
