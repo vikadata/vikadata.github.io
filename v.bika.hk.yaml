@@ -19,11 +19,11 @@ proxies:
     port: 30250
     password: vikadata
     sni: v.bika.hk
-  - type: vmess
-    name: hkt1.bika.hk
-    server: hkt1.bika.hk
-    port: 30251
-    uuid: 9e88a10b-655c-5120-89d0-408634169561
+  # - type: vmess
+  #   name: hkt1.bika.hk
+  #   server: hkt1.bika.hk
+  #   port: 30251
+  #   uuid: 9e88a10b-655c-5120-89d0-408634169561
   - type: vmess
     name: hkt2.bika.hk
     server: hkt2.bika.hk
@@ -397,7 +397,7 @@ proxy-groups:
     type: select
     proxies:
       - v.bika.hk
-      - hkt1.bika.hk
+      # - hkt1.bika.hk
       - hkt2.bika.hk
       - icable.bika.hk
       - 中转•香港301•高速
