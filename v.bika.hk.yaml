@@ -1,7 +1,7 @@
-#!MANAGED-CONFIG https://www.flybar.top/link/3zhzwvRl0iczVJwv?clash=1
+#!MANAGED-CONFIG https://www.flybar.top/link/w6HgvAMupJOo8pTH?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2024-03-20 10:56:08
+## 上次更新于：2024-06-26 09:24:30
 #---------------------------------------------------#
 
 port: 7890
@@ -16,393 +16,405 @@ proxies:
   - type: trojan
     name: v.bika.hk
     server: v.bika.hk
-    port: 443
+    port: 30250
     password: vikadata
     sni: v.bika.hk
+  - type: vmess
+    name: hkt1.bika.hk
+    server: hkt1.bika.hk
+    port: 30251
+    uuid: 9e88a10b-655c-5120-89d0-408634169561
+  - type: vmess
+    name: hkt2.bika.hk
+    server: hkt2.bika.hk
+    port: 30251
+    uuid: 9e88a10b-655c-5120-89d0-408634169561
+  - type: vmess
+    name: icable.bika.hk
+    server: icable.bika.hk
+    port: 30251
+    uuid: 9e88a10b-655c-5120-89d0-408634169561
   -
     name: 中转•香港301•高速
     type: trojan
     server: gy.58n.net
     port: 20301
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: z301.hongkongnode.top
-  -
-    name: 广港•香港143•高速
-    type: trojan
-    server: gy.58n.net
-    port: 28678
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z143.hongkongnode.top
-  -
-    name: 广港•香港269•高速
-    type: trojan
-    server: gy.58n.net
-    port: 22741
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: dufu.hongkongnode.top
-  -
-    name: 广港•香港294•高速
-    type: trojan
-    server: gy.58n.net
-    port: 20294
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z294.hongkongnode.top
   -
     name: 中转•香港102•高速
     type: trojan
     server: gy.58n.net
     port: 43337
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: z102.hongkongnode.top
+  -
+    name: 中转•香港307•高速
+    type: trojan
+    server: gy.58n.net
+    port: 20307
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z307.hongkongnode.top
+  -
+    name: 广港•香港143•高速
+    type: trojan
+    server: gy.58n.net
+    port: 28678
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z143.hongkongnode.top
   -
     name: 广港•香港259•高速
     type: trojan
     server: gy.58n.net
     port: 24603
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: z259.hongkongnode.top
+  -
+    name: 广港•香港269•高速
+    type: trojan
+    server: gy.58n.net
+    port: 22741
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: dufu.hongkongnode.top
   -
     name: 广港•香港278•高速
     type: trojan
     server: gy.58n.net
     port: 20278
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: z278.hongkongnode.top
   -
     name: 广港•香港279•高速
     type: trojan
     server: gy.58n.net
     port: 20279
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: z279.hongkongnode.top
+  -
+    name: 广港•香港294•高速
+    type: trojan
+    server: gy.58n.net
+    port: 20294
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z294.hongkongnode.top
   -
     name: 中转•台湾100•高速
     type: trojan
     server: gy.58n.net
     port: 59021
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: x100.flybar.work
   -
     name: 中转•台湾91•原生
     type: trojan
     server: gy.58n.net
     port: 21247
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: x91.flybar.work
-  -
-    name: 中转•德国302•GPT
-    type: trojan
-    server: gy.58n.net
-    port: 20302
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z302.hongkongnode.top
-  -
-    name: 中转•德国303•GPT
-    type: trojan
-    server: gy.58n.net
-    port: 20303
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z303.hongkongnode.top
-  -
-    name: 中转•德国304•GPT
-    type: trojan
-    server: gy.58n.net
-    port: 20304
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z304.hongkongnode.top
-  -
-    name: 中转•德国305•GPT
-    type: trojan
-    server: gy.58n.net
-    port: 20305
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z305.hongkongnode.top
-  -
-    name: 中转•德国306•GPT
-    type: trojan
-    server: gy.58n.net
-    port: 20306
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z306.hongkongnode.top
-  -
-    name: 中转•新加坡299•高速
-    type: trojan
-    server: gy.58n.net
-    port: 20299
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: x299.flybar.work
-  -
-    name: 中转•新加坡65•青铜
-    type: trojan
-    server: gy.58n.net
-    port: 17806
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: x65.flybar.work
-  -
-    name: 中转•新加坡74•铂金
-    type: trojan
-    server: gy.58n.net
-    port: 63985
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: x74.flybar.work
-  -
-    name: 中转•新加坡83•高速
-    type: trojan
-    server: gy.58n.net
-    port: 30712
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: x83.flybar.work
-  -
-    name: 中转•日本298•高速
-    type: trojan
-    server: gy.58n.net
-    port: 20298
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z298.hongkongnode.top
-  -
-    name: 中转•日本300•原生
-    type: trojan
-    server: gy.58n.net
-    port: 20300
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z300.hongkongnode.top
-  -
-    name: 中转•美国295•高速
-    type: trojan
-    server: gy.58n.net
-    port: 20295
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z295.hongkongnode.top
-  -
-    name: 中转•美国296•高速
-    type: trojan
-    server: gy.58n.net
-    port: 20296
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z296.hongkongnode.top
-  -
-    name: 中转•美国308•高速
-    type: trojan
-    server: gy.58n.net
-    port: 20308
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z308.hongkongnode.top
-  -
-    name: 中转•美国40•高速
-    type: trojan
-    server: gy.58n.net
-    port: 16895
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: x40.flybar.work
-  -
-    name: 中转•美国41•原生
-    type: trojan
-    server: gy.58n.net
-    port: 21970
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: x41.flybar.work
-  -
-    name: 中转•美国46•原生
-    type: trojan
-    server: gy.58n.net
-    port: 14846
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: x46.flybar.work
-  -
-    name: 中转•美国49•高速
-    type: trojan
-    server: gy.58n.net
-    port: 19659
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: x49.flybar.work
-  -
-    name: 中转•美国61•高速
-    type: trojan
-    server: gy.58n.net
-    port: 30767
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z61.hongkongnode.top
-  -
-    name: 中转•英国267•高速
-    type: trojan
-    server: gy.58n.net
-    port: 25238
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z267.hongkongnode.top
-  -
-    name: 中转•英国268•高速
-    type: trojan
-    server: gy.58n.net
-    port: 11215
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z268.hongkongnode.top
-  -
-    name: 中转•英国283•高速
-    type: trojan
-    server: gy.58n.net
-    port: 20283
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z283.hongkongnode.top
-  -
-    name: 中转•香港307•高速
-    type: trojan
-    server: gy.58n.net
-    port: 20307
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z307.hongkongnode.top
   -
     name: 广港•台湾261•高速
     type: trojan
     server: gy.58n.net
     port: 33323
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: z261.hongkongnode.top
   -
     name: 广港•台湾262•高速
     type: trojan
     server: gy.58n.net
     port: 36821
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: z262.hongkongnode.top
-  -
-    name: 广港•美国266•高速
-    type: trojan
-    server: gy.58n.net
-    port: 56783
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z266.hongkongnode.top
-  -
-    name: 广港•美国288•高速
-    type: trojan
-    server: gy.58n.net
-    port: 20288
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: z288.hongkongnode.top
   -
     name: 广港•韩国263•高速
     type: trojan
-    server: gy.58n.net
+    server: 183.232.167.100
     port: 45168
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: z263.hongkongnode.top
   -
     name: 广港•韩国264•高速
     type: trojan
     server: gy.58n.net
     port: 50355
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: z264.hongkongnode.top
   -
-    name: 新加坡•高速129•高速
+    name: 中转•美国295•高速
     type: trojan
     server: gy.58n.net
-    port: 20129
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: x129.flybar.work
+    port: 20295
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z295.hongkongnode.top
   -
-    name: 新加坡•高速130•铂金
+    name: 中转•美国296•高速
     type: trojan
     server: gy.58n.net
-    port: 20130
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
-    sni: x130.flybar.work
+    port: 20296
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z296.hongkongnode.top
+  -
+    name: 中转•美国308•高速
+    type: trojan
+    server: gy.58n.net
+    port: 20308
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z308.hongkongnode.top
+  -
+    name: 中转•美国40•高速
+    type: trojan
+    server: gy.58n.net
+    port: 16895
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: x40.flybar.work
+  -
+    name: 中转•美国41•原生
+    type: trojan
+    server: gy.58n.net
+    port: 21970
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: x41.flybar.work
+  -
+    name: 中转•美国46•原生
+    type: trojan
+    server: gy.58n.net
+    port: 14846
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: x46.flybar.work
+  -
+    name: 中转•美国49•高速
+    type: trojan
+    server: gy.58n.net
+    port: 19659
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: x49.flybar.work
+  -
+    name: 中转•美国61•高速
+    type: trojan
+    server: gy.58n.net
+    port: 30767
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z61.hongkongnode.top
+  -
+    name: 广港•美国266•高速
+    type: trojan
+    server: gy.58n.net
+    port: 56783
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z266.hongkongnode.top
+  -
+    name: 广港•美国288•高速
+    type: trojan
+    server: gy.58n.net
+    port: 20288
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z288.hongkongnode.top
+  -
+    name: 中转•日本298•高速
+    type: trojan
+    server: gy.58n.net
+    port: 20298
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z298.hongkongnode.top
+  -
+    name: 中转•日本300•原生
+    type: trojan
+    server: gy.58n.net
+    port: 20300
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z300.hongkongnode.top
   -
     name: 日本•高速114•高速
     type: trojan
     server: gy.58n.net
     port: 41767
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: x114.flybar.work
   -
     name: 日本•高速115•高速
     type: trojan
     server: gy.58n.net
     port: 54178
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: x115.flybar.work
   -
     name: 日本•高速139•铂金
     type: trojan
     server: gy.58n.net
     port: 20139
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: z139.hongkongnode.top
   -
     name: 日本•高速140•铂金
     type: trojan
     server: gy.58n.net
     port: 20140
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: z140.hongkongnode.top
   -
     name: 日本•高速141•铂金
     type: trojan
     server: gy.58n.net
     port: 20141
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: z141.hongkongnode.top
   -
     name: 日本•高速142•原生
     type: trojan
     server: gy.58n.net
     port: 20142
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: z142.hongkongnode.top
   -
     name: 日本•高速50•高速
     type: trojan
     server: gy.58n.net
     port: 20050
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: x50.flybar.work
   -
     name: 日本•高速59•青铜
     type: trojan
     server: gy.58n.net
     port: 20059
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: x59.flybar.work
   -
     name: 日本•高速71•高速
     type: trojan
     server: gy.58n.net
     port: 20071
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: x71.flybar.work
   -
     name: 日本•高速76•高速
     type: trojan
     server: gy.58n.net
     port: 20076
-    password: 2d8e44f1-1b63-3c6a-a6a5-069c3cf84ad4
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
     sni: x76.flybar.work
+  -
+    name: 中转•新加坡299•高速
+    type: trojan
+    server: gy.58n.net
+    port: 20299
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: x299.flybar.work
+  -
+    name: 中转•新加坡65•青铜
+    type: trojan
+    server: gy.58n.net
+    port: 17806
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: x65.flybar.work
+  -
+    name: 中转•新加坡74•铂金
+    type: trojan
+    server: gy.58n.net
+    port: 63985
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: x74.flybar.work
+  -
+    name: 中转•新加坡83•高速
+    type: trojan
+    server: gy.58n.net
+    port: 30712
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: x83.flybar.work
+  -
+    name: 新加坡•高速129•高速
+    type: trojan
+    server: gy.58n.net
+    port: 20129
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: x129.flybar.work
+  -
+    name: 新加坡•高速130•铂金
+    type: trojan
+    server: gy.58n.net
+    port: 20130
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: x130.flybar.work
+  -
+    name: 中转•英国267•高速
+    type: trojan
+    server: gy.58n.net
+    port: 25238
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z267.hongkongnode.top
+  -
+    name: 中转•英国268•高速
+    type: trojan
+    server: gy.58n.net
+    port: 11215
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z268.hongkongnode.top
+  -
+    name: 中转•英国283•高速
+    type: trojan
+    server: gy.58n.net
+    port: 20283
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z283.hongkongnode.top
+  -
+    name: 中转•德国302•GPT
+    type: trojan
+    server: gy.58n.net
+    port: 20302
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z302.hongkongnode.top
+  -
+    name: 中转•德国303•GPT
+    type: trojan
+    server: gy.58n.net
+    port: 20303
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z303.hongkongnode.top
+  -
+    name: 中转•德国304•GPT
+    type: trojan
+    server: gy.58n.net
+    port: 20304
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z304.hongkongnode.top
+  -
+    name: 中转•德国305•GPT
+    type: trojan
+    server: gy.58n.net
+    port: 20305
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z305.hongkongnode.top
+  -
+    name: 中转•德国306•GPT
+    type: trojan
+    server: gy.58n.net
+    port: 20306
+    password: fbe40e4a-501d-3d77-8297-7bdffcd0df8e
+    sni: z306.hongkongnode.top
 proxy-groups:
   -
     name: 🔰国外流量
     type: select
     proxies:
       - v.bika.hk
+      - hkt1.bika.hk
+      - hkt2.bika.hk
+      - icable.bika.hk
       - 中转•香港301•高速
-      - 广港•香港143•高速
-      - 广港•香港269•高速
-      - 广港•香港294•高速
       - 中转•香港102•高速
+      - 中转•香港307•高速
+      - 广港•香港143•高速
       - 广港•香港259•高速
+      - 广港•香港269•高速
       - 广港•香港278•高速
       - 广港•香港279•高速
+      - 广港•香港294•高速
       - 中转•台湾100•高速
       - 中转•台湾91•原生
-      - 中转•德国302•GPT
-      - 中转•德国303•GPT
-      - 中转•德国304•GPT
-      - 中转•德国305•GPT
-      - 中转•德国306•GPT
-      - 中转•新加坡299•高速
-      - 中转•新加坡65•青铜
-      - 中转•新加坡74•铂金
-      - 中转•新加坡83•高速
-      - 中转•日本298•高速
-      - 中转•日本300•原生
+      - 广港•台湾261•高速
+      - 广港•台湾262•高速
+      - 广港•韩国263•高速
+      - 广港•韩国264•高速
       - 中转•美国295•高速
       - 中转•美国296•高速
       - 中转•美国308•高速
@@ -411,18 +423,10 @@ proxy-groups:
       - 中转•美国46•原生
       - 中转•美国49•高速
       - 中转•美国61•高速
-      - 中转•英国267•高速
-      - 中转•英国268•高速
-      - 中转•英国283•高速
-      - 中转•香港307•高速
-      - 广港•台湾261•高速
-      - 广港•台湾262•高速
       - 广港•美国266•高速
       - 广港•美国288•高速
-      - 广港•韩国263•高速
-      - 广港•韩国264•高速
-      - 新加坡•高速129•高速
-      - 新加坡•高速130•铂金
+      - 中转•日本298•高速
+      - 中转•日本300•原生
       - 日本•高速114•高速
       - 日本•高速115•高速
       - 日本•高速139•铂金
@@ -433,6 +437,20 @@ proxy-groups:
       - 日本•高速59•青铜
       - 日本•高速71•高速
       - 日本•高速76•高速
+      - 中转•新加坡299•高速
+      - 中转•新加坡65•青铜
+      - 中转•新加坡74•铂金
+      - 中转•新加坡83•高速
+      - 新加坡•高速129•高速
+      - 新加坡•高速130•铂金
+      - 中转•英国267•高速
+      - 中转•英国268•高速
+      - 中转•英国283•高速
+      - 中转•德国302•GPT
+      - 中转•德国303•GPT
+      - 中转•德国304•GPT
+      - 中转•德国305•GPT
+      - 中转•德国306•GPT
       - 🚀直接连接
   -
     name: ⚓️其他流量
@@ -446,26 +464,20 @@ proxy-groups:
     proxies:
       - 🔰国外流量
       - 中转•香港301•高速
-      - 广港•香港143•高速
-      - 广港•香港269•高速
-      - 广港•香港294•高速
       - 中转•香港102•高速
+      - 中转•香港307•高速
+      - 广港•香港143•高速
       - 广港•香港259•高速
+      - 广港•香港269•高速
       - 广港•香港278•高速
       - 广港•香港279•高速
+      - 广港•香港294•高速
       - 中转•台湾100•高速
       - 中转•台湾91•原生
-      - 中转•德国302•GPT
-      - 中转•德国303•GPT
-      - 中转•德国304•GPT
-      - 中转•德国305•GPT
-      - 中转•德国306•GPT
-      - 中转•新加坡299•高速
-      - 中转•新加坡65•青铜
-      - 中转•新加坡74•铂金
-      - 中转•新加坡83•高速
-      - 中转•日本298•高速
-      - 中转•日本300•原生
+      - 广港•台湾261•高速
+      - 广港•台湾262•高速
+      - 广港•韩国263•高速
+      - 广港•韩国264•高速
       - 中转•美国295•高速
       - 中转•美国296•高速
       - 中转•美国308•高速
@@ -474,18 +486,10 @@ proxy-groups:
       - 中转•美国46•原生
       - 中转•美国49•高速
       - 中转•美国61•高速
-      - 中转•英国267•高速
-      - 中转•英国268•高速
-      - 中转•英国283•高速
-      - 中转•香港307•高速
-      - 广港•台湾261•高速
-      - 广港•台湾262•高速
       - 广港•美国266•高速
       - 广港•美国288•高速
-      - 广港•韩国263•高速
-      - 广港•韩国264•高速
-      - 新加坡•高速129•高速
-      - 新加坡•高速130•铂金
+      - 中转•日本298•高速
+      - 中转•日本300•原生
       - 日本•高速114•高速
       - 日本•高速115•高速
       - 日本•高速139•铂金
@@ -496,32 +500,40 @@ proxy-groups:
       - 日本•高速59•青铜
       - 日本•高速71•高速
       - 日本•高速76•高速
+      - 中转•新加坡299•高速
+      - 中转•新加坡65•青铜
+      - 中转•新加坡74•铂金
+      - 中转•新加坡83•高速
+      - 新加坡•高速129•高速
+      - 新加坡•高速130•铂金
+      - 中转•英国267•高速
+      - 中转•英国268•高速
+      - 中转•英国283•高速
+      - 中转•德国302•GPT
+      - 中转•德国303•GPT
+      - 中转•德国304•GPT
+      - 中转•德国305•GPT
+      - 中转•德国306•GPT
   -
     name: 🎬Youtube
     type: select
     proxies:
       - 🔰国外流量
       - 中转•香港301•高速
-      - 广港•香港143•高速
-      - 广港•香港269•高速
-      - 广港•香港294•高速
       - 中转•香港102•高速
+      - 中转•香港307•高速
+      - 广港•香港143•高速
       - 广港•香港259•高速
+      - 广港•香港269•高速
       - 广港•香港278•高速
       - 广港•香港279•高速
+      - 广港•香港294•高速
       - 中转•台湾100•高速
       - 中转•台湾91•原生
-      - 中转•德国302•GPT
-      - 中转•德国303•GPT
-      - 中转•德国304•GPT
-      - 中转•德国305•GPT
-      - 中转•德国306•GPT
-      - 中转•新加坡299•高速
-      - 中转•新加坡65•青铜
-      - 中转•新加坡74•铂金
-      - 中转•新加坡83•高速
-      - 中转•日本298•高速
-      - 中转•日本300•原生
+      - 广港•台湾261•高速
+      - 广港•台湾262•高速
+      - 广港•韩国263•高速
+      - 广港•韩国264•高速
       - 中转•美国295•高速
       - 中转•美国296•高速
       - 中转•美国308•高速
@@ -530,18 +542,10 @@ proxy-groups:
       - 中转•美国46•原生
       - 中转•美国49•高速
       - 中转•美国61•高速
-      - 中转•英国267•高速
-      - 中转•英国268•高速
-      - 中转•英国283•高速
-      - 中转•香港307•高速
-      - 广港•台湾261•高速
-      - 广港•台湾262•高速
       - 广港•美国266•高速
       - 广港•美国288•高速
-      - 广港•韩国263•高速
-      - 广港•韩国264•高速
-      - 新加坡•高速129•高速
-      - 新加坡•高速130•铂金
+      - 中转•日本298•高速
+      - 中转•日本300•原生
       - 日本•高速114•高速
       - 日本•高速115•高速
       - 日本•高速139•铂金
@@ -552,32 +556,40 @@ proxy-groups:
       - 日本•高速59•青铜
       - 日本•高速71•高速
       - 日本•高速76•高速
+      - 中转•新加坡299•高速
+      - 中转•新加坡65•青铜
+      - 中转•新加坡74•铂金
+      - 中转•新加坡83•高速
+      - 新加坡•高速129•高速
+      - 新加坡•高速130•铂金
+      - 中转•英国267•高速
+      - 中转•英国268•高速
+      - 中转•英国283•高速
+      - 中转•德国302•GPT
+      - 中转•德国303•GPT
+      - 中转•德国304•GPT
+      - 中转•德国305•GPT
+      - 中转•德国306•GPT
   -
     name: 🎬Netflix
     type: select
     proxies:
       - 🔰国外流量
       - 中转•香港301•高速
-      - 广港•香港143•高速
-      - 广港•香港269•高速
-      - 广港•香港294•高速
       - 中转•香港102•高速
+      - 中转•香港307•高速
+      - 广港•香港143•高速
       - 广港•香港259•高速
+      - 广港•香港269•高速
       - 广港•香港278•高速
       - 广港•香港279•高速
+      - 广港•香港294•高速
       - 中转•台湾100•高速
       - 中转•台湾91•原生
-      - 中转•德国302•GPT
-      - 中转•德国303•GPT
-      - 中转•德国304•GPT
-      - 中转•德国305•GPT
-      - 中转•德国306•GPT
-      - 中转•新加坡299•高速
-      - 中转•新加坡65•青铜
-      - 中转•新加坡74•铂金
-      - 中转•新加坡83•高速
-      - 中转•日本298•高速
-      - 中转•日本300•原生
+      - 广港•台湾261•高速
+      - 广港•台湾262•高速
+      - 广港•韩国263•高速
+      - 广港•韩国264•高速
       - 中转•美国295•高速
       - 中转•美国296•高速
       - 中转•美国308•高速
@@ -586,18 +598,10 @@ proxy-groups:
       - 中转•美国46•原生
       - 中转•美国49•高速
       - 中转•美国61•高速
-      - 中转•英国267•高速
-      - 中转•英国268•高速
-      - 中转•英国283•高速
-      - 中转•香港307•高速
-      - 广港•台湾261•高速
-      - 广港•台湾262•高速
       - 广港•美国266•高速
       - 广港•美国288•高速
-      - 广港•韩国263•高速
-      - 广港•韩国264•高速
-      - 新加坡•高速129•高速
-      - 新加坡•高速130•铂金
+      - 中转•日本298•高速
+      - 中转•日本300•原生
       - 日本•高速114•高速
       - 日本•高速115•高速
       - 日本•高速139•铂金
@@ -608,32 +612,40 @@ proxy-groups:
       - 日本•高速59•青铜
       - 日本•高速71•高速
       - 日本•高速76•高速
+      - 中转•新加坡299•高速
+      - 中转•新加坡65•青铜
+      - 中转•新加坡74•铂金
+      - 中转•新加坡83•高速
+      - 新加坡•高速129•高速
+      - 新加坡•高速130•铂金
+      - 中转•英国267•高速
+      - 中转•英国268•高速
+      - 中转•英国283•高速
+      - 中转•德国302•GPT
+      - 中转•德国303•GPT
+      - 中转•德国304•GPT
+      - 中转•德国305•GPT
+      - 中转•德国306•GPT
   -
     name: 🎬哔哩哔哩
     type: select
     proxies:
       - 🚀直接连接
       - 中转•香港301•高速
-      - 广港•香港143•高速
-      - 广港•香港269•高速
-      - 广港•香港294•高速
       - 中转•香港102•高速
+      - 中转•香港307•高速
+      - 广港•香港143•高速
       - 广港•香港259•高速
+      - 广港•香港269•高速
       - 广港•香港278•高速
       - 广港•香港279•高速
+      - 广港•香港294•高速
       - 中转•台湾100•高速
       - 中转•台湾91•原生
-      - 中转•德国302•GPT
-      - 中转•德国303•GPT
-      - 中转•德国304•GPT
-      - 中转•德国305•GPT
-      - 中转•德国306•GPT
-      - 中转•新加坡299•高速
-      - 中转•新加坡65•青铜
-      - 中转•新加坡74•铂金
-      - 中转•新加坡83•高速
-      - 中转•日本298•高速
-      - 中转•日本300•原生
+      - 广港•台湾261•高速
+      - 广港•台湾262•高速
+      - 广港•韩国263•高速
+      - 广港•韩国264•高速
       - 中转•美国295•高速
       - 中转•美国296•高速
       - 中转•美国308•高速
@@ -642,18 +654,10 @@ proxy-groups:
       - 中转•美国46•原生
       - 中转•美国49•高速
       - 中转•美国61•高速
-      - 中转•英国267•高速
-      - 中转•英国268•高速
-      - 中转•英国283•高速
-      - 中转•香港307•高速
-      - 广港•台湾261•高速
-      - 广港•台湾262•高速
       - 广港•美国266•高速
       - 广港•美国288•高速
-      - 广港•韩国263•高速
-      - 广港•韩国264•高速
-      - 新加坡•高速129•高速
-      - 新加坡•高速130•铂金
+      - 中转•日本298•高速
+      - 中转•日本300•原生
       - 日本•高速114•高速
       - 日本•高速115•高速
       - 日本•高速139•铂金
@@ -664,32 +668,40 @@ proxy-groups:
       - 日本•高速59•青铜
       - 日本•高速71•高速
       - 日本•高速76•高速
+      - 中转•新加坡299•高速
+      - 中转•新加坡65•青铜
+      - 中转•新加坡74•铂金
+      - 中转•新加坡83•高速
+      - 新加坡•高速129•高速
+      - 新加坡•高速130•铂金
+      - 中转•英国267•高速
+      - 中转•英国268•高速
+      - 中转•英国283•高速
+      - 中转•德国302•GPT
+      - 中转•德国303•GPT
+      - 中转•德国304•GPT
+      - 中转•德国305•GPT
+      - 中转•德国306•GPT
   -
     name: 🎬国外媒体
     type: select
     proxies:
       - 🔰国外流量
       - 中转•香港301•高速
-      - 广港•香港143•高速
-      - 广港•香港269•高速
-      - 广港•香港294•高速
       - 中转•香港102•高速
+      - 中转•香港307•高速
+      - 广港•香港143•高速
       - 广港•香港259•高速
+      - 广港•香港269•高速
       - 广港•香港278•高速
       - 广港•香港279•高速
+      - 广港•香港294•高速
       - 中转•台湾100•高速
       - 中转•台湾91•原生
-      - 中转•德国302•GPT
-      - 中转•德国303•GPT
-      - 中转•德国304•GPT
-      - 中转•德国305•GPT
-      - 中转•德国306•GPT
-      - 中转•新加坡299•高速
-      - 中转•新加坡65•青铜
-      - 中转•新加坡74•铂金
-      - 中转•新加坡83•高速
-      - 中转•日本298•高速
-      - 中转•日本300•原生
+      - 广港•台湾261•高速
+      - 广港•台湾262•高速
+      - 广港•韩国263•高速
+      - 广港•韩国264•高速
       - 中转•美国295•高速
       - 中转•美国296•高速
       - 中转•美国308•高速
@@ -698,18 +710,10 @@ proxy-groups:
       - 中转•美国46•原生
       - 中转•美国49•高速
       - 中转•美国61•高速
-      - 中转•英国267•高速
-      - 中转•英国268•高速
-      - 中转•英国283•高速
-      - 中转•香港307•高速
-      - 广港•台湾261•高速
-      - 广港•台湾262•高速
       - 广港•美国266•高速
       - 广港•美国288•高速
-      - 广港•韩国263•高速
-      - 广港•韩国264•高速
-      - 新加坡•高速129•高速
-      - 新加坡•高速130•铂金
+      - 中转•日本298•高速
+      - 中转•日本300•原生
       - 日本•高速114•高速
       - 日本•高速115•高速
       - 日本•高速139•铂金
@@ -720,6 +724,20 @@ proxy-groups:
       - 日本•高速59•青铜
       - 日本•高速71•高速
       - 日本•高速76•高速
+      - 中转•新加坡299•高速
+      - 中转•新加坡65•青铜
+      - 中转•新加坡74•铂金
+      - 中转•新加坡83•高速
+      - 新加坡•高速129•高速
+      - 新加坡•高速130•铂金
+      - 中转•英国267•高速
+      - 中转•英国268•高速
+      - 中转•英国283•高速
+      - 中转•德国302•GPT
+      - 中转•德国303•GPT
+      - 中转•德国304•GPT
+      - 中转•德国305•GPT
+      - 中转•德国306•GPT
   -
     name: 🍎苹果服务
     type: select
