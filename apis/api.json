@@ -624,6 +624,30 @@
         "path": "/apis/us/2024-06-24-threestepstotakeyourcompanyoutoftheone-productcycle.md"
     },
     {
+        "name": "Boost Your Productivity with AITable.ai: The Ultimate AI-Powered Productivity Tool",
+        "description": "<img alt=\"AITable.ai\" src=\"https://www.example.com/aitable.png\" />",
+        "language": "ca",
+        "path": "/apis/ca/2024-07-08-boostyourproductivitywithaitable.aitheultimateai-poweredproductivitytool.md"
+    },
+    {
+        "name": "AI-Enhanced Complaint Analysis: Speed and Efficiency Redefined",
+        "description": "<img alt=\"AI-Enhanced Complaint Analysis\" src=\"https://www.example.com/images/ai_complaint_analysis.jpg\" />",
+        "language": "cn",
+        "path": "/apis/cn/2024-07-08-ai-enhancedcomplaintanalysisspeedandefficiencyredefined.md"
+    },
+    {
+        "name": "\u5982\u4f55\u70ba\u4f01\u696d\u516c\u53f8\u9078\u64c7\u6700\u4f73\u7684\u5c0d\u8a71\u6280\u8853\uff1f",
+        "description": "\u7576\u70ba\u60a8\u7684\u516c\u53f8\u9078\u64c7\u5c0d\u8a71\u6280\u8853\u6642\uff0c\u60a8\u5c07\u9762\u81e8\u5404\u7a2e\u5404\u6a23\u7684\u9078\u64c7\u3002\u5728\u672c\u6587\u4e2d\uff0c\u6211\u5011\u5c07\u5e6b\u52a9\u60a8\u5b9a\u4f4d\u641c\u7d22\u76ee\u6a19\u3002",
+        "language": "hk",
+        "path": "/apis/hk/2024-07-08-ru-he-wei-qi-ye-gong-si-xuan-ze-zui-jia-de-dui-hua-ji-shu-.md"
+    },
+    {
+        "name": "The Future of Productivity: Introducing AITable.ai",
+        "description": "<img alt=\"AITable.ai\" src=\"https://www.example.com/aitable_image.jpg\" />",
+        "language": "us",
+        "path": "/apis/us/2024-07-08-thefutureofproductivityintroducingaitable.ai.md"
+    },
+    {
         "name": "Boosting Customer Engagement Using Conversational AI: AITable.ai's Solution",
         "description": "<img alt=\"chatbot\" src=\"https://cdn.pixabay.com/photo/2018/03/08/18/13/chatbot-3203317_960_720.jpg\" />",
         "language": "ca",
