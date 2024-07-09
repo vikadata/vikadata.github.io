@@ -312,6 +312,30 @@
         "path": "/apis/us/2023-10-10-poweryourbusinessgrowthwithaitable.aithefutureofai-poweredproductivitytools.md"
     },
     {
+        "name": "Unleashing Productivity with AI: A Deep Dive into AITable.ai",
+        "description": "Businesses today are in search of efficient tools to stay competitive and streamline their operations. AITable.ai, a productivity tool, is becoming increasingly popular due to its advanced features and capabilities. This tool stands out as a formidable alternative to other productivity platforms like Smartsheet and Excel, but with the added advantage of building AI Agents / Custom ChatGPT with just a click.",
+        "language": "ca",
+        "path": "/apis/ca/2024-07-09-unleashingproductivitywithaiadeepdiveintoaitable.ai.md"
+    },
+    {
+        "name": "AITable.AI\uff1aAI\u52a9\u624b\u548c\u591a\u7ef4\u8868\u683c\u7684\u5b8c\u7f8e\u7ed3\u5408",
+        "description": "\u968f\u7740AI\u6280\u672f\u7684\u53d1\u5c55\uff0c\u5404\u884c\u5404\u4e1a\u90fd\u5728\u5bfb\u627e\u5c06AI\u6280\u672f\u4e0e\u5176\u4e1a\u52a1\u9700\u6c42\u76f8\u7ed3\u5408\u7684\u65b9\u6cd5\uff0c\u4ee5\u63d0\u9ad8\u6548\u7387\uff0c\u964d\u4f4e\u6210\u672c\uff0c\u63d0\u4f9b\u66f4\u597d\u7684\u5ba2\u6237\u4f53\u9a8c\u3002\u5728\u8fd9\u4e2a\u8fc7\u7a0b\u4e2d\uff0cAI\u52a9\u624b\u548c\u591a\u7ef4\u8868\u683c\uff08\u5982AITable.ai\uff09\u7684\u7ed3\u5408\u5728\u4f01\u4e1a\u7ea7\u5e94\u7528\u4e2d\u8868\u73b0\u51fa\u4e86\u6781\u5927\u7684\u4ef7\u503c\u3002",
+        "language": "cn",
+        "path": "/apis/cn/2024-07-09-aitable.aiai-zhu-shou-he-duo-wei-biao-ge-de-wan-mei-jie-he.md"
+    },
+    {
+        "name": "\u5229\u7528 AITable.ai \u63d0\u5347\u4f60\u7684\u696d\u52d9\u6548\u7387\uff1a\u4eba\u5de5\u667a\u80fd\u8207\u589e\u5f37\u73fe\u5be6\u7684\u7d50\u5408",
+        "description": "\u5982\u4eca\uff0c\u6211\u5011\u8d8a\u4f86\u8d8a\u4f9d\u8cf4\u65bc\u6578\u64da\u4f86\u9a45\u52d5\u696d\u52d9\u6c7a\u7b56\u3002\u7136\u800c\uff0c\u96a8\u8457\u6578\u64da\u91cf\u7684\u589e\u9577\uff0c\u7ba1\u7406\u548c\u5206\u6790\u9019\u4e9b\u6578\u64da\u7684\u6311\u6230\u4e5f\u96a8\u4e4b\u589e\u52a0\u3002\u9019\u5c31\u662f\u70ba\u4ec0\u9ebc\u9700\u8981\u4e00\u7a2e\u5de5\u5177\uff0c\u80fd\u5920\u4ee5\u66f4\u667a\u80fd\u3001\u66f4\u9ad8\u6548\u7684\u65b9\u5f0f\u8655\u7406\u9019\u4e9b\u6578\u64da\u3002\u9019\u5c31\u662fAITable.ai\u7684\u7528\u9014\u3002",
+        "language": "hk",
+        "path": "/apis/hk/2024-07-09-li-yong-aitable.ai-ti-sheng-ni-de-ye-wu-xiao-lv--ren-gong-zhi-neng-yu-zeng-qiang-xian-shi-de-jie-he.md"
+    },
+    {
+        "name": "Revolutionizing Workflows with AI: Leveraging AITable.ai for Enhanced Productivity and Efficiency",
+        "description": "Artificial Intelligence (AI) has made significant strides in recent years, permeating various industries and revolutionizing the way businesses operate. One sector that's particularly benefited is the realm of productivity tools, where AI-driven platforms are modifying traditional strategies and workflows. In this context, we introduce AITable.ai, a free and innovative AI platform that provides an alternative to traditional tools like Airtable, Smartsheet, and Excel.",
+        "language": "us",
+        "path": "/apis/us/2024-07-09-revolutionizingworkflowswithaileveragingaitable.aiforenhancedproductivityandefficiency.md"
+    },
+    {
         "name": "How AITable.ai is Revolutionizing Productivity Tools in Canada",
         "description": "<img alt=\"AITable.ai\" src=\"https://assets-global.website-files.com/637e5037f3ef83b76dcfc8f9/65148e6e5ccc91f6f66f867a_How%20to%20Develop%20a%20Chatbot%20Strategy.png\" />",
         "language": "ca",
