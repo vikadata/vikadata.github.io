@@ -33,7 +33,7 @@ proxies:
     cipher: auto
   - type: vmess
     name: gcp-ja.bika.hk
-    server: 34.97.75.50
+    server: 34.97.140.11
     port: 30251
     uuid: 9e88a10b-655c-5120-89d0-408634169561
     alterId: 0
