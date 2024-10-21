@@ -26,14 +26,14 @@ proxies:
   #   uuid: 9e88a10b-655c-5120-89d0-408634169561
   - type: vmess
     name: gcp-hk.bika.hk
-    server: 34.92.161.205
+    server: 34.92.66.193
     port: 30251
     uuid: 9e88a10b-655c-5120-89d0-408634169561
     alterId: 0
     cipher: auto
   - type: vmess
     name: gcp-ja.bika.hk
-    server: 34.97.121.62
+    server: 34.97.241.207
     port: 30251
     uuid: 9e88a10b-655c-5120-89d0-408634169561
     alterId: 0
