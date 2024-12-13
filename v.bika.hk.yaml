@@ -418,8 +418,8 @@ proxy-groups:
       # - hkt1.bika.hk
       - gcp-ja.bika.hk
       - gcp-hk.bika.hk
-      - hkt2.bika.hk
-      - icable.bika.hk
+      #- hkt2.bika.hk
+      #- icable.bika.hk
       - 中转•香港301•高速
       - 中转•香港102•高速
       - 中转•香港307•高速
