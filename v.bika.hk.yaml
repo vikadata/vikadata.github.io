@@ -26,32 +26,32 @@ proxies:
   #   uuid: 9e88a10b-655c-5120-89d0-408634169561
   - type: vmess
     name: gcp-hk.bika.hk
-    server: 34.92.66.193
+    server: 34.92.208.172
     port: 30251
     uuid: 9e88a10b-655c-5120-89d0-408634169561
     alterId: 0
     cipher: auto
   - type: vmess
     name: gcp-ja.bika.hk
-    server: 34.97.86.155
+    server: 34.97.135.220
     port: 30251
     uuid: 9e88a10b-655c-5120-89d0-408634169561
     alterId: 0
     cipher: auto
-  - type: vmess
-    name: hkt2.bika.hk
-    server: hkt2.bika.hk
-    port: 30251
-    uuid: 9e88a10b-655c-5120-89d0-408634169561
-    alterId: 0
-    cipher: auto
-  - type: vmess
-    name: icable.bika.hk
-    server: icable.bika.hk
-    port: 30251
-    uuid: 9e88a10b-655c-5120-89d0-408634169561
-    alterId: 0
-    cipher: auto
+  #- type: vmess
+  #  name: hkt2.bika.hk
+  #  server: hkt2.bika.hk
+  #  port: 30251
+  #  uuid: 9e88a10b-655c-5120-89d0-408634169561
+  #  alterId: 0
+  #  cipher: auto
+  #- type: vmess
+  #  name: icable.bika.hk
+  #  server: icable.bika.hk
+  # port: 30251
+  #  uuid: 9e88a10b-655c-5120-89d0-408634169561
+  #  alterId: 0
+  #  cipher: auto
   -
     name: 中转•香港301•高速
     type: trojan
