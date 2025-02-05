@@ -1,7 +1,7 @@
 #!MANAGED-CONFIG https://www.flybar.top/link/w6HgvAMupJOo8pTH?clash=1
 
 #---------------------------------------------------#
-## 上次更新于：2024-06-26 09:24:30
+## 上次更新于：2025-02-05 10:12:30
 #---------------------------------------------------#
 
 port: 7890
@@ -29,951 +29,1007 @@ proxies:
     uuid: 9e88a10b-655c-5120-89d0-408634169561
     alterId: 0
     cipher: auto
-  - {name: 有问题先切换VIP1或VIP2尝试, server: aexgzbgp01.114837322.xyz, port: 14392, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 推荐客户下单返红包H/Y, server: aexshbgp01.114837322.xyz, port: 14393, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: Netflix/Disney/GPT出售, server: aexshbgp01.114837322.xyz, port: 14394, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP, server: aexgzbgp01.114837322.xyz, port: 14391, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 狮城-极速专线 VIP, server: aexgzbgp01.114837322.xyz, port: 14392, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP, server: aexshbgp01.114837322.xyz, port: 14393, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP, server: aexshbgp01.114837322.xyz, port: 14394, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP1 01, server: high.ab.he.defehaita.xyz, port: 30273, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP1 02, server: high.ab.he.defehaita.xyz, port: 30273, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP1 03, server: high.ab.he.defehaita.xyz, port: 22140, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP1 04, server: high.ab.he.defehaita.xyz, port: 62645, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP1 05, server: high.ab.he.defehaita.xyz, port: 28780, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP2 01, server: aexgzbgp01.114837322.xyz, port: 14401, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP2 02, server: aexgzbgp01.114837322.xyz, port: 14402, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP2 03, server: aexgzbgp01.114837322.xyz, port: 14403, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP2 04, server: aexgzbgp01.114837322.xyz, port: 14404, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP2 05, server: aexgzbgp01.114837322.xyz, port: 14405, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-极速专线 VIP1 01, server: high.vb.defehaita.xyz, port: 46585, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-极速专线 VIP1 02, server: high.vb.defehaita.xyz, port: 6737, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-极速专线 VIP1 03, server: high.vb.defehaita.xyz, port: 21703, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-极速专线 VIP1 04, server: high.vb.defehaita.xyz, port: 8932, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-极速专线 VIP1 05, server: high.vb.defehaita.xyz, port: 10007, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 狮城-极速专线 VIP2 01, server: aexgzbgp01.114837322.xyz, port: 14411, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 狮城-极速专线 VIP2 02, server: aexgzbgp01.114837322.xyz, port: 14412, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 狮城-极速专线 VIP2 03, server: aexgzbgp01.114837322.xyz, port: 14413, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 狮城-极速专线 VIP2 04, server: aexgzbgp01.114837322.xyz, port: 14414, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 狮城-极速专线 VIP2 05, server: aexgzbgp01.114837322.xyz, port: 14415, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 台湾-极速专线 VIP1 01, server: high.vb.defehaita.xyz, port: 43460, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 台湾-极速专线 VIP1 02, server: high.vb.defehaita.xyz, port: 11969, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 台湾-极速专线 VIP1 03, server: high.vb.defehaita.xyz, port: 27364, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP1 01, server: high.eb.defehaita.xyz, port: 24215, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP1 02, server: high.eb.defehaita.xyz, port: 31381, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP1 03, server: high.eb.defehaita.xyz, port: 25661, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 台湾-极速专线 VIP2 01, server: aexgzbgp01.114837322.xyz, port: 14451, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 台湾-极速专线 VIP2 02, server: aexgzbgp01.114837322.xyz, port: 14452, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP2 01, server: aexshbgp01.114837322.xyz, port: 14421, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP2 02, server: aexshbgp01.114837322.xyz, port: 14422, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP2 03, server: aexshbgp01.114837322.xyz, port: 14423, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP2 04, server: aexshbgp01.114837322.xyz, port: 14424, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP1 01, server: high.eb.defehaita.xyz, port: 42541, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP1 02, server: high.eb.defehaita.xyz, port: 18604, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP1 03, server: high.eb.defehaita.xyz, port: 22332, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP1 04, server: high.eb.defehaita.xyz, port: 44788, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP1 05, server: high.eb.defehaita.xyz, port: 39126, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP2 01, server: aexshbgp01.114837322.xyz, port: 14431, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP2 02, server: aexshbgp01.114837322.xyz, port: 14432, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP2 03, server: aexshbgp01.114837322.xyz, port: 14433, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP2 04, server: aexshbgp01.114837322.xyz, port: 14434, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP2 05, server: aexshbgp01.114837322.xyz, port: 14435, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP1 06, server: high.ab.he.defehaita.xyz, port: 17878, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP1 07, server: high.ab.he.defehaita.xyz, port: 36940, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP1 08, server: high.ab.he.defehaita.xyz, port: 10985, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP1 09, server: high.ab.he.defehaita.xyz, port: 11210, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP1 10, server: high.ab.he.defehaita.xyz, port: 31210, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP1 04, server: high.eb.defehaita.xyz, port: 26558, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP1 05, server: high.eb.defehaita.xyz, port: 37907, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP1 06, server: high.eb.defehaita.xyz, port: 29657, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP1 07, server: high.eb.defehaita.xyz, port: 39137, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP1 08, server: high.eb.defehaita.xyz, port: 36026, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-极速专线 VIP1 01, server: high.vb.defehaita.xyz, port: 44767, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 澳大利亚-极速专线 VIP1 02, server: high.vb.defehaita.xyz, port: 59475, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-极速专线 VIP1 06, server: high.vb.defehaita.xyz, port: 10690, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-极速专线 VIP1 07, server: high.vb.defehaita.xyz, port: 22429, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 新加坡-极速专线 VIP1 08, server: high.vb.defehaita.xyz, port: 41089, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP1 06, server: high.eb.defehaita.xyz, port: 25781, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 法国-极速专线 VIP1 02, server: high.vb.defehaita.xyz, port: 15714, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 德国-极速专线 VIP1 01, server: high.vb.defehaita.xyz, port: 10359, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 德国-极速专线 VIP1 02, server: high.vb.defehaita.xyz, port: 27811, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 英国-极速专线 VIP1 01, server: high.vb.defehaita.xyz, port: 13946, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 英国-极速专线 VIP1 02, server: high.vb.defehaita.xyz, port: 13498, type: trojan, password: 3bcaef9b-af27-4e23-8e18-91be0774ba89, sni: douyin.com, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP2 06, server: aexgzbgp01.114837322.xyz, port: 14406, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP2 07, server: aexgzbgp01.114837322.xyz, port: 14407, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP2 06, server: aexshbgp01.114837322.xyz, port: 14436, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP2 07, server: aexshbgp01.114837322.xyz, port: 14437, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 韩国-极速专线 VIP2 01, server: aexshbgp01.114837322.xyz, port: 14441, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 韩国-极速专线 VIP2 02, server: aexshbgp01.114837322.xyz, port: 14442, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP2 05, server: aexshbgp01.114837322.xyz, port: 14425, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP2 06, server: aexshbgp01.114837322.xyz, port: 14426, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP2 07, server: aexshbgp01.114837322.xyz, port: 14427, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP2 01 2, server: aexgzbgp01.114837322.xyz, port: 14301, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP2 02 2, server: aexgzbgp01.114837322.xyz, port: 14302, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 香港-极速专线 VIP2 03 2, server: aexgzbgp01.114837322.xyz, port: 14303, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 狮城-极速专线 VIP2 01 2, server: aexgzbgp01.114837322.xyz, port: 14311, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 狮城-极速专线 VIP2 02 2, server: aexgzbgp01.114837322.xyz, port: 14312, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 狮城-极速专线 VIP2 03 2, server: aexgzbgp01.114837322.xyz, port: 14313, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP2 01 2, server: aexshbgp01.114837322.xyz, port: 14331, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP2 02 2, server: aexshbgp01.114837322.xyz, port: 14332, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP2 03 2, server: aexshbgp01.114837322.xyz, port: 14333, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP2 04 2, server: aexshbgp01.114837322.xyz, port: 14334, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP2 05 2, server: aexshbgp01.114837322.xyz, port: 14335, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 美国-极速专线 VIP2 06 2, server: aexshbgp01.114837322.xyz, port: 14336, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 韩国-极速专线 VIP2 01 2, server: aexshbgp01.114837322.xyz, port: 14341, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP2 01 2, server: aexshbgp01.114837322.xyz, port: 14321, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP2 02 2, server: aexshbgp01.114837322.xyz, port: 14322, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP2 03 2, server: aexshbgp01.114837322.xyz, port: 14323, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 日本-极速专线 VIP2 04 2, server: aexshbgp01.114837322.xyz, port: 14324, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 台湾-极速专线 VIP2 01 2, server: aexgzbgp01.114837322.xyz, port: 14351, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 伦敦-极速专线 VIP2 01, server: aexbjbgp01.114837322.xyz, port: 14501, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 伦敦-极速专线 VIP2 02, server: aexbjbgp01.114837322.xyz, port: 14502, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 德国-极速专线 VIP2 01, server: aexbjbgp01.114837322.xyz, port: 14500, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 德国-极速专线 VIP2 02, server: aexbjbgp01.114837322.xyz, port: 14507, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 加拿大-极速专线 VIP2 01, server: aexshbgp01.114837322.xyz, port: 14506, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 加拿大-极速专线 VIP2 02, server: aexshbgp01.114837322.xyz, port: 14508, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 土耳其-极速专线 VIP2 01, server: aexbjbgp01.114837322.xyz, port: 14498, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 土耳其-极速专线 VIP2 02, server: aexbjbgp01.114837322.xyz, port: 14518, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 印度, server: aexgzbgp01.114837322.xyz, port: 14494, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 法国, server: aexbjbgp01.114837322.xyz, port: 14504, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 印尼, server: aexgzbgp01.114837322.xyz, port: 14514, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 埃及, server: aexbjbgp01.114837322.xyz, port: 14520, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 俄罗斯, server: aexbjbgp01.114837322.xyz, port: 14495, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 马来西亚, server: aexgzbgp01.114837322.xyz, port: 14519, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 尼日利亚, server: aexgzbgp01.114837322.xyz, port: 14510, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
-  - {name: 巴基斯坦, server: aexgzbgp01.114837322.xyz, port: 14516, type: trojan, password: 6AC378EE-C9AE-9D3C-3DD9-8C034898BE44, sni: mpvideo.qpic.cn, skip-cert-verify: true, udp: true}
+  - {name: 防失联Vx:hjtz1988, server: sg.afun-hip.com, port: 24550, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: 推荐客户下单返红包/4, server: sg.afun-hip.com, port: 24523, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: 有问题先切换VIP1或VIP2尝试, server: gzdata1.fc-smartcloud.xyz, port: 10103, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: Netflix/Disney/GPT出售/H/A, server: gzdata1.fc-smartcloud.xyz, port: 10101, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP 1 |日本-极速专线, server: sg.afun-hip.com, port: 24523, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |美国-极速专线, server: sg.afun-hip.com, port: 24550, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP2 |香港-极速专线, server: gzdata1.fc-smartcloud.xyz, port: 10101, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |新加坡-极速专线, server: gzdata1.fc-smartcloud.xyz, port: 10103, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP 1 |香港-极速专线 1, server: sg.afun-hip.com, port: 24551, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |香港-极速专线 2, server: sg.afun-hip.com, port: 24505, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |香港-极速专线 3, server: sg.afun-hip.com, port: 24506, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP2 |日本-极速专线, server: shdata1.fc-smartcloud.xyz, port: 10102, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |美国-极速专线, server: shdata1.fc-smartcloud.xyz, port: 10104, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |香港-极速专线 1, server: gzdata1.fc-smartcloud.xyz, port: 12101, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |香港-极速专线 2, server: gzdata1.fc-smartcloud.xyz, port: 12102, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |香港-极速专线 3, server: gzdata1.fc-smartcloud.xyz, port: 12103, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP 1 |台湾-极速专线 1, server: sg.afun-hip.com, port: 24510, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |台湾-极速专线 2, server: sg.afun-hip.com, port: 24511, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |台湾-极速专线 3, server: sg.afun-hip.com, port: 24512, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP2 |台湾-极速专线 1, server: gzdata1.fc-smartcloud.xyz, port: 12141, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |台湾-极速专线 2, server: gzdata1.fc-smartcloud.xyz, port: 12142, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |台湾-极速专线 3, server: gzdata1.fc-smartcloud.xyz, port: 12143, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP 1 |新加坡-极速专线 1, server: sg.afun-hip.com, port: 24514, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |新加坡-极速专线 2, server: sg.afun-hip.com, port: 24515, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |新加坡-极速专线 3, server: sg.afun-hip.com, port: 24516, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP2 |新加坡-极速专线 1, server: gzdata1.fc-smartcloud.xyz, port: 12131, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |新加坡-极速专线 2, server: gzdata1.fc-smartcloud.xyz, port: 12132, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |新加坡-极速专线 3, server: gzdata1.fc-smartcloud.xyz, port: 12133, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP 1 |日本-极速专线 1, server: sg.afun-hip.com, port: 24519, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |日本-极速专线 2, server: sg.afun-hip.com, port: 24520, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |日本-极速专线 3, server: sg.afun-hip.com, port: 24521, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP2 |日本-极速专线 1, server: shdata1.fc-smartcloud.xyz, port: 12111, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |日本-极速专线 2, server: shdata1.fc-smartcloud.xyz, port: 12112, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |日本-极速专线 3, server: shdata1.fc-smartcloud.xyz, port: 12113, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP 1 |美国-极速专线 1, server: sg.afun-hip.com, port: 24526, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |美国-极速专线 2, server: sg.afun-hip.com, port: 24527, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |美国-极速专线 3, server: sg.afun-hip.com, port: 24528, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP2 |美国-极速专线 1, server: shdata1.fc-smartcloud.xyz, port: 12121, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |美国-极速专线 2, server: shdata1.fc-smartcloud.xyz, port: 12122, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |美国-极速专线 3, server: shdata1.fc-smartcloud.xyz, port: 12123, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP 1 |韩国-极速专线 1, server: shjp.afun-hip.com, port: 24524, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |韩国-极速专线 2, server: shjp.afun-hip.com, port: 24525, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |香港-极速专线 4, server: sg.afun-hip.com, port: 24507, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |香港-极速专线 5, server: sg.afun-hip.com, port: 24508, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |香港-极速专线 6, server: sg.afun-hip.com, port: 24500, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |香港-极速专线 7, server: sg.afun-hip.com, port: 24501, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |香港-极速专线 8, server: sg.afun-hip.com, port: 24502, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |香港-极速专线 9, server: sg.afun-hip.com, port: 24503, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |澳门-极速专线 1, server: sg.afun-hip.com, port: 24543, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |澳门-极速专线 2, server: sg.afun-hip.com, port: 24544, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |台湾-极速专线 4, server: sg.afun-hip.com, port: 24513, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |台湾-极速专线 5, server: sg.afun-hip.com, port: 24549, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |新加坡-极速专线 4, server: sg.afun-hip.com, port: 24517, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |新加坡-极速专线 5, server: sg.afun-hip.com, port: 24518, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |日本-极速专线 4, server: sg.afun-hip.com, port: 24522, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |日本-极速专线 5, server: sg.afun-hip.com, port: 24547, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |日本-极速专线 6, server: sg.afun-hip.com, port: 24548, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |韩国-极速专线 1 2, server: sg.afun-hip.com, port: 24524, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |韩国-极速专线 2 2, server: sg.afun-hip.com, port: 24525, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |美国-极速专线 4, server: sg.afun-hip.com, port: 24529, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |美国-极速专线 5, server: sg.afun-hip.com, port: 24530, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |德国-极速专线 1, server: sg.afun-hip.com, port: 24531, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |日本-极速专线 1 2, server: shjp.afun-hip.com, port: 24519, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |日本-极速专线 2 2, server: shjp.afun-hip.com, port: 24520, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |日本-极速专线 3 2, server: shjp.afun-hip.com, port: 24521, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |日本-极速专线 4 2, server: shjp.afun-hip.com, port: 24522, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |日本-极速专线 5 2, server: shjp.afun-hip.com, port: 24547, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |日本-极速专线 6 2, server: shjp.afun-hip.com, port: 24548, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |美国-极速专线 1 2, server: shjp.afun-hip.com, port: 24526, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |美国-极速专线 2 2, server: shjp.afun-hip.com, port: 24527, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |美国-极速专线 3 2, server: shjp.afun-hip.com, port: 24528, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |美国-极速专线 4 2, server: shjp.afun-hip.com, port: 24529, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP 1 |美国-极速专线 5 2, server: shjp.afun-hip.com, port: 24530, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
+  - {name: VIP2 |香港-高速专线 1, server: gzdata1.fc-smartcloud.xyz, port: 11101, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |香港-高速专线 2, server: gzdata1.fc-smartcloud.xyz, port: 11102, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |香港-高速专线 3, server: gzdata1.fc-smartcloud.xyz, port: 11103, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |香港-高速专线 4, server: gzdata1.fc-smartcloud.xyz, port: 11104, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |香港-高速专线 5, server: gzdata1.fc-smartcloud.xyz, port: 11105, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |香港-高速专线 6, server: gzdata1.fc-smartcloud.xyz, port: 11106, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |香港-高速专线 7, server: gzdata1.fc-smartcloud.xyz, port: 11107, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |日本-高速专线 1, server: shdata1.fc-smartcloud.xyz, port: 11111, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |日本-高速专线 2, server: shdata1.fc-smartcloud.xyz, port: 11112, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |日本-高速专线 3, server: shdata1.fc-smartcloud.xyz, port: 11113, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |日本-高速专线 4, server: shdata1.fc-smartcloud.xyz, port: 11114, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |日本-高速专线 5, server: shdata1.fc-smartcloud.xyz, port: 11115, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |日本-高速专线 6, server: shdata1.fc-smartcloud.xyz, port: 11116, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |日本-高速专线 7, server: shdata1.fc-smartcloud.xyz, port: 11117, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |新加坡-高速专线 1, server: gzdata1.fc-smartcloud.xyz, port: 11131, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |新加坡-高速专线 2, server: gzdata1.fc-smartcloud.xyz, port: 11132, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |新加坡-高速专线 3, server: gzdata1.fc-smartcloud.xyz, port: 11133, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |新加坡-高速专线 4, server: gzdata1.fc-smartcloud.xyz, port: 11134, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |新加坡-高速专线 5, server: gzdata1.fc-smartcloud.xyz, port: 11135, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |新加坡-高速专线 6, server: gzdata1.fc-smartcloud.xyz, port: 11136, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |新加坡-高速专线 7, server: gzdata1.fc-smartcloud.xyz, port: 11137, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |台湾-高速专线 1, server: gzdata1.fc-smartcloud.xyz, port: 11141, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |台湾-高速专线 2, server: gzdata1.fc-smartcloud.xyz, port: 11142, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |台湾-高速专线 3, server: gzdata1.fc-smartcloud.xyz, port: 11143, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |美国-高速专线 1, server: shdata1.fc-smartcloud.xyz, port: 11121, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |美国-高速专线 2, server: shdata1.fc-smartcloud.xyz, port: 11122, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |美国-高速专线 3, server: shdata1.fc-smartcloud.xyz, port: 11123, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |美国-高速专线 4, server: shdata1.fc-smartcloud.xyz, port: 11124, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |美国-高速专线 5, server: shdata1.fc-smartcloud.xyz, port: 11125, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |美国-高速专线 6, server: shdata1.fc-smartcloud.xyz, port: 11126, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |美国-高速专线 7, server: shdata1.fc-smartcloud.xyz, port: 11127, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |土耳其-高速专线 1, server: bjdata1.fc-smartcloud.xyz, port: 11155, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |德国-高速专线 1, server: bjdata1.fc-smartcloud.xyz, port: 11156, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |德国-高速专线 2, server: bjdata1.fc-smartcloud.xyz, port: 11157, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |英国-高速专线 1, server: bjdata1.fc-smartcloud.xyz, port: 11158, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |英国-高速专线 2, server: bjdata1.fc-smartcloud.xyz, port: 11159, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |荷兰-高速专线 1, server: bjdata1.fc-smartcloud.xyz, port: 11160, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |荷兰-高速专线 2, server: bjdata1.fc-smartcloud.xyz, port: 11161, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |法国-高速专线 1, server: bjdata1.fc-smartcloud.xyz, port: 11162, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |法国-高速专线 2, server: bjdata1.fc-smartcloud.xyz, port: 11163, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |加拿大-高速专线 1, server: shdata1.fc-smartcloud.xyz, port: 11164, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |加拿大-高速专线 2, server: shdata1.fc-smartcloud.xyz, port: 11165, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |澳大利亚-高速专线 1, server: gzdata1.fc-smartcloud.xyz, port: 11169, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |韩国-高速专线 1, server: shdata1.fc-smartcloud.xyz, port: 11171, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |韩国-高速专线 2, server: shdata1.fc-smartcloud.xyz, port: 11172, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |马来西亚-高速专线 1, server: gzdata1.fc-smartcloud.xyz, port: 11185, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
+  - {name: VIP2 |埃及-高速专线 1, server: bjdata1.fc-smartcloud.xyz, port: 11186, type: trojan, password: BF304A87-79D7-3EA6-9E6E-DFC8EA8920F3, sni: m.ctrip.com, skip-cert-verify: true, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - gcp-ja.bika.hk
-      - gcp-hk.bika.hk    
+      - gcp-hk.bika.hk 
       - ♻️ 自动选择
       - DIRECT
+      - 防失联Vx:hjtz1988
+      - 推荐客户下单返红包/4
       - 有问题先切换VIP1或VIP2尝试
-      - 推荐客户下单返红包H/Y
-      - Netflix/Disney/GPT出售
-      - 香港-极速专线 VIP
-      - 狮城-极速专线 VIP
-      - 日本-极速专线 VIP
-      - 美国-极速专线 VIP
-      - 香港-极速专线 VIP1 01
-      - 香港-极速专线 VIP1 02
-      - 香港-极速专线 VIP1 03
-      - 香港-极速专线 VIP1 04
-      - 香港-极速专线 VIP1 05
-      - 香港-极速专线 VIP2 01
-      - 香港-极速专线 VIP2 02
-      - 香港-极速专线 VIP2 03
-      - 香港-极速专线 VIP2 04
-      - 香港-极速专线 VIP2 05
-      - 新加坡-极速专线 VIP1 01
-      - 新加坡-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 03
-      - 新加坡-极速专线 VIP1 04
-      - 新加坡-极速专线 VIP1 05
-      - 狮城-极速专线 VIP2 01
-      - 狮城-极速专线 VIP2 02
-      - 狮城-极速专线 VIP2 03
-      - 狮城-极速专线 VIP2 04
-      - 狮城-极速专线 VIP2 05
-      - 台湾-极速专线 VIP1 01
-      - 台湾-极速专线 VIP1 02
-      - 台湾-极速专线 VIP1 03
-      - 日本-极速专线 VIP1 01
-      - 日本-极速专线 VIP1 02
-      - 日本-极速专线 VIP1 03
-      - 台湾-极速专线 VIP2 01
-      - 台湾-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 01
-      - 日本-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 03
-      - 日本-极速专线 VIP2 04
-      - 美国-极速专线 VIP1 01
-      - 美国-极速专线 VIP1 02
-      - 美国-极速专线 VIP1 03
-      - 美国-极速专线 VIP1 04
-      - 美国-极速专线 VIP1 05
-      - 美国-极速专线 VIP2 01
-      - 美国-极速专线 VIP2 02
-      - 美国-极速专线 VIP2 03
-      - 美国-极速专线 VIP2 04
-      - 美国-极速专线 VIP2 05
-      - 香港-极速专线 VIP1 06
-      - 香港-极速专线 VIP1 07
-      - 香港-极速专线 VIP1 08
-      - 香港-极速专线 VIP1 09
-      - 香港-极速专线 VIP1 10
-      - 日本-极速专线 VIP1 04
-      - 日本-极速专线 VIP1 05
-      - 日本-极速专线 VIP1 06
-      - 日本-极速专线 VIP1 07
-      - 日本-极速专线 VIP1 08
-      - 澳大利亚-极速专线 VIP1 01
-      - 澳大利亚-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 06
-      - 新加坡-极速专线 VIP1 07
-      - 新加坡-极速专线 VIP1 08
-      - 美国-极速专线 VIP1 06
-      - 法国-极速专线 VIP1 02
-      - 德国-极速专线 VIP1 01
-      - 德国-极速专线 VIP1 02
-      - 英国-极速专线 VIP1 01
-      - 英国-极速专线 VIP1 02
-      - 香港-极速专线 VIP2 06
-      - 香港-极速专线 VIP2 07
-      - 美国-极速专线 VIP2 06
-      - 美国-极速专线 VIP2 07
-      - 韩国-极速专线 VIP2 01
-      - 韩国-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 05
-      - 日本-极速专线 VIP2 06
-      - 日本-极速专线 VIP2 07
-      - 香港-极速专线 VIP2 01 2
-      - 香港-极速专线 VIP2 02 2
-      - 香港-极速专线 VIP2 03 2
-      - 狮城-极速专线 VIP2 01 2
-      - 狮城-极速专线 VIP2 02 2
-      - 狮城-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 01 2
-      - 美国-极速专线 VIP2 02 2
-      - 美国-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 04 2
-      - 美国-极速专线 VIP2 05 2
-      - 美国-极速专线 VIP2 06 2
-      - 韩国-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 02 2
-      - 日本-极速专线 VIP2 03 2
-      - 日本-极速专线 VIP2 04 2
-      - 台湾-极速专线 VIP2 01 2
-      - 伦敦-极速专线 VIP2 01
-      - 伦敦-极速专线 VIP2 02
-      - 德国-极速专线 VIP2 01
-      - 德国-极速专线 VIP2 02
-      - 加拿大-极速专线 VIP2 01
-      - 加拿大-极速专线 VIP2 02
-      - 土耳其-极速专线 VIP2 01
-      - 土耳其-极速专线 VIP2 02
-      - 印度
-      - 法国
-      - 印尼
-      - 埃及
-      - 俄罗斯
-      - 马来西亚
-      - 尼日利亚
-      - 巴基斯坦
+      - Netflix/Disney/GPT出售/H/A
+      - VIP 1 |日本-极速专线
+      - VIP 1 |美国-极速专线
+      - VIP2 |香港-极速专线
+      - VIP2 |新加坡-极速专线
+      - VIP 1 |香港-极速专线 1
+      - VIP 1 |香港-极速专线 2
+      - VIP 1 |香港-极速专线 3
+      - VIP2 |日本-极速专线
+      - VIP2 |美国-极速专线
+      - VIP2 |香港-极速专线 1
+      - VIP2 |香港-极速专线 2
+      - VIP2 |香港-极速专线 3
+      - VIP 1 |台湾-极速专线 1
+      - VIP 1 |台湾-极速专线 2
+      - VIP 1 |台湾-极速专线 3
+      - VIP2 |台湾-极速专线 1
+      - VIP2 |台湾-极速专线 2
+      - VIP2 |台湾-极速专线 3
+      - VIP 1 |新加坡-极速专线 1
+      - VIP 1 |新加坡-极速专线 2
+      - VIP 1 |新加坡-极速专线 3
+      - VIP2 |新加坡-极速专线 1
+      - VIP2 |新加坡-极速专线 2
+      - VIP2 |新加坡-极速专线 3
+      - VIP 1 |日本-极速专线 1
+      - VIP 1 |日本-极速专线 2
+      - VIP 1 |日本-极速专线 3
+      - VIP2 |日本-极速专线 1
+      - VIP2 |日本-极速专线 2
+      - VIP2 |日本-极速专线 3
+      - VIP 1 |美国-极速专线 1
+      - VIP 1 |美国-极速专线 2
+      - VIP 1 |美国-极速专线 3
+      - VIP2 |美国-极速专线 1
+      - VIP2 |美国-极速专线 2
+      - VIP2 |美国-极速专线 3
+      - VIP 1 |韩国-极速专线 1
+      - VIP 1 |韩国-极速专线 2
+      - VIP 1 |香港-极速专线 4
+      - VIP 1 |香港-极速专线 5
+      - VIP 1 |香港-极速专线 6
+      - VIP 1 |香港-极速专线 7
+      - VIP 1 |香港-极速专线 8
+      - VIP 1 |香港-极速专线 9
+      - VIP 1 |澳门-极速专线 1
+      - VIP 1 |澳门-极速专线 2
+      - VIP 1 |台湾-极速专线 4
+      - VIP 1 |台湾-极速专线 5
+      - VIP 1 |新加坡-极速专线 4
+      - VIP 1 |新加坡-极速专线 5
+      - VIP 1 |日本-极速专线 4
+      - VIP 1 |日本-极速专线 5
+      - VIP 1 |日本-极速专线 6
+      - VIP 1 |韩国-极速专线 1 2
+      - VIP 1 |韩国-极速专线 2 2
+      - VIP 1 |美国-极速专线 4
+      - VIP 1 |美国-极速专线 5
+      - VIP 1 |德国-极速专线 1
+      - VIP 1 |日本-极速专线 1 2
+      - VIP 1 |日本-极速专线 2 2
+      - VIP 1 |日本-极速专线 3 2
+      - VIP 1 |日本-极速专线 4 2
+      - VIP 1 |日本-极速专线 5 2
+      - VIP 1 |日本-极速专线 6 2
+      - VIP 1 |美国-极速专线 1 2
+      - VIP 1 |美国-极速专线 2 2
+      - VIP 1 |美国-极速专线 3 2
+      - VIP 1 |美国-极速专线 4 2
+      - VIP 1 |美国-极速专线 5 2
+      - VIP2 |香港-高速专线 1
+      - VIP2 |香港-高速专线 2
+      - VIP2 |香港-高速专线 3
+      - VIP2 |香港-高速专线 4
+      - VIP2 |香港-高速专线 5
+      - VIP2 |香港-高速专线 6
+      - VIP2 |香港-高速专线 7
+      - VIP2 |日本-高速专线 1
+      - VIP2 |日本-高速专线 2
+      - VIP2 |日本-高速专线 3
+      - VIP2 |日本-高速专线 4
+      - VIP2 |日本-高速专线 5
+      - VIP2 |日本-高速专线 6
+      - VIP2 |日本-高速专线 7
+      - VIP2 |新加坡-高速专线 1
+      - VIP2 |新加坡-高速专线 2
+      - VIP2 |新加坡-高速专线 3
+      - VIP2 |新加坡-高速专线 4
+      - VIP2 |新加坡-高速专线 5
+      - VIP2 |新加坡-高速专线 6
+      - VIP2 |新加坡-高速专线 7
+      - VIP2 |台湾-高速专线 1
+      - VIP2 |台湾-高速专线 2
+      - VIP2 |台湾-高速专线 3
+      - VIP2 |美国-高速专线 1
+      - VIP2 |美国-高速专线 2
+      - VIP2 |美国-高速专线 3
+      - VIP2 |美国-高速专线 4
+      - VIP2 |美国-高速专线 5
+      - VIP2 |美国-高速专线 6
+      - VIP2 |美国-高速专线 7
+      - VIP2 |土耳其-高速专线 1
+      - VIP2 |德国-高速专线 1
+      - VIP2 |德国-高速专线 2
+      - VIP2 |英国-高速专线 1
+      - VIP2 |英国-高速专线 2
+      - VIP2 |荷兰-高速专线 1
+      - VIP2 |荷兰-高速专线 2
+      - VIP2 |法国-高速专线 1
+      - VIP2 |法国-高速专线 2
+      - VIP2 |加拿大-高速专线 1
+      - VIP2 |加拿大-高速专线 2
+      - VIP2 |澳大利亚-高速专线 1
+      - VIP2 |韩国-高速专线 1
+      - VIP2 |韩国-高速专线 2
+      - VIP2 |马来西亚-高速专线 1
+      - VIP2 |埃及-高速专线 1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 防失联Vx:hjtz1988
+      - 推荐客户下单返红包/4
       - 有问题先切换VIP1或VIP2尝试
-      - 推荐客户下单返红包H/Y
-      - Netflix/Disney/GPT出售
-      - 香港-极速专线 VIP
-      - 狮城-极速专线 VIP
-      - 日本-极速专线 VIP
-      - 美国-极速专线 VIP
-      - 香港-极速专线 VIP1 01
-      - 香港-极速专线 VIP1 02
-      - 香港-极速专线 VIP1 03
-      - 香港-极速专线 VIP1 04
-      - 香港-极速专线 VIP1 05
-      - 香港-极速专线 VIP2 01
-      - 香港-极速专线 VIP2 02
-      - 香港-极速专线 VIP2 03
-      - 香港-极速专线 VIP2 04
-      - 香港-极速专线 VIP2 05
-      - 新加坡-极速专线 VIP1 01
-      - 新加坡-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 03
-      - 新加坡-极速专线 VIP1 04
-      - 新加坡-极速专线 VIP1 05
-      - 狮城-极速专线 VIP2 01
-      - 狮城-极速专线 VIP2 02
-      - 狮城-极速专线 VIP2 03
-      - 狮城-极速专线 VIP2 04
-      - 狮城-极速专线 VIP2 05
-      - 台湾-极速专线 VIP1 01
-      - 台湾-极速专线 VIP1 02
-      - 台湾-极速专线 VIP1 03
-      - 日本-极速专线 VIP1 01
-      - 日本-极速专线 VIP1 02
-      - 日本-极速专线 VIP1 03
-      - 台湾-极速专线 VIP2 01
-      - 台湾-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 01
-      - 日本-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 03
-      - 日本-极速专线 VIP2 04
-      - 美国-极速专线 VIP1 01
-      - 美国-极速专线 VIP1 02
-      - 美国-极速专线 VIP1 03
-      - 美国-极速专线 VIP1 04
-      - 美国-极速专线 VIP1 05
-      - 美国-极速专线 VIP2 01
-      - 美国-极速专线 VIP2 02
-      - 美国-极速专线 VIP2 03
-      - 美国-极速专线 VIP2 04
-      - 美国-极速专线 VIP2 05
-      - 香港-极速专线 VIP1 06
-      - 香港-极速专线 VIP1 07
-      - 香港-极速专线 VIP1 08
-      - 香港-极速专线 VIP1 09
-      - 香港-极速专线 VIP1 10
-      - 日本-极速专线 VIP1 04
-      - 日本-极速专线 VIP1 05
-      - 日本-极速专线 VIP1 06
-      - 日本-极速专线 VIP1 07
-      - 日本-极速专线 VIP1 08
-      - 澳大利亚-极速专线 VIP1 01
-      - 澳大利亚-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 06
-      - 新加坡-极速专线 VIP1 07
-      - 新加坡-极速专线 VIP1 08
-      - 美国-极速专线 VIP1 06
-      - 法国-极速专线 VIP1 02
-      - 德国-极速专线 VIP1 01
-      - 德国-极速专线 VIP1 02
-      - 英国-极速专线 VIP1 01
-      - 英国-极速专线 VIP1 02
-      - 香港-极速专线 VIP2 06
-      - 香港-极速专线 VIP2 07
-      - 美国-极速专线 VIP2 06
-      - 美国-极速专线 VIP2 07
-      - 韩国-极速专线 VIP2 01
-      - 韩国-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 05
-      - 日本-极速专线 VIP2 06
-      - 日本-极速专线 VIP2 07
-      - 香港-极速专线 VIP2 01 2
-      - 香港-极速专线 VIP2 02 2
-      - 香港-极速专线 VIP2 03 2
-      - 狮城-极速专线 VIP2 01 2
-      - 狮城-极速专线 VIP2 02 2
-      - 狮城-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 01 2
-      - 美国-极速专线 VIP2 02 2
-      - 美国-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 04 2
-      - 美国-极速专线 VIP2 05 2
-      - 美国-极速专线 VIP2 06 2
-      - 韩国-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 02 2
-      - 日本-极速专线 VIP2 03 2
-      - 日本-极速专线 VIP2 04 2
-      - 台湾-极速专线 VIP2 01 2
-      - 伦敦-极速专线 VIP2 01
-      - 伦敦-极速专线 VIP2 02
-      - 德国-极速专线 VIP2 01
-      - 德国-极速专线 VIP2 02
-      - 加拿大-极速专线 VIP2 01
-      - 加拿大-极速专线 VIP2 02
-      - 土耳其-极速专线 VIP2 01
-      - 土耳其-极速专线 VIP2 02
-      - 印度
-      - 法国
-      - 印尼
-      - 埃及
-      - 俄罗斯
-      - 马来西亚
-      - 尼日利亚
-      - 巴基斯坦
+      - Netflix/Disney/GPT出售/H/A
+      - VIP 1 |日本-极速专线
+      - VIP 1 |美国-极速专线
+      - VIP2 |香港-极速专线
+      - VIP2 |新加坡-极速专线
+      - VIP 1 |香港-极速专线 1
+      - VIP 1 |香港-极速专线 2
+      - VIP 1 |香港-极速专线 3
+      - VIP2 |日本-极速专线
+      - VIP2 |美国-极速专线
+      - VIP2 |香港-极速专线 1
+      - VIP2 |香港-极速专线 2
+      - VIP2 |香港-极速专线 3
+      - VIP 1 |台湾-极速专线 1
+      - VIP 1 |台湾-极速专线 2
+      - VIP 1 |台湾-极速专线 3
+      - VIP2 |台湾-极速专线 1
+      - VIP2 |台湾-极速专线 2
+      - VIP2 |台湾-极速专线 3
+      - VIP 1 |新加坡-极速专线 1
+      - VIP 1 |新加坡-极速专线 2
+      - VIP 1 |新加坡-极速专线 3
+      - VIP2 |新加坡-极速专线 1
+      - VIP2 |新加坡-极速专线 2
+      - VIP2 |新加坡-极速专线 3
+      - VIP 1 |日本-极速专线 1
+      - VIP 1 |日本-极速专线 2
+      - VIP 1 |日本-极速专线 3
+      - VIP2 |日本-极速专线 1
+      - VIP2 |日本-极速专线 2
+      - VIP2 |日本-极速专线 3
+      - VIP 1 |美国-极速专线 1
+      - VIP 1 |美国-极速专线 2
+      - VIP 1 |美国-极速专线 3
+      - VIP2 |美国-极速专线 1
+      - VIP2 |美国-极速专线 2
+      - VIP2 |美国-极速专线 3
+      - VIP 1 |韩国-极速专线 1
+      - VIP 1 |韩国-极速专线 2
+      - VIP 1 |香港-极速专线 4
+      - VIP 1 |香港-极速专线 5
+      - VIP 1 |香港-极速专线 6
+      - VIP 1 |香港-极速专线 7
+      - VIP 1 |香港-极速专线 8
+      - VIP 1 |香港-极速专线 9
+      - VIP 1 |澳门-极速专线 1
+      - VIP 1 |澳门-极速专线 2
+      - VIP 1 |台湾-极速专线 4
+      - VIP 1 |台湾-极速专线 5
+      - VIP 1 |新加坡-极速专线 4
+      - VIP 1 |新加坡-极速专线 5
+      - VIP 1 |日本-极速专线 4
+      - VIP 1 |日本-极速专线 5
+      - VIP 1 |日本-极速专线 6
+      - VIP 1 |韩国-极速专线 1 2
+      - VIP 1 |韩国-极速专线 2 2
+      - VIP 1 |美国-极速专线 4
+      - VIP 1 |美国-极速专线 5
+      - VIP 1 |德国-极速专线 1
+      - VIP 1 |日本-极速专线 1 2
+      - VIP 1 |日本-极速专线 2 2
+      - VIP 1 |日本-极速专线 3 2
+      - VIP 1 |日本-极速专线 4 2
+      - VIP 1 |日本-极速专线 5 2
+      - VIP 1 |日本-极速专线 6 2
+      - VIP 1 |美国-极速专线 1 2
+      - VIP 1 |美国-极速专线 2 2
+      - VIP 1 |美国-极速专线 3 2
+      - VIP 1 |美国-极速专线 4 2
+      - VIP 1 |美国-极速专线 5 2
+      - VIP2 |香港-高速专线 1
+      - VIP2 |香港-高速专线 2
+      - VIP2 |香港-高速专线 3
+      - VIP2 |香港-高速专线 4
+      - VIP2 |香港-高速专线 5
+      - VIP2 |香港-高速专线 6
+      - VIP2 |香港-高速专线 7
+      - VIP2 |日本-高速专线 1
+      - VIP2 |日本-高速专线 2
+      - VIP2 |日本-高速专线 3
+      - VIP2 |日本-高速专线 4
+      - VIP2 |日本-高速专线 5
+      - VIP2 |日本-高速专线 6
+      - VIP2 |日本-高速专线 7
+      - VIP2 |新加坡-高速专线 1
+      - VIP2 |新加坡-高速专线 2
+      - VIP2 |新加坡-高速专线 3
+      - VIP2 |新加坡-高速专线 4
+      - VIP2 |新加坡-高速专线 5
+      - VIP2 |新加坡-高速专线 6
+      - VIP2 |新加坡-高速专线 7
+      - VIP2 |台湾-高速专线 1
+      - VIP2 |台湾-高速专线 2
+      - VIP2 |台湾-高速专线 3
+      - VIP2 |美国-高速专线 1
+      - VIP2 |美国-高速专线 2
+      - VIP2 |美国-高速专线 3
+      - VIP2 |美国-高速专线 4
+      - VIP2 |美国-高速专线 5
+      - VIP2 |美国-高速专线 6
+      - VIP2 |美国-高速专线 7
+      - VIP2 |土耳其-高速专线 1
+      - VIP2 |德国-高速专线 1
+      - VIP2 |德国-高速专线 2
+      - VIP2 |英国-高速专线 1
+      - VIP2 |英国-高速专线 2
+      - VIP2 |荷兰-高速专线 1
+      - VIP2 |荷兰-高速专线 2
+      - VIP2 |法国-高速专线 1
+      - VIP2 |法国-高速专线 2
+      - VIP2 |加拿大-高速专线 1
+      - VIP2 |加拿大-高速专线 2
+      - VIP2 |澳大利亚-高速专线 1
+      - VIP2 |韩国-高速专线 1
+      - VIP2 |韩国-高速专线 2
+      - VIP2 |马来西亚-高速专线 1
+      - VIP2 |埃及-高速专线 1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 防失联Vx:hjtz1988
+      - 推荐客户下单返红包/4
       - 有问题先切换VIP1或VIP2尝试
-      - 推荐客户下单返红包H/Y
-      - Netflix/Disney/GPT出售
-      - 香港-极速专线 VIP
-      - 狮城-极速专线 VIP
-      - 日本-极速专线 VIP
-      - 美国-极速专线 VIP
-      - 香港-极速专线 VIP1 01
-      - 香港-极速专线 VIP1 02
-      - 香港-极速专线 VIP1 03
-      - 香港-极速专线 VIP1 04
-      - 香港-极速专线 VIP1 05
-      - 香港-极速专线 VIP2 01
-      - 香港-极速专线 VIP2 02
-      - 香港-极速专线 VIP2 03
-      - 香港-极速专线 VIP2 04
-      - 香港-极速专线 VIP2 05
-      - 新加坡-极速专线 VIP1 01
-      - 新加坡-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 03
-      - 新加坡-极速专线 VIP1 04
-      - 新加坡-极速专线 VIP1 05
-      - 狮城-极速专线 VIP2 01
-      - 狮城-极速专线 VIP2 02
-      - 狮城-极速专线 VIP2 03
-      - 狮城-极速专线 VIP2 04
-      - 狮城-极速专线 VIP2 05
-      - 台湾-极速专线 VIP1 01
-      - 台湾-极速专线 VIP1 02
-      - 台湾-极速专线 VIP1 03
-      - 日本-极速专线 VIP1 01
-      - 日本-极速专线 VIP1 02
-      - 日本-极速专线 VIP1 03
-      - 台湾-极速专线 VIP2 01
-      - 台湾-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 01
-      - 日本-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 03
-      - 日本-极速专线 VIP2 04
-      - 美国-极速专线 VIP1 01
-      - 美国-极速专线 VIP1 02
-      - 美国-极速专线 VIP1 03
-      - 美国-极速专线 VIP1 04
-      - 美国-极速专线 VIP1 05
-      - 美国-极速专线 VIP2 01
-      - 美国-极速专线 VIP2 02
-      - 美国-极速专线 VIP2 03
-      - 美国-极速专线 VIP2 04
-      - 美国-极速专线 VIP2 05
-      - 香港-极速专线 VIP1 06
-      - 香港-极速专线 VIP1 07
-      - 香港-极速专线 VIP1 08
-      - 香港-极速专线 VIP1 09
-      - 香港-极速专线 VIP1 10
-      - 日本-极速专线 VIP1 04
-      - 日本-极速专线 VIP1 05
-      - 日本-极速专线 VIP1 06
-      - 日本-极速专线 VIP1 07
-      - 日本-极速专线 VIP1 08
-      - 澳大利亚-极速专线 VIP1 01
-      - 澳大利亚-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 06
-      - 新加坡-极速专线 VIP1 07
-      - 新加坡-极速专线 VIP1 08
-      - 美国-极速专线 VIP1 06
-      - 法国-极速专线 VIP1 02
-      - 德国-极速专线 VIP1 01
-      - 德国-极速专线 VIP1 02
-      - 英国-极速专线 VIP1 01
-      - 英国-极速专线 VIP1 02
-      - 香港-极速专线 VIP2 06
-      - 香港-极速专线 VIP2 07
-      - 美国-极速专线 VIP2 06
-      - 美国-极速专线 VIP2 07
-      - 韩国-极速专线 VIP2 01
-      - 韩国-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 05
-      - 日本-极速专线 VIP2 06
-      - 日本-极速专线 VIP2 07
-      - 香港-极速专线 VIP2 01 2
-      - 香港-极速专线 VIP2 02 2
-      - 香港-极速专线 VIP2 03 2
-      - 狮城-极速专线 VIP2 01 2
-      - 狮城-极速专线 VIP2 02 2
-      - 狮城-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 01 2
-      - 美国-极速专线 VIP2 02 2
-      - 美国-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 04 2
-      - 美国-极速专线 VIP2 05 2
-      - 美国-极速专线 VIP2 06 2
-      - 韩国-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 02 2
-      - 日本-极速专线 VIP2 03 2
-      - 日本-极速专线 VIP2 04 2
-      - 台湾-极速专线 VIP2 01 2
-      - 伦敦-极速专线 VIP2 01
-      - 伦敦-极速专线 VIP2 02
-      - 德国-极速专线 VIP2 01
-      - 德国-极速专线 VIP2 02
-      - 加拿大-极速专线 VIP2 01
-      - 加拿大-极速专线 VIP2 02
-      - 土耳其-极速专线 VIP2 01
-      - 土耳其-极速专线 VIP2 02
-      - 印度
-      - 法国
-      - 印尼
-      - 埃及
-      - 俄罗斯
-      - 马来西亚
-      - 尼日利亚
-      - 巴基斯坦
+      - Netflix/Disney/GPT出售/H/A
+      - VIP 1 |日本-极速专线
+      - VIP 1 |美国-极速专线
+      - VIP2 |香港-极速专线
+      - VIP2 |新加坡-极速专线
+      - VIP 1 |香港-极速专线 1
+      - VIP 1 |香港-极速专线 2
+      - VIP 1 |香港-极速专线 3
+      - VIP2 |日本-极速专线
+      - VIP2 |美国-极速专线
+      - VIP2 |香港-极速专线 1
+      - VIP2 |香港-极速专线 2
+      - VIP2 |香港-极速专线 3
+      - VIP 1 |台湾-极速专线 1
+      - VIP 1 |台湾-极速专线 2
+      - VIP 1 |台湾-极速专线 3
+      - VIP2 |台湾-极速专线 1
+      - VIP2 |台湾-极速专线 2
+      - VIP2 |台湾-极速专线 3
+      - VIP 1 |新加坡-极速专线 1
+      - VIP 1 |新加坡-极速专线 2
+      - VIP 1 |新加坡-极速专线 3
+      - VIP2 |新加坡-极速专线 1
+      - VIP2 |新加坡-极速专线 2
+      - VIP2 |新加坡-极速专线 3
+      - VIP 1 |日本-极速专线 1
+      - VIP 1 |日本-极速专线 2
+      - VIP 1 |日本-极速专线 3
+      - VIP2 |日本-极速专线 1
+      - VIP2 |日本-极速专线 2
+      - VIP2 |日本-极速专线 3
+      - VIP 1 |美国-极速专线 1
+      - VIP 1 |美国-极速专线 2
+      - VIP 1 |美国-极速专线 3
+      - VIP2 |美国-极速专线 1
+      - VIP2 |美国-极速专线 2
+      - VIP2 |美国-极速专线 3
+      - VIP 1 |韩国-极速专线 1
+      - VIP 1 |韩国-极速专线 2
+      - VIP 1 |香港-极速专线 4
+      - VIP 1 |香港-极速专线 5
+      - VIP 1 |香港-极速专线 6
+      - VIP 1 |香港-极速专线 7
+      - VIP 1 |香港-极速专线 8
+      - VIP 1 |香港-极速专线 9
+      - VIP 1 |澳门-极速专线 1
+      - VIP 1 |澳门-极速专线 2
+      - VIP 1 |台湾-极速专线 4
+      - VIP 1 |台湾-极速专线 5
+      - VIP 1 |新加坡-极速专线 4
+      - VIP 1 |新加坡-极速专线 5
+      - VIP 1 |日本-极速专线 4
+      - VIP 1 |日本-极速专线 5
+      - VIP 1 |日本-极速专线 6
+      - VIP 1 |韩国-极速专线 1 2
+      - VIP 1 |韩国-极速专线 2 2
+      - VIP 1 |美国-极速专线 4
+      - VIP 1 |美国-极速专线 5
+      - VIP 1 |德国-极速专线 1
+      - VIP 1 |日本-极速专线 1 2
+      - VIP 1 |日本-极速专线 2 2
+      - VIP 1 |日本-极速专线 3 2
+      - VIP 1 |日本-极速专线 4 2
+      - VIP 1 |日本-极速专线 5 2
+      - VIP 1 |日本-极速专线 6 2
+      - VIP 1 |美国-极速专线 1 2
+      - VIP 1 |美国-极速专线 2 2
+      - VIP 1 |美国-极速专线 3 2
+      - VIP 1 |美国-极速专线 4 2
+      - VIP 1 |美国-极速专线 5 2
+      - VIP2 |香港-高速专线 1
+      - VIP2 |香港-高速专线 2
+      - VIP2 |香港-高速专线 3
+      - VIP2 |香港-高速专线 4
+      - VIP2 |香港-高速专线 5
+      - VIP2 |香港-高速专线 6
+      - VIP2 |香港-高速专线 7
+      - VIP2 |日本-高速专线 1
+      - VIP2 |日本-高速专线 2
+      - VIP2 |日本-高速专线 3
+      - VIP2 |日本-高速专线 4
+      - VIP2 |日本-高速专线 5
+      - VIP2 |日本-高速专线 6
+      - VIP2 |日本-高速专线 7
+      - VIP2 |新加坡-高速专线 1
+      - VIP2 |新加坡-高速专线 2
+      - VIP2 |新加坡-高速专线 3
+      - VIP2 |新加坡-高速专线 4
+      - VIP2 |新加坡-高速专线 5
+      - VIP2 |新加坡-高速专线 6
+      - VIP2 |新加坡-高速专线 7
+      - VIP2 |台湾-高速专线 1
+      - VIP2 |台湾-高速专线 2
+      - VIP2 |台湾-高速专线 3
+      - VIP2 |美国-高速专线 1
+      - VIP2 |美国-高速专线 2
+      - VIP2 |美国-高速专线 3
+      - VIP2 |美国-高速专线 4
+      - VIP2 |美国-高速专线 5
+      - VIP2 |美国-高速专线 6
+      - VIP2 |美国-高速专线 7
+      - VIP2 |土耳其-高速专线 1
+      - VIP2 |德国-高速专线 1
+      - VIP2 |德国-高速专线 2
+      - VIP2 |英国-高速专线 1
+      - VIP2 |英国-高速专线 2
+      - VIP2 |荷兰-高速专线 1
+      - VIP2 |荷兰-高速专线 2
+      - VIP2 |法国-高速专线 1
+      - VIP2 |法国-高速专线 2
+      - VIP2 |加拿大-高速专线 1
+      - VIP2 |加拿大-高速专线 2
+      - VIP2 |澳大利亚-高速专线 1
+      - VIP2 |韩国-高速专线 1
+      - VIP2 |韩国-高速专线 2
+      - VIP2 |马来西亚-高速专线 1
+      - VIP2 |埃及-高速专线 1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 防失联Vx:hjtz1988
+      - 推荐客户下单返红包/4
       - 有问题先切换VIP1或VIP2尝试
-      - 推荐客户下单返红包H/Y
-      - Netflix/Disney/GPT出售
-      - 香港-极速专线 VIP
-      - 狮城-极速专线 VIP
-      - 日本-极速专线 VIP
-      - 美国-极速专线 VIP
-      - 香港-极速专线 VIP1 01
-      - 香港-极速专线 VIP1 02
-      - 香港-极速专线 VIP1 03
-      - 香港-极速专线 VIP1 04
-      - 香港-极速专线 VIP1 05
-      - 香港-极速专线 VIP2 01
-      - 香港-极速专线 VIP2 02
-      - 香港-极速专线 VIP2 03
-      - 香港-极速专线 VIP2 04
-      - 香港-极速专线 VIP2 05
-      - 新加坡-极速专线 VIP1 01
-      - 新加坡-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 03
-      - 新加坡-极速专线 VIP1 04
-      - 新加坡-极速专线 VIP1 05
-      - 狮城-极速专线 VIP2 01
-      - 狮城-极速专线 VIP2 02
-      - 狮城-极速专线 VIP2 03
-      - 狮城-极速专线 VIP2 04
-      - 狮城-极速专线 VIP2 05
-      - 台湾-极速专线 VIP1 01
-      - 台湾-极速专线 VIP1 02
-      - 台湾-极速专线 VIP1 03
-      - 日本-极速专线 VIP1 01
-      - 日本-极速专线 VIP1 02
-      - 日本-极速专线 VIP1 03
-      - 台湾-极速专线 VIP2 01
-      - 台湾-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 01
-      - 日本-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 03
-      - 日本-极速专线 VIP2 04
-      - 美国-极速专线 VIP1 01
-      - 美国-极速专线 VIP1 02
-      - 美国-极速专线 VIP1 03
-      - 美国-极速专线 VIP1 04
-      - 美国-极速专线 VIP1 05
-      - 美国-极速专线 VIP2 01
-      - 美国-极速专线 VIP2 02
-      - 美国-极速专线 VIP2 03
-      - 美国-极速专线 VIP2 04
-      - 美国-极速专线 VIP2 05
-      - 香港-极速专线 VIP1 06
-      - 香港-极速专线 VIP1 07
-      - 香港-极速专线 VIP1 08
-      - 香港-极速专线 VIP1 09
-      - 香港-极速专线 VIP1 10
-      - 日本-极速专线 VIP1 04
-      - 日本-极速专线 VIP1 05
-      - 日本-极速专线 VIP1 06
-      - 日本-极速专线 VIP1 07
-      - 日本-极速专线 VIP1 08
-      - 澳大利亚-极速专线 VIP1 01
-      - 澳大利亚-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 06
-      - 新加坡-极速专线 VIP1 07
-      - 新加坡-极速专线 VIP1 08
-      - 美国-极速专线 VIP1 06
-      - 法国-极速专线 VIP1 02
-      - 德国-极速专线 VIP1 01
-      - 德国-极速专线 VIP1 02
-      - 英国-极速专线 VIP1 01
-      - 英国-极速专线 VIP1 02
-      - 香港-极速专线 VIP2 06
-      - 香港-极速专线 VIP2 07
-      - 美国-极速专线 VIP2 06
-      - 美国-极速专线 VIP2 07
-      - 韩国-极速专线 VIP2 01
-      - 韩国-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 05
-      - 日本-极速专线 VIP2 06
-      - 日本-极速专线 VIP2 07
-      - 香港-极速专线 VIP2 01 2
-      - 香港-极速专线 VIP2 02 2
-      - 香港-极速专线 VIP2 03 2
-      - 狮城-极速专线 VIP2 01 2
-      - 狮城-极速专线 VIP2 02 2
-      - 狮城-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 01 2
-      - 美国-极速专线 VIP2 02 2
-      - 美国-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 04 2
-      - 美国-极速专线 VIP2 05 2
-      - 美国-极速专线 VIP2 06 2
-      - 韩国-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 02 2
-      - 日本-极速专线 VIP2 03 2
-      - 日本-极速专线 VIP2 04 2
-      - 台湾-极速专线 VIP2 01 2
-      - 伦敦-极速专线 VIP2 01
-      - 伦敦-极速专线 VIP2 02
-      - 德国-极速专线 VIP2 01
-      - 德国-极速专线 VIP2 02
-      - 加拿大-极速专线 VIP2 01
-      - 加拿大-极速专线 VIP2 02
-      - 土耳其-极速专线 VIP2 01
-      - 土耳其-极速专线 VIP2 02
-      - 印度
-      - 法国
-      - 印尼
-      - 埃及
-      - 俄罗斯
-      - 马来西亚
-      - 尼日利亚
-      - 巴基斯坦
+      - Netflix/Disney/GPT出售/H/A
+      - VIP 1 |日本-极速专线
+      - VIP 1 |美国-极速专线
+      - VIP2 |香港-极速专线
+      - VIP2 |新加坡-极速专线
+      - VIP 1 |香港-极速专线 1
+      - VIP 1 |香港-极速专线 2
+      - VIP 1 |香港-极速专线 3
+      - VIP2 |日本-极速专线
+      - VIP2 |美国-极速专线
+      - VIP2 |香港-极速专线 1
+      - VIP2 |香港-极速专线 2
+      - VIP2 |香港-极速专线 3
+      - VIP 1 |台湾-极速专线 1
+      - VIP 1 |台湾-极速专线 2
+      - VIP 1 |台湾-极速专线 3
+      - VIP2 |台湾-极速专线 1
+      - VIP2 |台湾-极速专线 2
+      - VIP2 |台湾-极速专线 3
+      - VIP 1 |新加坡-极速专线 1
+      - VIP 1 |新加坡-极速专线 2
+      - VIP 1 |新加坡-极速专线 3
+      - VIP2 |新加坡-极速专线 1
+      - VIP2 |新加坡-极速专线 2
+      - VIP2 |新加坡-极速专线 3
+      - VIP 1 |日本-极速专线 1
+      - VIP 1 |日本-极速专线 2
+      - VIP 1 |日本-极速专线 3
+      - VIP2 |日本-极速专线 1
+      - VIP2 |日本-极速专线 2
+      - VIP2 |日本-极速专线 3
+      - VIP 1 |美国-极速专线 1
+      - VIP 1 |美国-极速专线 2
+      - VIP 1 |美国-极速专线 3
+      - VIP2 |美国-极速专线 1
+      - VIP2 |美国-极速专线 2
+      - VIP2 |美国-极速专线 3
+      - VIP 1 |韩国-极速专线 1
+      - VIP 1 |韩国-极速专线 2
+      - VIP 1 |香港-极速专线 4
+      - VIP 1 |香港-极速专线 5
+      - VIP 1 |香港-极速专线 6
+      - VIP 1 |香港-极速专线 7
+      - VIP 1 |香港-极速专线 8
+      - VIP 1 |香港-极速专线 9
+      - VIP 1 |澳门-极速专线 1
+      - VIP 1 |澳门-极速专线 2
+      - VIP 1 |台湾-极速专线 4
+      - VIP 1 |台湾-极速专线 5
+      - VIP 1 |新加坡-极速专线 4
+      - VIP 1 |新加坡-极速专线 5
+      - VIP 1 |日本-极速专线 4
+      - VIP 1 |日本-极速专线 5
+      - VIP 1 |日本-极速专线 6
+      - VIP 1 |韩国-极速专线 1 2
+      - VIP 1 |韩国-极速专线 2 2
+      - VIP 1 |美国-极速专线 4
+      - VIP 1 |美国-极速专线 5
+      - VIP 1 |德国-极速专线 1
+      - VIP 1 |日本-极速专线 1 2
+      - VIP 1 |日本-极速专线 2 2
+      - VIP 1 |日本-极速专线 3 2
+      - VIP 1 |日本-极速专线 4 2
+      - VIP 1 |日本-极速专线 5 2
+      - VIP 1 |日本-极速专线 6 2
+      - VIP 1 |美国-极速专线 1 2
+      - VIP 1 |美国-极速专线 2 2
+      - VIP 1 |美国-极速专线 3 2
+      - VIP 1 |美国-极速专线 4 2
+      - VIP 1 |美国-极速专线 5 2
+      - VIP2 |香港-高速专线 1
+      - VIP2 |香港-高速专线 2
+      - VIP2 |香港-高速专线 3
+      - VIP2 |香港-高速专线 4
+      - VIP2 |香港-高速专线 5
+      - VIP2 |香港-高速专线 6
+      - VIP2 |香港-高速专线 7
+      - VIP2 |日本-高速专线 1
+      - VIP2 |日本-高速专线 2
+      - VIP2 |日本-高速专线 3
+      - VIP2 |日本-高速专线 4
+      - VIP2 |日本-高速专线 5
+      - VIP2 |日本-高速专线 6
+      - VIP2 |日本-高速专线 7
+      - VIP2 |新加坡-高速专线 1
+      - VIP2 |新加坡-高速专线 2
+      - VIP2 |新加坡-高速专线 3
+      - VIP2 |新加坡-高速专线 4
+      - VIP2 |新加坡-高速专线 5
+      - VIP2 |新加坡-高速专线 6
+      - VIP2 |新加坡-高速专线 7
+      - VIP2 |台湾-高速专线 1
+      - VIP2 |台湾-高速专线 2
+      - VIP2 |台湾-高速专线 3
+      - VIP2 |美国-高速专线 1
+      - VIP2 |美国-高速专线 2
+      - VIP2 |美国-高速专线 3
+      - VIP2 |美国-高速专线 4
+      - VIP2 |美国-高速专线 5
+      - VIP2 |美国-高速专线 6
+      - VIP2 |美国-高速专线 7
+      - VIP2 |土耳其-高速专线 1
+      - VIP2 |德国-高速专线 1
+      - VIP2 |德国-高速专线 2
+      - VIP2 |英国-高速专线 1
+      - VIP2 |英国-高速专线 2
+      - VIP2 |荷兰-高速专线 1
+      - VIP2 |荷兰-高速专线 2
+      - VIP2 |法国-高速专线 1
+      - VIP2 |法国-高速专线 2
+      - VIP2 |加拿大-高速专线 1
+      - VIP2 |加拿大-高速专线 2
+      - VIP2 |澳大利亚-高速专线 1
+      - VIP2 |韩国-高速专线 1
+      - VIP2 |韩国-高速专线 2
+      - VIP2 |马来西亚-高速专线 1
+      - VIP2 |埃及-高速专线 1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 防失联Vx:hjtz1988
+      - 推荐客户下单返红包/4
       - 有问题先切换VIP1或VIP2尝试
-      - 推荐客户下单返红包H/Y
-      - Netflix/Disney/GPT出售
-      - 香港-极速专线 VIP
-      - 狮城-极速专线 VIP
-      - 日本-极速专线 VIP
-      - 美国-极速专线 VIP
-      - 香港-极速专线 VIP1 01
-      - 香港-极速专线 VIP1 02
-      - 香港-极速专线 VIP1 03
-      - 香港-极速专线 VIP1 04
-      - 香港-极速专线 VIP1 05
-      - 香港-极速专线 VIP2 01
-      - 香港-极速专线 VIP2 02
-      - 香港-极速专线 VIP2 03
-      - 香港-极速专线 VIP2 04
-      - 香港-极速专线 VIP2 05
-      - 新加坡-极速专线 VIP1 01
-      - 新加坡-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 03
-      - 新加坡-极速专线 VIP1 04
-      - 新加坡-极速专线 VIP1 05
-      - 狮城-极速专线 VIP2 01
-      - 狮城-极速专线 VIP2 02
-      - 狮城-极速专线 VIP2 03
-      - 狮城-极速专线 VIP2 04
-      - 狮城-极速专线 VIP2 05
-      - 台湾-极速专线 VIP1 01
-      - 台湾-极速专线 VIP1 02
-      - 台湾-极速专线 VIP1 03
-      - 日本-极速专线 VIP1 01
-      - 日本-极速专线 VIP1 02
-      - 日本-极速专线 VIP1 03
-      - 台湾-极速专线 VIP2 01
-      - 台湾-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 01
-      - 日本-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 03
-      - 日本-极速专线 VIP2 04
-      - 美国-极速专线 VIP1 01
-      - 美国-极速专线 VIP1 02
-      - 美国-极速专线 VIP1 03
-      - 美国-极速专线 VIP1 04
-      - 美国-极速专线 VIP1 05
-      - 美国-极速专线 VIP2 01
-      - 美国-极速专线 VIP2 02
-      - 美国-极速专线 VIP2 03
-      - 美国-极速专线 VIP2 04
-      - 美国-极速专线 VIP2 05
-      - 香港-极速专线 VIP1 06
-      - 香港-极速专线 VIP1 07
-      - 香港-极速专线 VIP1 08
-      - 香港-极速专线 VIP1 09
-      - 香港-极速专线 VIP1 10
-      - 日本-极速专线 VIP1 04
-      - 日本-极速专线 VIP1 05
-      - 日本-极速专线 VIP1 06
-      - 日本-极速专线 VIP1 07
-      - 日本-极速专线 VIP1 08
-      - 澳大利亚-极速专线 VIP1 01
-      - 澳大利亚-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 06
-      - 新加坡-极速专线 VIP1 07
-      - 新加坡-极速专线 VIP1 08
-      - 美国-极速专线 VIP1 06
-      - 法国-极速专线 VIP1 02
-      - 德国-极速专线 VIP1 01
-      - 德国-极速专线 VIP1 02
-      - 英国-极速专线 VIP1 01
-      - 英国-极速专线 VIP1 02
-      - 香港-极速专线 VIP2 06
-      - 香港-极速专线 VIP2 07
-      - 美国-极速专线 VIP2 06
-      - 美国-极速专线 VIP2 07
-      - 韩国-极速专线 VIP2 01
-      - 韩国-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 05
-      - 日本-极速专线 VIP2 06
-      - 日本-极速专线 VIP2 07
-      - 香港-极速专线 VIP2 01 2
-      - 香港-极速专线 VIP2 02 2
-      - 香港-极速专线 VIP2 03 2
-      - 狮城-极速专线 VIP2 01 2
-      - 狮城-极速专线 VIP2 02 2
-      - 狮城-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 01 2
-      - 美国-极速专线 VIP2 02 2
-      - 美国-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 04 2
-      - 美国-极速专线 VIP2 05 2
-      - 美国-极速专线 VIP2 06 2
-      - 韩国-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 02 2
-      - 日本-极速专线 VIP2 03 2
-      - 日本-极速专线 VIP2 04 2
-      - 台湾-极速专线 VIP2 01 2
-      - 伦敦-极速专线 VIP2 01
-      - 伦敦-极速专线 VIP2 02
-      - 德国-极速专线 VIP2 01
-      - 德国-极速专线 VIP2 02
-      - 加拿大-极速专线 VIP2 01
-      - 加拿大-极速专线 VIP2 02
-      - 土耳其-极速专线 VIP2 01
-      - 土耳其-极速专线 VIP2 02
-      - 印度
-      - 法国
-      - 印尼
-      - 埃及
-      - 俄罗斯
-      - 马来西亚
-      - 尼日利亚
-      - 巴基斯坦
+      - Netflix/Disney/GPT出售/H/A
+      - VIP 1 |日本-极速专线
+      - VIP 1 |美国-极速专线
+      - VIP2 |香港-极速专线
+      - VIP2 |新加坡-极速专线
+      - VIP 1 |香港-极速专线 1
+      - VIP 1 |香港-极速专线 2
+      - VIP 1 |香港-极速专线 3
+      - VIP2 |日本-极速专线
+      - VIP2 |美国-极速专线
+      - VIP2 |香港-极速专线 1
+      - VIP2 |香港-极速专线 2
+      - VIP2 |香港-极速专线 3
+      - VIP 1 |台湾-极速专线 1
+      - VIP 1 |台湾-极速专线 2
+      - VIP 1 |台湾-极速专线 3
+      - VIP2 |台湾-极速专线 1
+      - VIP2 |台湾-极速专线 2
+      - VIP2 |台湾-极速专线 3
+      - VIP 1 |新加坡-极速专线 1
+      - VIP 1 |新加坡-极速专线 2
+      - VIP 1 |新加坡-极速专线 3
+      - VIP2 |新加坡-极速专线 1
+      - VIP2 |新加坡-极速专线 2
+      - VIP2 |新加坡-极速专线 3
+      - VIP 1 |日本-极速专线 1
+      - VIP 1 |日本-极速专线 2
+      - VIP 1 |日本-极速专线 3
+      - VIP2 |日本-极速专线 1
+      - VIP2 |日本-极速专线 2
+      - VIP2 |日本-极速专线 3
+      - VIP 1 |美国-极速专线 1
+      - VIP 1 |美国-极速专线 2
+      - VIP 1 |美国-极速专线 3
+      - VIP2 |美国-极速专线 1
+      - VIP2 |美国-极速专线 2
+      - VIP2 |美国-极速专线 3
+      - VIP 1 |韩国-极速专线 1
+      - VIP 1 |韩国-极速专线 2
+      - VIP 1 |香港-极速专线 4
+      - VIP 1 |香港-极速专线 5
+      - VIP 1 |香港-极速专线 6
+      - VIP 1 |香港-极速专线 7
+      - VIP 1 |香港-极速专线 8
+      - VIP 1 |香港-极速专线 9
+      - VIP 1 |澳门-极速专线 1
+      - VIP 1 |澳门-极速专线 2
+      - VIP 1 |台湾-极速专线 4
+      - VIP 1 |台湾-极速专线 5
+      - VIP 1 |新加坡-极速专线 4
+      - VIP 1 |新加坡-极速专线 5
+      - VIP 1 |日本-极速专线 4
+      - VIP 1 |日本-极速专线 5
+      - VIP 1 |日本-极速专线 6
+      - VIP 1 |韩国-极速专线 1 2
+      - VIP 1 |韩国-极速专线 2 2
+      - VIP 1 |美国-极速专线 4
+      - VIP 1 |美国-极速专线 5
+      - VIP 1 |德国-极速专线 1
+      - VIP 1 |日本-极速专线 1 2
+      - VIP 1 |日本-极速专线 2 2
+      - VIP 1 |日本-极速专线 3 2
+      - VIP 1 |日本-极速专线 4 2
+      - VIP 1 |日本-极速专线 5 2
+      - VIP 1 |日本-极速专线 6 2
+      - VIP 1 |美国-极速专线 1 2
+      - VIP 1 |美国-极速专线 2 2
+      - VIP 1 |美国-极速专线 3 2
+      - VIP 1 |美国-极速专线 4 2
+      - VIP 1 |美国-极速专线 5 2
+      - VIP2 |香港-高速专线 1
+      - VIP2 |香港-高速专线 2
+      - VIP2 |香港-高速专线 3
+      - VIP2 |香港-高速专线 4
+      - VIP2 |香港-高速专线 5
+      - VIP2 |香港-高速专线 6
+      - VIP2 |香港-高速专线 7
+      - VIP2 |日本-高速专线 1
+      - VIP2 |日本-高速专线 2
+      - VIP2 |日本-高速专线 3
+      - VIP2 |日本-高速专线 4
+      - VIP2 |日本-高速专线 5
+      - VIP2 |日本-高速专线 6
+      - VIP2 |日本-高速专线 7
+      - VIP2 |新加坡-高速专线 1
+      - VIP2 |新加坡-高速专线 2
+      - VIP2 |新加坡-高速专线 3
+      - VIP2 |新加坡-高速专线 4
+      - VIP2 |新加坡-高速专线 5
+      - VIP2 |新加坡-高速专线 6
+      - VIP2 |新加坡-高速专线 7
+      - VIP2 |台湾-高速专线 1
+      - VIP2 |台湾-高速专线 2
+      - VIP2 |台湾-高速专线 3
+      - VIP2 |美国-高速专线 1
+      - VIP2 |美国-高速专线 2
+      - VIP2 |美国-高速专线 3
+      - VIP2 |美国-高速专线 4
+      - VIP2 |美国-高速专线 5
+      - VIP2 |美国-高速专线 6
+      - VIP2 |美国-高速专线 7
+      - VIP2 |土耳其-高速专线 1
+      - VIP2 |德国-高速专线 1
+      - VIP2 |德国-高速专线 2
+      - VIP2 |英国-高速专线 1
+      - VIP2 |英国-高速专线 2
+      - VIP2 |荷兰-高速专线 1
+      - VIP2 |荷兰-高速专线 2
+      - VIP2 |法国-高速专线 1
+      - VIP2 |法国-高速专线 2
+      - VIP2 |加拿大-高速专线 1
+      - VIP2 |加拿大-高速专线 2
+      - VIP2 |澳大利亚-高速专线 1
+      - VIP2 |韩国-高速专线 1
+      - VIP2 |韩国-高速专线 2
+      - VIP2 |马来西亚-高速专线 1
+      - VIP2 |埃及-高速专线 1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 防失联Vx:hjtz1988
+      - 推荐客户下单返红包/4
       - 有问题先切换VIP1或VIP2尝试
-      - 推荐客户下单返红包H/Y
-      - Netflix/Disney/GPT出售
-      - 香港-极速专线 VIP
-      - 狮城-极速专线 VIP
-      - 日本-极速专线 VIP
-      - 美国-极速专线 VIP
-      - 香港-极速专线 VIP1 01
-      - 香港-极速专线 VIP1 02
-      - 香港-极速专线 VIP1 03
-      - 香港-极速专线 VIP1 04
-      - 香港-极速专线 VIP1 05
-      - 香港-极速专线 VIP2 01
-      - 香港-极速专线 VIP2 02
-      - 香港-极速专线 VIP2 03
-      - 香港-极速专线 VIP2 04
-      - 香港-极速专线 VIP2 05
-      - 新加坡-极速专线 VIP1 01
-      - 新加坡-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 03
-      - 新加坡-极速专线 VIP1 04
-      - 新加坡-极速专线 VIP1 05
-      - 狮城-极速专线 VIP2 01
-      - 狮城-极速专线 VIP2 02
-      - 狮城-极速专线 VIP2 03
-      - 狮城-极速专线 VIP2 04
-      - 狮城-极速专线 VIP2 05
-      - 台湾-极速专线 VIP1 01
-      - 台湾-极速专线 VIP1 02
-      - 台湾-极速专线 VIP1 03
-      - 日本-极速专线 VIP1 01
-      - 日本-极速专线 VIP1 02
-      - 日本-极速专线 VIP1 03
-      - 台湾-极速专线 VIP2 01
-      - 台湾-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 01
-      - 日本-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 03
-      - 日本-极速专线 VIP2 04
-      - 美国-极速专线 VIP1 01
-      - 美国-极速专线 VIP1 02
-      - 美国-极速专线 VIP1 03
-      - 美国-极速专线 VIP1 04
-      - 美国-极速专线 VIP1 05
-      - 美国-极速专线 VIP2 01
-      - 美国-极速专线 VIP2 02
-      - 美国-极速专线 VIP2 03
-      - 美国-极速专线 VIP2 04
-      - 美国-极速专线 VIP2 05
-      - 香港-极速专线 VIP1 06
-      - 香港-极速专线 VIP1 07
-      - 香港-极速专线 VIP1 08
-      - 香港-极速专线 VIP1 09
-      - 香港-极速专线 VIP1 10
-      - 日本-极速专线 VIP1 04
-      - 日本-极速专线 VIP1 05
-      - 日本-极速专线 VIP1 06
-      - 日本-极速专线 VIP1 07
-      - 日本-极速专线 VIP1 08
-      - 澳大利亚-极速专线 VIP1 01
-      - 澳大利亚-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 06
-      - 新加坡-极速专线 VIP1 07
-      - 新加坡-极速专线 VIP1 08
-      - 美国-极速专线 VIP1 06
-      - 法国-极速专线 VIP1 02
-      - 德国-极速专线 VIP1 01
-      - 德国-极速专线 VIP1 02
-      - 英国-极速专线 VIP1 01
-      - 英国-极速专线 VIP1 02
-      - 香港-极速专线 VIP2 06
-      - 香港-极速专线 VIP2 07
-      - 美国-极速专线 VIP2 06
-      - 美国-极速专线 VIP2 07
-      - 韩国-极速专线 VIP2 01
-      - 韩国-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 05
-      - 日本-极速专线 VIP2 06
-      - 日本-极速专线 VIP2 07
-      - 香港-极速专线 VIP2 01 2
-      - 香港-极速专线 VIP2 02 2
-      - 香港-极速专线 VIP2 03 2
-      - 狮城-极速专线 VIP2 01 2
-      - 狮城-极速专线 VIP2 02 2
-      - 狮城-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 01 2
-      - 美国-极速专线 VIP2 02 2
-      - 美国-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 04 2
-      - 美国-极速专线 VIP2 05 2
-      - 美国-极速专线 VIP2 06 2
-      - 韩国-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 02 2
-      - 日本-极速专线 VIP2 03 2
-      - 日本-极速专线 VIP2 04 2
-      - 台湾-极速专线 VIP2 01 2
-      - 伦敦-极速专线 VIP2 01
-      - 伦敦-极速专线 VIP2 02
-      - 德国-极速专线 VIP2 01
-      - 德国-极速专线 VIP2 02
-      - 加拿大-极速专线 VIP2 01
-      - 加拿大-极速专线 VIP2 02
-      - 土耳其-极速专线 VIP2 01
-      - 土耳其-极速专线 VIP2 02
-      - 印度
-      - 法国
-      - 印尼
-      - 埃及
-      - 俄罗斯
-      - 马来西亚
-      - 尼日利亚
-      - 巴基斯坦
+      - Netflix/Disney/GPT出售/H/A
+      - VIP 1 |日本-极速专线
+      - VIP 1 |美国-极速专线
+      - VIP2 |香港-极速专线
+      - VIP2 |新加坡-极速专线
+      - VIP 1 |香港-极速专线 1
+      - VIP 1 |香港-极速专线 2
+      - VIP 1 |香港-极速专线 3
+      - VIP2 |日本-极速专线
+      - VIP2 |美国-极速专线
+      - VIP2 |香港-极速专线 1
+      - VIP2 |香港-极速专线 2
+      - VIP2 |香港-极速专线 3
+      - VIP 1 |台湾-极速专线 1
+      - VIP 1 |台湾-极速专线 2
+      - VIP 1 |台湾-极速专线 3
+      - VIP2 |台湾-极速专线 1
+      - VIP2 |台湾-极速专线 2
+      - VIP2 |台湾-极速专线 3
+      - VIP 1 |新加坡-极速专线 1
+      - VIP 1 |新加坡-极速专线 2
+      - VIP 1 |新加坡-极速专线 3
+      - VIP2 |新加坡-极速专线 1
+      - VIP2 |新加坡-极速专线 2
+      - VIP2 |新加坡-极速专线 3
+      - VIP 1 |日本-极速专线 1
+      - VIP 1 |日本-极速专线 2
+      - VIP 1 |日本-极速专线 3
+      - VIP2 |日本-极速专线 1
+      - VIP2 |日本-极速专线 2
+      - VIP2 |日本-极速专线 3
+      - VIP 1 |美国-极速专线 1
+      - VIP 1 |美国-极速专线 2
+      - VIP 1 |美国-极速专线 3
+      - VIP2 |美国-极速专线 1
+      - VIP2 |美国-极速专线 2
+      - VIP2 |美国-极速专线 3
+      - VIP 1 |韩国-极速专线 1
+      - VIP 1 |韩国-极速专线 2
+      - VIP 1 |香港-极速专线 4
+      - VIP 1 |香港-极速专线 5
+      - VIP 1 |香港-极速专线 6
+      - VIP 1 |香港-极速专线 7
+      - VIP 1 |香港-极速专线 8
+      - VIP 1 |香港-极速专线 9
+      - VIP 1 |澳门-极速专线 1
+      - VIP 1 |澳门-极速专线 2
+      - VIP 1 |台湾-极速专线 4
+      - VIP 1 |台湾-极速专线 5
+      - VIP 1 |新加坡-极速专线 4
+      - VIP 1 |新加坡-极速专线 5
+      - VIP 1 |日本-极速专线 4
+      - VIP 1 |日本-极速专线 5
+      - VIP 1 |日本-极速专线 6
+      - VIP 1 |韩国-极速专线 1 2
+      - VIP 1 |韩国-极速专线 2 2
+      - VIP 1 |美国-极速专线 4
+      - VIP 1 |美国-极速专线 5
+      - VIP 1 |德国-极速专线 1
+      - VIP 1 |日本-极速专线 1 2
+      - VIP 1 |日本-极速专线 2 2
+      - VIP 1 |日本-极速专线 3 2
+      - VIP 1 |日本-极速专线 4 2
+      - VIP 1 |日本-极速专线 5 2
+      - VIP 1 |日本-极速专线 6 2
+      - VIP 1 |美国-极速专线 1 2
+      - VIP 1 |美国-极速专线 2 2
+      - VIP 1 |美国-极速专线 3 2
+      - VIP 1 |美国-极速专线 4 2
+      - VIP 1 |美国-极速专线 5 2
+      - VIP2 |香港-高速专线 1
+      - VIP2 |香港-高速专线 2
+      - VIP2 |香港-高速专线 3
+      - VIP2 |香港-高速专线 4
+      - VIP2 |香港-高速专线 5
+      - VIP2 |香港-高速专线 6
+      - VIP2 |香港-高速专线 7
+      - VIP2 |日本-高速专线 1
+      - VIP2 |日本-高速专线 2
+      - VIP2 |日本-高速专线 3
+      - VIP2 |日本-高速专线 4
+      - VIP2 |日本-高速专线 5
+      - VIP2 |日本-高速专线 6
+      - VIP2 |日本-高速专线 7
+      - VIP2 |新加坡-高速专线 1
+      - VIP2 |新加坡-高速专线 2
+      - VIP2 |新加坡-高速专线 3
+      - VIP2 |新加坡-高速专线 4
+      - VIP2 |新加坡-高速专线 5
+      - VIP2 |新加坡-高速专线 6
+      - VIP2 |新加坡-高速专线 7
+      - VIP2 |台湾-高速专线 1
+      - VIP2 |台湾-高速专线 2
+      - VIP2 |台湾-高速专线 3
+      - VIP2 |美国-高速专线 1
+      - VIP2 |美国-高速专线 2
+      - VIP2 |美国-高速专线 3
+      - VIP2 |美国-高速专线 4
+      - VIP2 |美国-高速专线 5
+      - VIP2 |美国-高速专线 6
+      - VIP2 |美国-高速专线 7
+      - VIP2 |土耳其-高速专线 1
+      - VIP2 |德国-高速专线 1
+      - VIP2 |德国-高速专线 2
+      - VIP2 |英国-高速专线 1
+      - VIP2 |英国-高速专线 2
+      - VIP2 |荷兰-高速专线 1
+      - VIP2 |荷兰-高速专线 2
+      - VIP2 |法国-高速专线 1
+      - VIP2 |法国-高速专线 2
+      - VIP2 |加拿大-高速专线 1
+      - VIP2 |加拿大-高速专线 2
+      - VIP2 |澳大利亚-高速专线 1
+      - VIP2 |韩国-高速专线 1
+      - VIP2 |韩国-高速专线 2
+      - VIP2 |马来西亚-高速专线 1
+      - VIP2 |埃及-高速专线 1
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 防失联Vx:hjtz1988
+      - 推荐客户下单返红包/4
       - 有问题先切换VIP1或VIP2尝试
-      - 推荐客户下单返红包H/Y
-      - Netflix/Disney/GPT出售
-      - 香港-极速专线 VIP
-      - 狮城-极速专线 VIP
-      - 日本-极速专线 VIP
-      - 美国-极速专线 VIP
-      - 香港-极速专线 VIP1 01
-      - 香港-极速专线 VIP1 02
-      - 香港-极速专线 VIP1 03
-      - 香港-极速专线 VIP1 04
-      - 香港-极速专线 VIP1 05
-      - 香港-极速专线 VIP2 01
-      - 香港-极速专线 VIP2 02
-      - 香港-极速专线 VIP2 03
-      - 香港-极速专线 VIP2 04
-      - 香港-极速专线 VIP2 05
-      - 新加坡-极速专线 VIP1 01
-      - 新加坡-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 03
-      - 新加坡-极速专线 VIP1 04
-      - 新加坡-极速专线 VIP1 05
-      - 狮城-极速专线 VIP2 01
-      - 狮城-极速专线 VIP2 02
-      - 狮城-极速专线 VIP2 03
-      - 狮城-极速专线 VIP2 04
-      - 狮城-极速专线 VIP2 05
-      - 台湾-极速专线 VIP1 01
-      - 台湾-极速专线 VIP1 02
-      - 台湾-极速专线 VIP1 03
-      - 日本-极速专线 VIP1 01
-      - 日本-极速专线 VIP1 02
-      - 日本-极速专线 VIP1 03
-      - 台湾-极速专线 VIP2 01
-      - 台湾-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 01
-      - 日本-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 03
-      - 日本-极速专线 VIP2 04
-      - 美国-极速专线 VIP1 01
-      - 美国-极速专线 VIP1 02
-      - 美国-极速专线 VIP1 03
-      - 美国-极速专线 VIP1 04
-      - 美国-极速专线 VIP1 05
-      - 美国-极速专线 VIP2 01
-      - 美国-极速专线 VIP2 02
-      - 美国-极速专线 VIP2 03
-      - 美国-极速专线 VIP2 04
-      - 美国-极速专线 VIP2 05
-      - 香港-极速专线 VIP1 06
-      - 香港-极速专线 VIP1 07
-      - 香港-极速专线 VIP1 08
-      - 香港-极速专线 VIP1 09
-      - 香港-极速专线 VIP1 10
-      - 日本-极速专线 VIP1 04
-      - 日本-极速专线 VIP1 05
-      - 日本-极速专线 VIP1 06
-      - 日本-极速专线 VIP1 07
-      - 日本-极速专线 VIP1 08
-      - 澳大利亚-极速专线 VIP1 01
-      - 澳大利亚-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 06
-      - 新加坡-极速专线 VIP1 07
-      - 新加坡-极速专线 VIP1 08
-      - 美国-极速专线 VIP1 06
-      - 法国-极速专线 VIP1 02
-      - 德国-极速专线 VIP1 01
-      - 德国-极速专线 VIP1 02
-      - 英国-极速专线 VIP1 01
-      - 英国-极速专线 VIP1 02
-      - 香港-极速专线 VIP2 06
-      - 香港-极速专线 VIP2 07
-      - 美国-极速专线 VIP2 06
-      - 美国-极速专线 VIP2 07
-      - 韩国-极速专线 VIP2 01
-      - 韩国-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 05
-      - 日本-极速专线 VIP2 06
-      - 日本-极速专线 VIP2 07
-      - 香港-极速专线 VIP2 01 2
-      - 香港-极速专线 VIP2 02 2
-      - 香港-极速专线 VIP2 03 2
-      - 狮城-极速专线 VIP2 01 2
-      - 狮城-极速专线 VIP2 02 2
-      - 狮城-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 01 2
-      - 美国-极速专线 VIP2 02 2
-      - 美国-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 04 2
-      - 美国-极速专线 VIP2 05 2
-      - 美国-极速专线 VIP2 06 2
-      - 韩国-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 02 2
-      - 日本-极速专线 VIP2 03 2
-      - 日本-极速专线 VIP2 04 2
-      - 台湾-极速专线 VIP2 01 2
-      - 伦敦-极速专线 VIP2 01
-      - 伦敦-极速专线 VIP2 02
-      - 德国-极速专线 VIP2 01
-      - 德国-极速专线 VIP2 02
-      - 加拿大-极速专线 VIP2 01
-      - 加拿大-极速专线 VIP2 02
-      - 土耳其-极速专线 VIP2 01
-      - 土耳其-极速专线 VIP2 02
-      - 印度
-      - 法国
-      - 印尼
-      - 埃及
-      - 俄罗斯
-      - 马来西亚
-      - 尼日利亚
-      - 巴基斯坦
+      - Netflix/Disney/GPT出售/H/A
+      - VIP 1 |日本-极速专线
+      - VIP 1 |美国-极速专线
+      - VIP2 |香港-极速专线
+      - VIP2 |新加坡-极速专线
+      - VIP 1 |香港-极速专线 1
+      - VIP 1 |香港-极速专线 2
+      - VIP 1 |香港-极速专线 3
+      - VIP2 |日本-极速专线
+      - VIP2 |美国-极速专线
+      - VIP2 |香港-极速专线 1
+      - VIP2 |香港-极速专线 2
+      - VIP2 |香港-极速专线 3
+      - VIP 1 |台湾-极速专线 1
+      - VIP 1 |台湾-极速专线 2
+      - VIP 1 |台湾-极速专线 3
+      - VIP2 |台湾-极速专线 1
+      - VIP2 |台湾-极速专线 2
+      - VIP2 |台湾-极速专线 3
+      - VIP 1 |新加坡-极速专线 1
+      - VIP 1 |新加坡-极速专线 2
+      - VIP 1 |新加坡-极速专线 3
+      - VIP2 |新加坡-极速专线 1
+      - VIP2 |新加坡-极速专线 2
+      - VIP2 |新加坡-极速专线 3
+      - VIP 1 |日本-极速专线 1
+      - VIP 1 |日本-极速专线 2
+      - VIP 1 |日本-极速专线 3
+      - VIP2 |日本-极速专线 1
+      - VIP2 |日本-极速专线 2
+      - VIP2 |日本-极速专线 3
+      - VIP 1 |美国-极速专线 1
+      - VIP 1 |美国-极速专线 2
+      - VIP 1 |美国-极速专线 3
+      - VIP2 |美国-极速专线 1
+      - VIP2 |美国-极速专线 2
+      - VIP2 |美国-极速专线 3
+      - VIP 1 |韩国-极速专线 1
+      - VIP 1 |韩国-极速专线 2
+      - VIP 1 |香港-极速专线 4
+      - VIP 1 |香港-极速专线 5
+      - VIP 1 |香港-极速专线 6
+      - VIP 1 |香港-极速专线 7
+      - VIP 1 |香港-极速专线 8
+      - VIP 1 |香港-极速专线 9
+      - VIP 1 |澳门-极速专线 1
+      - VIP 1 |澳门-极速专线 2
+      - VIP 1 |台湾-极速专线 4
+      - VIP 1 |台湾-极速专线 5
+      - VIP 1 |新加坡-极速专线 4
+      - VIP 1 |新加坡-极速专线 5
+      - VIP 1 |日本-极速专线 4
+      - VIP 1 |日本-极速专线 5
+      - VIP 1 |日本-极速专线 6
+      - VIP 1 |韩国-极速专线 1 2
+      - VIP 1 |韩国-极速专线 2 2
+      - VIP 1 |美国-极速专线 4
+      - VIP 1 |美国-极速专线 5
+      - VIP 1 |德国-极速专线 1
+      - VIP 1 |日本-极速专线 1 2
+      - VIP 1 |日本-极速专线 2 2
+      - VIP 1 |日本-极速专线 3 2
+      - VIP 1 |日本-极速专线 4 2
+      - VIP 1 |日本-极速专线 5 2
+      - VIP 1 |日本-极速专线 6 2
+      - VIP 1 |美国-极速专线 1 2
+      - VIP 1 |美国-极速专线 2 2
+      - VIP 1 |美国-极速专线 3 2
+      - VIP 1 |美国-极速专线 4 2
+      - VIP 1 |美国-极速专线 5 2
+      - VIP2 |香港-高速专线 1
+      - VIP2 |香港-高速专线 2
+      - VIP2 |香港-高速专线 3
+      - VIP2 |香港-高速专线 4
+      - VIP2 |香港-高速专线 5
+      - VIP2 |香港-高速专线 6
+      - VIP2 |香港-高速专线 7
+      - VIP2 |日本-高速专线 1
+      - VIP2 |日本-高速专线 2
+      - VIP2 |日本-高速专线 3
+      - VIP2 |日本-高速专线 4
+      - VIP2 |日本-高速专线 5
+      - VIP2 |日本-高速专线 6
+      - VIP2 |日本-高速专线 7
+      - VIP2 |新加坡-高速专线 1
+      - VIP2 |新加坡-高速专线 2
+      - VIP2 |新加坡-高速专线 3
+      - VIP2 |新加坡-高速专线 4
+      - VIP2 |新加坡-高速专线 5
+      - VIP2 |新加坡-高速专线 6
+      - VIP2 |新加坡-高速专线 7
+      - VIP2 |台湾-高速专线 1
+      - VIP2 |台湾-高速专线 2
+      - VIP2 |台湾-高速专线 3
+      - VIP2 |美国-高速专线 1
+      - VIP2 |美国-高速专线 2
+      - VIP2 |美国-高速专线 3
+      - VIP2 |美国-高速专线 4
+      - VIP2 |美国-高速专线 5
+      - VIP2 |美国-高速专线 6
+      - VIP2 |美国-高速专线 7
+      - VIP2 |土耳其-高速专线 1
+      - VIP2 |德国-高速专线 1
+      - VIP2 |德国-高速专线 2
+      - VIP2 |英国-高速专线 1
+      - VIP2 |英国-高速专线 2
+      - VIP2 |荷兰-高速专线 1
+      - VIP2 |荷兰-高速专线 2
+      - VIP2 |法国-高速专线 1
+      - VIP2 |法国-高速专线 2
+      - VIP2 |加拿大-高速专线 1
+      - VIP2 |加拿大-高速专线 2
+      - VIP2 |澳大利亚-高速专线 1
+      - VIP2 |韩国-高速专线 1
+      - VIP2 |韩国-高速专线 2
+      - VIP2 |马来西亚-高速专线 1
+      - VIP2 |埃及-高速专线 1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -996,119 +1052,126 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 防失联Vx:hjtz1988
+      - 推荐客户下单返红包/4
       - 有问题先切换VIP1或VIP2尝试
-      - 推荐客户下单返红包H/Y
-      - Netflix/Disney/GPT出售
-      - 香港-极速专线 VIP
-      - 狮城-极速专线 VIP
-      - 日本-极速专线 VIP
-      - 美国-极速专线 VIP
-      - 香港-极速专线 VIP1 01
-      - 香港-极速专线 VIP1 02
-      - 香港-极速专线 VIP1 03
-      - 香港-极速专线 VIP1 04
-      - 香港-极速专线 VIP1 05
-      - 香港-极速专线 VIP2 01
-      - 香港-极速专线 VIP2 02
-      - 香港-极速专线 VIP2 03
-      - 香港-极速专线 VIP2 04
-      - 香港-极速专线 VIP2 05
-      - 新加坡-极速专线 VIP1 01
-      - 新加坡-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 03
-      - 新加坡-极速专线 VIP1 04
-      - 新加坡-极速专线 VIP1 05
-      - 狮城-极速专线 VIP2 01
-      - 狮城-极速专线 VIP2 02
-      - 狮城-极速专线 VIP2 03
-      - 狮城-极速专线 VIP2 04
-      - 狮城-极速专线 VIP2 05
-      - 台湾-极速专线 VIP1 01
-      - 台湾-极速专线 VIP1 02
-      - 台湾-极速专线 VIP1 03
-      - 日本-极速专线 VIP1 01
-      - 日本-极速专线 VIP1 02
-      - 日本-极速专线 VIP1 03
-      - 台湾-极速专线 VIP2 01
-      - 台湾-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 01
-      - 日本-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 03
-      - 日本-极速专线 VIP2 04
-      - 美国-极速专线 VIP1 01
-      - 美国-极速专线 VIP1 02
-      - 美国-极速专线 VIP1 03
-      - 美国-极速专线 VIP1 04
-      - 美国-极速专线 VIP1 05
-      - 美国-极速专线 VIP2 01
-      - 美国-极速专线 VIP2 02
-      - 美国-极速专线 VIP2 03
-      - 美国-极速专线 VIP2 04
-      - 美国-极速专线 VIP2 05
-      - 香港-极速专线 VIP1 06
-      - 香港-极速专线 VIP1 07
-      - 香港-极速专线 VIP1 08
-      - 香港-极速专线 VIP1 09
-      - 香港-极速专线 VIP1 10
-      - 日本-极速专线 VIP1 04
-      - 日本-极速专线 VIP1 05
-      - 日本-极速专线 VIP1 06
-      - 日本-极速专线 VIP1 07
-      - 日本-极速专线 VIP1 08
-      - 澳大利亚-极速专线 VIP1 01
-      - 澳大利亚-极速专线 VIP1 02
-      - 新加坡-极速专线 VIP1 06
-      - 新加坡-极速专线 VIP1 07
-      - 新加坡-极速专线 VIP1 08
-      - 美国-极速专线 VIP1 06
-      - 法国-极速专线 VIP1 02
-      - 德国-极速专线 VIP1 01
-      - 德国-极速专线 VIP1 02
-      - 英国-极速专线 VIP1 01
-      - 英国-极速专线 VIP1 02
-      - 香港-极速专线 VIP2 06
-      - 香港-极速专线 VIP2 07
-      - 美国-极速专线 VIP2 06
-      - 美国-极速专线 VIP2 07
-      - 韩国-极速专线 VIP2 01
-      - 韩国-极速专线 VIP2 02
-      - 日本-极速专线 VIP2 05
-      - 日本-极速专线 VIP2 06
-      - 日本-极速专线 VIP2 07
-      - 香港-极速专线 VIP2 01 2
-      - 香港-极速专线 VIP2 02 2
-      - 香港-极速专线 VIP2 03 2
-      - 狮城-极速专线 VIP2 01 2
-      - 狮城-极速专线 VIP2 02 2
-      - 狮城-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 01 2
-      - 美国-极速专线 VIP2 02 2
-      - 美国-极速专线 VIP2 03 2
-      - 美国-极速专线 VIP2 04 2
-      - 美国-极速专线 VIP2 05 2
-      - 美国-极速专线 VIP2 06 2
-      - 韩国-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 01 2
-      - 日本-极速专线 VIP2 02 2
-      - 日本-极速专线 VIP2 03 2
-      - 日本-极速专线 VIP2 04 2
-      - 台湾-极速专线 VIP2 01 2
-      - 伦敦-极速专线 VIP2 01
-      - 伦敦-极速专线 VIP2 02
-      - 德国-极速专线 VIP2 01
-      - 德国-极速专线 VIP2 02
-      - 加拿大-极速专线 VIP2 01
-      - 加拿大-极速专线 VIP2 02
-      - 土耳其-极速专线 VIP2 01
-      - 土耳其-极速专线 VIP2 02
-      - 印度
-      - 法国
-      - 印尼
-      - 埃及
-      - 俄罗斯
-      - 马来西亚
-      - 尼日利亚
-      - 巴基斯坦
+      - Netflix/Disney/GPT出售/H/A
+      - VIP 1 |日本-极速专线
+      - VIP 1 |美国-极速专线
+      - VIP2 |香港-极速专线
+      - VIP2 |新加坡-极速专线
+      - VIP 1 |香港-极速专线 1
+      - VIP 1 |香港-极速专线 2
+      - VIP 1 |香港-极速专线 3
+      - VIP2 |日本-极速专线
+      - VIP2 |美国-极速专线
+      - VIP2 |香港-极速专线 1
+      - VIP2 |香港-极速专线 2
+      - VIP2 |香港-极速专线 3
+      - VIP 1 |台湾-极速专线 1
+      - VIP 1 |台湾-极速专线 2
+      - VIP 1 |台湾-极速专线 3
+      - VIP2 |台湾-极速专线 1
+      - VIP2 |台湾-极速专线 2
+      - VIP2 |台湾-极速专线 3
+      - VIP 1 |新加坡-极速专线 1
+      - VIP 1 |新加坡-极速专线 2
+      - VIP 1 |新加坡-极速专线 3
+      - VIP2 |新加坡-极速专线 1
+      - VIP2 |新加坡-极速专线 2
+      - VIP2 |新加坡-极速专线 3
+      - VIP 1 |日本-极速专线 1
+      - VIP 1 |日本-极速专线 2
+      - VIP 1 |日本-极速专线 3
+      - VIP2 |日本-极速专线 1
+      - VIP2 |日本-极速专线 2
+      - VIP2 |日本-极速专线 3
+      - VIP 1 |美国-极速专线 1
+      - VIP 1 |美国-极速专线 2
+      - VIP 1 |美国-极速专线 3
+      - VIP2 |美国-极速专线 1
+      - VIP2 |美国-极速专线 2
+      - VIP2 |美国-极速专线 3
+      - VIP 1 |韩国-极速专线 1
+      - VIP 1 |韩国-极速专线 2
+      - VIP 1 |香港-极速专线 4
+      - VIP 1 |香港-极速专线 5
+      - VIP 1 |香港-极速专线 6
+      - VIP 1 |香港-极速专线 7
+      - VIP 1 |香港-极速专线 8
+      - VIP 1 |香港-极速专线 9
+      - VIP 1 |澳门-极速专线 1
+      - VIP 1 |澳门-极速专线 2
+      - VIP 1 |台湾-极速专线 4
+      - VIP 1 |台湾-极速专线 5
+      - VIP 1 |新加坡-极速专线 4
+      - VIP 1 |新加坡-极速专线 5
+      - VIP 1 |日本-极速专线 4
+      - VIP 1 |日本-极速专线 5
+      - VIP 1 |日本-极速专线 6
+      - VIP 1 |韩国-极速专线 1 2
+      - VIP 1 |韩国-极速专线 2 2
+      - VIP 1 |美国-极速专线 4
+      - VIP 1 |美国-极速专线 5
+      - VIP 1 |德国-极速专线 1
+      - VIP 1 |日本-极速专线 1 2
+      - VIP 1 |日本-极速专线 2 2
+      - VIP 1 |日本-极速专线 3 2
+      - VIP 1 |日本-极速专线 4 2
+      - VIP 1 |日本-极速专线 5 2
+      - VIP 1 |日本-极速专线 6 2
+      - VIP 1 |美国-极速专线 1 2
+      - VIP 1 |美国-极速专线 2 2
+      - VIP 1 |美国-极速专线 3 2
+      - VIP 1 |美国-极速专线 4 2
+      - VIP 1 |美国-极速专线 5 2
+      - VIP2 |香港-高速专线 1
+      - VIP2 |香港-高速专线 2
+      - VIP2 |香港-高速专线 3
+      - VIP2 |香港-高速专线 4
+      - VIP2 |香港-高速专线 5
+      - VIP2 |香港-高速专线 6
+      - VIP2 |香港-高速专线 7
+      - VIP2 |日本-高速专线 1
+      - VIP2 |日本-高速专线 2
+      - VIP2 |日本-高速专线 3
+      - VIP2 |日本-高速专线 4
+      - VIP2 |日本-高速专线 5
+      - VIP2 |日本-高速专线 6
+      - VIP2 |日本-高速专线 7
+      - VIP2 |新加坡-高速专线 1
+      - VIP2 |新加坡-高速专线 2
+      - VIP2 |新加坡-高速专线 3
+      - VIP2 |新加坡-高速专线 4
+      - VIP2 |新加坡-高速专线 5
+      - VIP2 |新加坡-高速专线 6
+      - VIP2 |新加坡-高速专线 7
+      - VIP2 |台湾-高速专线 1
+      - VIP2 |台湾-高速专线 2
+      - VIP2 |台湾-高速专线 3
+      - VIP2 |美国-高速专线 1
+      - VIP2 |美国-高速专线 2
+      - VIP2 |美国-高速专线 3
+      - VIP2 |美国-高速专线 4
+      - VIP2 |美国-高速专线 5
+      - VIP2 |美国-高速专线 6
+      - VIP2 |美国-高速专线 7
+      - VIP2 |土耳其-高速专线 1
+      - VIP2 |德国-高速专线 1
+      - VIP2 |德国-高速专线 2
+      - VIP2 |英国-高速专线 1
+      - VIP2 |英国-高速专线 2
+      - VIP2 |荷兰-高速专线 1
+      - VIP2 |荷兰-高速专线 2
+      - VIP2 |法国-高速专线 1
+      - VIP2 |法国-高速专线 2
+      - VIP2 |加拿大-高速专线 1
+      - VIP2 |加拿大-高速专线 2
+      - VIP2 |澳大利亚-高速专线 1
+      - VIP2 |韩国-高速专线 1
+      - VIP2 |韩国-高速专线 2
+      - VIP2 |马来西亚-高速专线 1
+      - VIP2 |埃及-高速专线 1
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
