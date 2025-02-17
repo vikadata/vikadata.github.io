@@ -19,14 +19,14 @@ proxies:
     name: gcp-hk.bika.hk
     server: 34.92.208.172
     port: 30251
-    uuid: 9e88a10b-655c-5120-89d0-408634169561
+    uuid: 86c9c119-c46d-45a9-82a6-75a886e5e795
     alterId: 0
     cipher: auto
   - type: vmess
     name: gcp-ja.bika.hk
     server: 34.97.135.220
     port: 30251
-    uuid: 9e88a10b-655c-5120-89d0-408634169561
+    uuid: 86c9c119-c46d-45a9-82a6-75a886e5e795
     alterId: 0
     cipher: auto
   - {name: 防失联Vx:hjtz1988, server: sg.afun-hip.com, port: 24550, type: ss, cipher: aes-128-gcm, password: 44a25461-85a0-4892-8d9b-b26989622333, udp: true}
