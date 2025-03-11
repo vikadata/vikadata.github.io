@@ -19,12 +19,30 @@ EOF
 
 trap notes ERR
 
+map_arch() {
+    local arch=$(uname -m)
+    case $arch in
+        x86_64)
+            echo "amd64"
+            ;;
+        aarch64)
+            echo "arm64"
+            ;;
+        armv7l)
+            echo "arm"
+            ;;
+        *)
+            echo "$arch"
+            ;;
+    esac
+}
+arch=$(map_arch)
+
 if ! docker info >/dev/null 2>&1; then
    os=$(uname -s)
-   arch=$(uname -m)
    if [ "$os" == "Linux" ]; then
-     wget -C https://download-selfhosted.bika.ai/docker-compose/${arch}/docker-28.0.1.tgz
-     tar -zxvf docker.tgz -C /tmp
+     curl -O https://download-selfhosted.bika.ai/docker-compose/${arch}/docker-28.0.1.tgz
+     tar -zxvf docker-28.0.1.tgz -C /tmp
      mkdir -p /etc/docker
      mkdir -p /usr/local/lib/docker/cli-plugins
 
