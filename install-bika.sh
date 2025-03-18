@@ -11,6 +11,7 @@ notes () {
 Before you submit any github issue, please do the following check:
 * make sure the docker daemon is running
 * make sure you use docker compose v2: recommend 2.x.x, got $(docker compose version --short 2>/dev/null || echo not install)
+* make sure the kernel version is greater than 4.10+, got $(uname -r)
 * check your internet connection if timeout happens
 * check for potential port conflicts if you have local services listening on all interfaces (e.g. another redis container listening on *:6379)
 ===========================
@@ -64,13 +65,14 @@ if ! docker info >/dev/null 2>&1; then
    fi
 fi
 
-DOWNLOAD_URL='https://download-selfhosted.bika.ai/latest/bika-docker-amd64.tar.gz'
+DOWNLOAD_URL="https://download-selfhosted.bika.ai/latest/bika-docker-${arch}.tar.gz"
 
 : "${DOWNLOAD_URL?✗ missing env}"
 
 curl -fLo bika-docker-amd64.tar.gz "${DOWNLOAD_URL}"
 tar -zxvf bika-docker-amd64.tar.gz  && cd bika
 [ ! -f .env ] && cat .env.template > .env
+mkdir -p .data/elasticsearch
 
 docker compose --profile all down -v --remove-orphans
 for i in {1..50}; do
