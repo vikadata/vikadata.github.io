@@ -63,7 +63,7 @@ proxies:
   - {name: "🇸🇬 [高速]新加坡-节点 02", server: gdcm-sg.cnix.asia, port: 25002, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
   - {name: "🇸🇬 [高速]新加坡-节点 03", server: gdcm-sg.cnix.asia, port: 25003, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
   - {name: "🇸🇬 [高速]新加坡-节点 04", server: gdcm-sg.cnix.asia, port: 25004, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸 [高速]新加坡-节点 05", server: gdcm-sg.cnix.asia, port: 25005, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
+  - {name: "🇸🇬 [高速]新加坡-节点 05", server: gdcm-sg.cnix.asia, port: 25005, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
   - {name: "🇸🇬 [高速]新加坡-节点 06", server: singapore.cnix.asia, port: 25006, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
   - {name: "🇸🇬 [高速]新加坡-节点 07", server: singapore.cnix.asia, port: 25007, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
   - {name: "🇸🇬 [高速]新加坡-节点 08", server: singapore.cnix.asia, port: 25008, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
