@@ -29,59 +29,43 @@ proxies:
     uuid: 86c9c119-c46d-45a9-82a6-75a886e5e795
     alterId: 0
     cipher: auto
-  - {name: 有问题截图反馈A, server: gdgzcm-hkbase.cnix.asia, port: 56001, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇭🇰 [高速]香港-节点 01", server: gdgzcm-hkbase.cnix.asia, port: 56001, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇭🇰 [高速]香港-节点 02", server: gdgzcm-hkbase.cnix.asia, port: 56002, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇭🇰 [高速]香港-节点 03", server: gdgzcm-hkbase.cnix.asia, port: 56003, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇭🇰 [高速]香港-节点 04", server: gdgzcm-hkbase.cnix.asia, port: 56004, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇭🇰 [高速]香港-节点 05", server: gdgzcm-hkbase.cnix.asia, port: 56005, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇭🇰 [高速]香港-节点 06", server: gdgzcm-hkbase.cnix.asia, port: 56006, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇭🇰 [高速]香港-节点 07", server: gdgzcm-hkbase.cnix.asia, port: 56007, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇭🇰 [高速]香港-节点 08", server: gdgzcm-hkbase.cnix.asia, port: 56008, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇯🇵 [高速]日本-节点 01", server: japan.cnix.asia, port: 12001, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇯🇵 [高速]日本-节点 02", server: japan.cnix.asia, port: 12002, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇯🇵 [高速]日本-节点 03", server: japan.cnix.asia, port: 12003, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇯🇵 [高速]日本-节点 04", server: japan.cnix.asia, port: 12004, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇯🇵 [高速]日本-节点 05", server: japan.cnix.asia, port: 12005, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇯🇵 [高速]日本-节点 06", server: japan.cnix.asia, port: 12006, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇯🇵 [高速]日本-节点 07", server: japan.cnix.asia, port: 12007, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇯🇵 [高速]日本-节点 08", server: japan.cnix.asia, port: 12008, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇺🇸 [高速]美国-节点 01", server: jscm-hkmax.cnix.asia, port: 13001, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇺🇸 [高速]美国-节点 02", server: jscm-hkmax.cnix.asia, port: 13002, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇺🇸 [高速]美国-节点 03", server: jscm-hkmax.cnix.asia, port: 13003, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇺🇸 [高速]美国-节点 04", server: jscm-hkmax.cnix.asia, port: 13004, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇺🇸 [高速]美国-节点 05", server: jscm-hkmax.cnix.asia, port: 13005, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇺🇸 [高速]美国-节点 06", server: jscm-hkmax.cnix.asia, port: 13006, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇺🇸 [高速]美国-节点 07", server: jscm-hkmax.cnix.asia, port: 13007, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇺🇸 [高速]美国-节点 08", server: jscm-hkmax.cnix.asia, port: 13008, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇺🇸 [高速]美国-节点 09", server: jscm-hkmax.cnix.asia, port: 13009, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇺🇸 [高速]美国-节点 10", server: jscm-hkmax.cnix.asia, port: 13010, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇺🇸 [高速]美国-节点 11", server: jscm-usa.cnix.asia, port: 13011, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇺🇸 [高速]美国-节点 12", server: jscm-usa.cnix.asia, port: 13012, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇺🇸 [高速]美国-节点 13", server: jscm-usa.cnix.asia, port: 13013, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸🇬 [高速]新加坡-节点 01", server: gdcm-sg.cnix.asia, port: 25001, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸🇬 [高速]新加坡-节点 02", server: gdcm-sg.cnix.asia, port: 25002, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸🇬 [高速]新加坡-节点 03", server: gdcm-sg.cnix.asia, port: 25003, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸🇬 [高速]新加坡-节点 04", server: gdcm-sg.cnix.asia, port: 25004, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸🇬 [高速]新加坡-节点 05", server: gdcm-sg.cnix.asia, port: 25005, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸🇬 [高速]新加坡-节点 06", server: singapore.cnix.asia, port: 25006, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸🇬 [高速]新加坡-节点 07", server: singapore.cnix.asia, port: 25007, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸🇬 [高速]新加坡-节点 08", server: singapore.cnix.asia, port: 25008, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸🇬 [高速]新加坡-节点 09", server: singapore.cnix.asia, port: 25009, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸🇬 [高速]新加坡-节点 10", server: singapore.cnix.asia, port: 25010, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸🇬 [高速]新加坡-节点 11", server: singapore.cnix.asia, port: 25011, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸🇬 [高速]新加坡-节点 12", server: singapore.cnix.asia, port: 25012, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇸🇬 [高速]新加坡-节点 13", server: singapore.cnix.asia, port: 25013, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇨🇳 [高速]台湾-节点 01", server: japan.cnix.asia, port: 14001, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇨🇳 [高速]台湾-节点 02", server: japan.cnix.asia, port: 14002, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇨🇳 [高速]台湾-节点 03", server: japan.cnix.asia, port: 14003, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇨🇳 [高速]台湾-节点 04", server: japan.cnix.asia, port: 14004, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇨🇳 [高速]台湾-节点 05", server: japan.cnix.asia, port: 14005, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇯🇵 [高速]日本-节点 11", server: jscm-jp.cnix.asia, port: 16001, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇯🇵 [高速]日本-节点 12", server: jscm-jp.cnix.asia, port: 16002, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇯🇵 [高速]日本-节点 13", server: jscm-jp.cnix.asia, port: 16003, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇰🇷 [高速]韩国-节点 01", server: gdcm-hkmax.cnix.asia, port: 51101, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
-  - {name: "🇩🇪 [高速]德国-节点 01", server: gdcm-hkmax.cnix.asia, port: 51201, type: ss, cipher: aes-128-gcm, password: feb203c3-4b25-4961-be32-7e842d7b5dab, udp: true}
+  - {name: 推荐客户下单返红包, server: hk1.qsm1.xyz, port: 39781, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: 有问题截图反馈Q, server: hk2.qsm1.xyz, port: 33706, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇭🇰 [VIP]香港-极速专线 1", server: hk1.qsm1.xyz, port: 33651, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇭🇰 [VIP]香港-极速专线 2", server: hk2.qsm1.xyz, port: 33652, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇭🇰 [VIP]香港-极速专线 3", server: hk3.qsm1.xyz, port: 33653, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇭🇰 [VIP]香港-极速专线 4", server: hk4.qsm1.xyz, port: 33654, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇭🇰 [VIP]香港-极速专线 5", server: hk1.qsm1.xyz, port: 33755, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇭🇰 [VIP]香港-极速专线 6", server: hk2.qsm1.xyz, port: 33706, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇭🇰 [VIP]香港-极速专线 7", server: hk3.qsm1.xyz, port: 33759, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇭🇰 [VIP]香港-极速专线 8", server: hk4.qsm1.xyz, port: 34759, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇭🇰 [VIP]香港-极速专线 9", server: hk1.qsm1.xyz, port: 23651, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇭🇰 [VIP]香港-极速专线 10", server: hk2.qsm1.xyz, port: 23652, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇨🇳 [VIP]台湾-极速专线 1", server: hk1.qsm1.xyz, port: 38791, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇨🇳 [VIP]台湾-极速专线 2", server: hk2.qsm1.xyz, port: 38792, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇨🇳 [VIP]台湾-极速专线 3", server: hk3.qsm1.xyz, port: 38793, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇨🇳 [VIP]台湾-极速专线 4", server: hk4.qsm1.xyz, port: 36794, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇨🇳 [VIP]台湾-极速专线 5", server: hk1.qsm1.xyz, port: 36795, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇨🇳 [VIP]台湾-极速专线 6", server: hk1.qsm1.xyz, port: 36796, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇸🇬 [VIP]新加坡-极速专线 1", server: hk1.qsm1.xyz, port: 39781, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇸🇬 [VIP]新加坡-极速专线 2", server: hk2.qsm1.xyz, port: 39782, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇸🇬 [VIP]新加坡-极速专线 3", server: hk3.qsm1.xyz, port: 39783, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇸🇬 [VIP]新加坡-极速专线 4", server: hk4.qsm1.xyz, port: 39784, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇸🇬 [VIP]新加坡-极速专线 5", server: hk2.qsm1.xyz, port: 39785, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇸🇬 [VIP]新加坡-极速专线 6", server: hk1.qsm1.xyz, port: 39786, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇯🇵 [VIP]日本-极速专线 1", server: jp1.qsm1.xyz, port: 43681, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇯🇵 [VIP]日本-极速专线 2", server: jp2.qsm1.xyz, port: 32581, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇯🇵 [VIP]日本-极速专线 3", server: jp3.qsm1.xyz, port: 43683, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇯🇵 [VIP]日本-极速专线 4", server: jp4.qsm1.xyz, port: 43684, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇯🇵 [VIP]日本-极速专线 5", server: jp1.qsm1.xyz, port: 43685, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇯🇵 [VIP]日本-极速专线 6", server: jp1.qsm1.xyz, port: 43786, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇺🇸 [VIP]美国-极速专线 1", server: jp1.qsm1.xyz, port: 48491, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇺🇸 [VIP]美国-极速专线 2", server: jp2.qsm1.xyz, port: 48492, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇺🇸 [VIP]美国-极速专线 3", server: jp3.qsm1.xyz, port: 45768, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇺🇸 [VIP]美国-极速专线 4", server: jp4.qsm1.xyz, port: 45960, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇬🇧 [VIP]英国-极速专线 1", server: oz.qsm1.xyz, port: 35619, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇩🇪 [VIP]德国-极速专线 1", server: oz.qsm1.xyz, port: 36617, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
+  - {name: "🇹🇷 [VIP]土耳其-极速专线 1", server: oz.qsm1.xyz, port: 34469, type: ss, cipher: aes-128-gcm, password: 5022cf62-1a1a-4bfb-b8ef-b6177375c6ac, udp: true}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -90,410 +74,298 @@ proxy-groups:
       - gcp-hk.bika.hk
       - ♻️ 自动选择
       - DIRECT
-      - 有问题截图反馈A
-      - 🇭🇰 [高速]香港-节点 01
-      - 🇭🇰 [高速]香港-节点 02
-      - 🇭🇰 [高速]香港-节点 03
-      - 🇭🇰 [高速]香港-节点 04
-      - 🇭🇰 [高速]香港-节点 05
-      - 🇭🇰 [高速]香港-节点 06
-      - 🇭🇰 [高速]香港-节点 07
-      - 🇭🇰 [高速]香港-节点 08
-      - 🇯🇵 [高速]日本-节点 01
-      - 🇯🇵 [高速]日本-节点 02
-      - 🇯🇵 [高速]日本-节点 03
-      - 🇯🇵 [高速]日本-节点 04
-      - 🇯🇵 [高速]日本-节点 05
-      - 🇯🇵 [高速]日本-节点 06
-      - 🇯🇵 [高速]日本-节点 07
-      - 🇯🇵 [高速]日本-节点 08
-      - 🇺🇸 [高速]美国-节点 01
-      - 🇺🇸 [高速]美国-节点 02
-      - 🇺🇸 [高速]美国-节点 03
-      - 🇺🇸 [高速]美国-节点 04
-      - 🇺🇸 [高速]美国-节点 05
-      - 🇺🇸 [高速]美国-节点 06
-      - 🇺🇸 [高速]美国-节点 07
-      - 🇺🇸 [高速]美国-节点 08
-      - 🇺🇸 [高速]美国-节点 09
-      - 🇺🇸 [高速]美国-节点 10
-      - 🇺🇸 [高速]美国-节点 11
-      - 🇺🇸 [高速]美国-节点 12
-      - 🇺🇸 [高速]美国-节点 13
-      - 🇸🇬 [高速]新加坡-节点 01
-      - 🇸🇬 [高速]新加坡-节点 02
-      - 🇸🇬 [高速]新加坡-节点 03
-      - 🇸🇬 [高速]新加坡-节点 04
-      - 🇸🇬 [高速]新加坡-节点 05
-      - 🇸🇬 [高速]新加坡-节点 06
-      - 🇸🇬 [高速]新加坡-节点 07
-      - 🇸🇬 [高速]新加坡-节点 08
-      - 🇸🇬 [高速]新加坡-节点 09
-      - 🇸🇬 [高速]新加坡-节点 10
-      - 🇸🇬 [高速]新加坡-节点 11
-      - 🇸🇬 [高速]新加坡-节点 12
-      - 🇸🇬 [高速]新加坡-节点 13
-      - 🇨🇳 [高速]台湾-节点 01
-      - 🇨🇳 [高速]台湾-节点 02
-      - 🇨🇳 [高速]台湾-节点 03
-      - 🇨🇳 [高速]台湾-节点 04
-      - 🇨🇳 [高速]台湾-节点 05
-      - 🇯🇵 [高速]日本-节点 11
-      - 🇯🇵 [高速]日本-节点 12
-      - 🇯🇵 [高速]日本-节点 13
-      - 🇰🇷 [高速]韩国-节点 01
-      - 🇩🇪 [高速]德国-节点 01
+      - 推荐客户下单返红包
+      - 有问题截图反馈Q
+      - 🇭🇰 [VIP]香港-极速专线 1
+      - 🇭🇰 [VIP]香港-极速专线 2
+      - 🇭🇰 [VIP]香港-极速专线 3
+      - 🇭🇰 [VIP]香港-极速专线 4
+      - 🇭🇰 [VIP]香港-极速专线 5
+      - 🇭🇰 [VIP]香港-极速专线 6
+      - 🇭🇰 [VIP]香港-极速专线 7
+      - 🇭🇰 [VIP]香港-极速专线 8
+      - 🇭🇰 [VIP]香港-极速专线 9
+      - 🇭🇰 [VIP]香港-极速专线 10
+      - 🇨🇳 [VIP]台湾-极速专线 1
+      - 🇨🇳 [VIP]台湾-极速专线 2
+      - 🇨🇳 [VIP]台湾-极速专线 3
+      - 🇨🇳 [VIP]台湾-极速专线 4
+      - 🇨🇳 [VIP]台湾-极速专线 5
+      - 🇨🇳 [VIP]台湾-极速专线 6
+      - 🇸🇬 [VIP]新加坡-极速专线 1
+      - 🇸🇬 [VIP]新加坡-极速专线 2
+      - 🇸🇬 [VIP]新加坡-极速专线 3
+      - 🇸🇬 [VIP]新加坡-极速专线 4
+      - 🇸🇬 [VIP]新加坡-极速专线 5
+      - 🇸🇬 [VIP]新加坡-极速专线 6
+      - 🇯🇵 [VIP]日本-极速专线 1
+      - 🇯🇵 [VIP]日本-极速专线 2
+      - 🇯🇵 [VIP]日本-极速专线 3
+      - 🇯🇵 [VIP]日本-极速专线 4
+      - 🇯🇵 [VIP]日本-极速专线 5
+      - 🇯🇵 [VIP]日本-极速专线 6
+      - 🇺🇸 [VIP]美国-极速专线 1
+      - 🇺🇸 [VIP]美国-极速专线 2
+      - 🇺🇸 [VIP]美国-极速专线 3
+      - 🇺🇸 [VIP]美国-极速专线 4
+      - 🇬🇧 [VIP]英国-极速专线 1
+      - 🇩🇪 [VIP]德国-极速专线 1
+      - 🇹🇷 [VIP]土耳其-极速专线 1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 有问题截图反馈A
-      - 🇭🇰 [高速]香港-节点 01
-      - 🇭🇰 [高速]香港-节点 02
-      - 🇭🇰 [高速]香港-节点 03
-      - 🇭🇰 [高速]香港-节点 04
-      - 🇭🇰 [高速]香港-节点 05
-      - 🇭🇰 [高速]香港-节点 06
-      - 🇭🇰 [高速]香港-节点 07
-      - 🇭🇰 [高速]香港-节点 08
-      - 🇯🇵 [高速]日本-节点 01
-      - 🇯🇵 [高速]日本-节点 02
-      - 🇯🇵 [高速]日本-节点 03
-      - 🇯🇵 [高速]日本-节点 04
-      - 🇯🇵 [高速]日本-节点 05
-      - 🇯🇵 [高速]日本-节点 06
-      - 🇯🇵 [高速]日本-节点 07
-      - 🇯🇵 [高速]日本-节点 08
-      - 🇺🇸 [高速]美国-节点 01
-      - 🇺🇸 [高速]美国-节点 02
-      - 🇺🇸 [高速]美国-节点 03
-      - 🇺🇸 [高速]美国-节点 04
-      - 🇺🇸 [高速]美国-节点 05
-      - 🇺🇸 [高速]美国-节点 06
-      - 🇺🇸 [高速]美国-节点 07
-      - 🇺🇸 [高速]美国-节点 08
-      - 🇺🇸 [高速]美国-节点 09
-      - 🇺🇸 [高速]美国-节点 10
-      - 🇺🇸 [高速]美国-节点 11
-      - 🇺🇸 [高速]美国-节点 12
-      - 🇺🇸 [高速]美国-节点 13
-      - 🇸🇬 [高速]新加坡-节点 01
-      - 🇸🇬 [高速]新加坡-节点 02
-      - 🇸🇬 [高速]新加坡-节点 03
-      - 🇸🇬 [高速]新加坡-节点 04
-      - 🇸🇬 [高速]新加坡-节点 05
-      - 🇸🇬 [高速]新加坡-节点 06
-      - 🇸🇬 [高速]新加坡-节点 07
-      - 🇸🇬 [高速]新加坡-节点 08
-      - 🇸🇬 [高速]新加坡-节点 09
-      - 🇸🇬 [高速]新加坡-节点 10
-      - 🇸🇬 [高速]新加坡-节点 11
-      - 🇸🇬 [高速]新加坡-节点 12
-      - 🇸🇬 [高速]新加坡-节点 13
-      - 🇨🇳 [高速]台湾-节点 01
-      - 🇨🇳 [高速]台湾-节点 02
-      - 🇨🇳 [高速]台湾-节点 03
-      - 🇨🇳 [高速]台湾-节点 04
-      - 🇨🇳 [高速]台湾-节点 05
-      - 🇯🇵 [高速]日本-节点 11
-      - 🇯🇵 [高速]日本-节点 12
-      - 🇯🇵 [高速]日本-节点 13
-      - 🇰🇷 [高速]韩国-节点 01
-      - 🇩🇪 [高速]德国-节点 01
+      - 推荐客户下单返红包
+      - 有问题截图反馈Q
+      - 🇭🇰 [VIP]香港-极速专线 1
+      - 🇭🇰 [VIP]香港-极速专线 2
+      - 🇭🇰 [VIP]香港-极速专线 3
+      - 🇭🇰 [VIP]香港-极速专线 4
+      - 🇭🇰 [VIP]香港-极速专线 5
+      - 🇭🇰 [VIP]香港-极速专线 6
+      - 🇭🇰 [VIP]香港-极速专线 7
+      - 🇭🇰 [VIP]香港-极速专线 8
+      - 🇭🇰 [VIP]香港-极速专线 9
+      - 🇭🇰 [VIP]香港-极速专线 10
+      - 🇨🇳 [VIP]台湾-极速专线 1
+      - 🇨🇳 [VIP]台湾-极速专线 2
+      - 🇨🇳 [VIP]台湾-极速专线 3
+      - 🇨🇳 [VIP]台湾-极速专线 4
+      - 🇨🇳 [VIP]台湾-极速专线 5
+      - 🇨🇳 [VIP]台湾-极速专线 6
+      - 🇸🇬 [VIP]新加坡-极速专线 1
+      - 🇸🇬 [VIP]新加坡-极速专线 2
+      - 🇸🇬 [VIP]新加坡-极速专线 3
+      - 🇸🇬 [VIP]新加坡-极速专线 4
+      - 🇸🇬 [VIP]新加坡-极速专线 5
+      - 🇸🇬 [VIP]新加坡-极速专线 6
+      - 🇯🇵 [VIP]日本-极速专线 1
+      - 🇯🇵 [VIP]日本-极速专线 2
+      - 🇯🇵 [VIP]日本-极速专线 3
+      - 🇯🇵 [VIP]日本-极速专线 4
+      - 🇯🇵 [VIP]日本-极速专线 5
+      - 🇯🇵 [VIP]日本-极速专线 6
+      - 🇺🇸 [VIP]美国-极速专线 1
+      - 🇺🇸 [VIP]美国-极速专线 2
+      - 🇺🇸 [VIP]美国-极速专线 3
+      - 🇺🇸 [VIP]美国-极速专线 4
+      - 🇬🇧 [VIP]英国-极速专线 1
+      - 🇩🇪 [VIP]德国-极速专线 1
+      - 🇹🇷 [VIP]土耳其-极速专线 1
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 有问题截图反馈A
-      - 🇭🇰 [高速]香港-节点 01
-      - 🇭🇰 [高速]香港-节点 02
-      - 🇭🇰 [高速]香港-节点 03
-      - 🇭🇰 [高速]香港-节点 04
-      - 🇭🇰 [高速]香港-节点 05
-      - 🇭🇰 [高速]香港-节点 06
-      - 🇭🇰 [高速]香港-节点 07
-      - 🇭🇰 [高速]香港-节点 08
-      - 🇯🇵 [高速]日本-节点 01
-      - 🇯🇵 [高速]日本-节点 02
-      - 🇯🇵 [高速]日本-节点 03
-      - 🇯🇵 [高速]日本-节点 04
-      - 🇯🇵 [高速]日本-节点 05
-      - 🇯🇵 [高速]日本-节点 06
-      - 🇯🇵 [高速]日本-节点 07
-      - 🇯🇵 [高速]日本-节点 08
-      - 🇺🇸 [高速]美国-节点 01
-      - 🇺🇸 [高速]美国-节点 02
-      - 🇺🇸 [高速]美国-节点 03
-      - 🇺🇸 [高速]美国-节点 04
-      - 🇺🇸 [高速]美国-节点 05
-      - 🇺🇸 [高速]美国-节点 06
-      - 🇺🇸 [高速]美国-节点 07
-      - 🇺🇸 [高速]美国-节点 08
-      - 🇺🇸 [高速]美国-节点 09
-      - 🇺🇸 [高速]美国-节点 10
-      - 🇺🇸 [高速]美国-节点 11
-      - 🇺🇸 [高速]美国-节点 12
-      - 🇺🇸 [高速]美国-节点 13
-      - 🇸🇬 [高速]新加坡-节点 01
-      - 🇸🇬 [高速]新加坡-节点 02
-      - 🇸🇬 [高速]新加坡-节点 03
-      - 🇸🇬 [高速]新加坡-节点 04
-      - 🇸🇬 [高速]新加坡-节点 05
-      - 🇸🇬 [高速]新加坡-节点 06
-      - 🇸🇬 [高速]新加坡-节点 07
-      - 🇸🇬 [高速]新加坡-节点 08
-      - 🇸🇬 [高速]新加坡-节点 09
-      - 🇸🇬 [高速]新加坡-节点 10
-      - 🇸🇬 [高速]新加坡-节点 11
-      - 🇸🇬 [高速]新加坡-节点 12
-      - 🇸🇬 [高速]新加坡-节点 13
-      - 🇨🇳 [高速]台湾-节点 01
-      - 🇨🇳 [高速]台湾-节点 02
-      - 🇨🇳 [高速]台湾-节点 03
-      - 🇨🇳 [高速]台湾-节点 04
-      - 🇨🇳 [高速]台湾-节点 05
-      - 🇯🇵 [高速]日本-节点 11
-      - 🇯🇵 [高速]日本-节点 12
-      - 🇯🇵 [高速]日本-节点 13
-      - 🇰🇷 [高速]韩国-节点 01
-      - 🇩🇪 [高速]德国-节点 01
+      - 推荐客户下单返红包
+      - 有问题截图反馈Q
+      - 🇭🇰 [VIP]香港-极速专线 1
+      - 🇭🇰 [VIP]香港-极速专线 2
+      - 🇭🇰 [VIP]香港-极速专线 3
+      - 🇭🇰 [VIP]香港-极速专线 4
+      - 🇭🇰 [VIP]香港-极速专线 5
+      - 🇭🇰 [VIP]香港-极速专线 6
+      - 🇭🇰 [VIP]香港-极速专线 7
+      - 🇭🇰 [VIP]香港-极速专线 8
+      - 🇭🇰 [VIP]香港-极速专线 9
+      - 🇭🇰 [VIP]香港-极速专线 10
+      - 🇨🇳 [VIP]台湾-极速专线 1
+      - 🇨🇳 [VIP]台湾-极速专线 2
+      - 🇨🇳 [VIP]台湾-极速专线 3
+      - 🇨🇳 [VIP]台湾-极速专线 4
+      - 🇨🇳 [VIP]台湾-极速专线 5
+      - 🇨🇳 [VIP]台湾-极速专线 6
+      - 🇸🇬 [VIP]新加坡-极速专线 1
+      - 🇸🇬 [VIP]新加坡-极速专线 2
+      - 🇸🇬 [VIP]新加坡-极速专线 3
+      - 🇸🇬 [VIP]新加坡-极速专线 4
+      - 🇸🇬 [VIP]新加坡-极速专线 5
+      - 🇸🇬 [VIP]新加坡-极速专线 6
+      - 🇯🇵 [VIP]日本-极速专线 1
+      - 🇯🇵 [VIP]日本-极速专线 2
+      - 🇯🇵 [VIP]日本-极速专线 3
+      - 🇯🇵 [VIP]日本-极速专线 4
+      - 🇯🇵 [VIP]日本-极速专线 5
+      - 🇯🇵 [VIP]日本-极速专线 6
+      - 🇺🇸 [VIP]美国-极速专线 1
+      - 🇺🇸 [VIP]美国-极速专线 2
+      - 🇺🇸 [VIP]美国-极速专线 3
+      - 🇺🇸 [VIP]美国-极速专线 4
+      - 🇬🇧 [VIP]英国-极速专线 1
+      - 🇩🇪 [VIP]德国-极速专线 1
+      - 🇹🇷 [VIP]土耳其-极速专线 1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 有问题截图反馈A
-      - 🇭🇰 [高速]香港-节点 01
-      - 🇭🇰 [高速]香港-节点 02
-      - 🇭🇰 [高速]香港-节点 03
-      - 🇭🇰 [高速]香港-节点 04
-      - 🇭🇰 [高速]香港-节点 05
-      - 🇭🇰 [高速]香港-节点 06
-      - 🇭🇰 [高速]香港-节点 07
-      - 🇭🇰 [高速]香港-节点 08
-      - 🇯🇵 [高速]日本-节点 01
-      - 🇯🇵 [高速]日本-节点 02
-      - 🇯🇵 [高速]日本-节点 03
-      - 🇯🇵 [高速]日本-节点 04
-      - 🇯🇵 [高速]日本-节点 05
-      - 🇯🇵 [高速]日本-节点 06
-      - 🇯🇵 [高速]日本-节点 07
-      - 🇯🇵 [高速]日本-节点 08
-      - 🇺🇸 [高速]美国-节点 01
-      - 🇺🇸 [高速]美国-节点 02
-      - 🇺🇸 [高速]美国-节点 03
-      - 🇺🇸 [高速]美国-节点 04
-      - 🇺🇸 [高速]美国-节点 05
-      - 🇺🇸 [高速]美国-节点 06
-      - 🇺🇸 [高速]美国-节点 07
-      - 🇺🇸 [高速]美国-节点 08
-      - 🇺🇸 [高速]美国-节点 09
-      - 🇺🇸 [高速]美国-节点 10
-      - 🇺🇸 [高速]美国-节点 11
-      - 🇺🇸 [高速]美国-节点 12
-      - 🇺🇸 [高速]美国-节点 13
-      - 🇸🇬 [高速]新加坡-节点 01
-      - 🇸🇬 [高速]新加坡-节点 02
-      - 🇸🇬 [高速]新加坡-节点 03
-      - 🇸🇬 [高速]新加坡-节点 04
-      - 🇸🇬 [高速]新加坡-节点 05
-      - 🇸🇬 [高速]新加坡-节点 06
-      - 🇸🇬 [高速]新加坡-节点 07
-      - 🇸🇬 [高速]新加坡-节点 08
-      - 🇸🇬 [高速]新加坡-节点 09
-      - 🇸🇬 [高速]新加坡-节点 10
-      - 🇸🇬 [高速]新加坡-节点 11
-      - 🇸🇬 [高速]新加坡-节点 12
-      - 🇸🇬 [高速]新加坡-节点 13
-      - 🇨🇳 [高速]台湾-节点 01
-      - 🇨🇳 [高速]台湾-节点 02
-      - 🇨🇳 [高速]台湾-节点 03
-      - 🇨🇳 [高速]台湾-节点 04
-      - 🇨🇳 [高速]台湾-节点 05
-      - 🇯🇵 [高速]日本-节点 11
-      - 🇯🇵 [高速]日本-节点 12
-      - 🇯🇵 [高速]日本-节点 13
-      - 🇰🇷 [高速]韩国-节点 01
-      - 🇩🇪 [高速]德国-节点 01
+      - 推荐客户下单返红包
+      - 有问题截图反馈Q
+      - 🇭🇰 [VIP]香港-极速专线 1
+      - 🇭🇰 [VIP]香港-极速专线 2
+      - 🇭🇰 [VIP]香港-极速专线 3
+      - 🇭🇰 [VIP]香港-极速专线 4
+      - 🇭🇰 [VIP]香港-极速专线 5
+      - 🇭🇰 [VIP]香港-极速专线 6
+      - 🇭🇰 [VIP]香港-极速专线 7
+      - 🇭🇰 [VIP]香港-极速专线 8
+      - 🇭🇰 [VIP]香港-极速专线 9
+      - 🇭🇰 [VIP]香港-极速专线 10
+      - 🇨🇳 [VIP]台湾-极速专线 1
+      - 🇨🇳 [VIP]台湾-极速专线 2
+      - 🇨🇳 [VIP]台湾-极速专线 3
+      - 🇨🇳 [VIP]台湾-极速专线 4
+      - 🇨🇳 [VIP]台湾-极速专线 5
+      - 🇨🇳 [VIP]台湾-极速专线 6
+      - 🇸🇬 [VIP]新加坡-极速专线 1
+      - 🇸🇬 [VIP]新加坡-极速专线 2
+      - 🇸🇬 [VIP]新加坡-极速专线 3
+      - 🇸🇬 [VIP]新加坡-极速专线 4
+      - 🇸🇬 [VIP]新加坡-极速专线 5
+      - 🇸🇬 [VIP]新加坡-极速专线 6
+      - 🇯🇵 [VIP]日本-极速专线 1
+      - 🇯🇵 [VIP]日本-极速专线 2
+      - 🇯🇵 [VIP]日本-极速专线 3
+      - 🇯🇵 [VIP]日本-极速专线 4
+      - 🇯🇵 [VIP]日本-极速专线 5
+      - 🇯🇵 [VIP]日本-极速专线 6
+      - 🇺🇸 [VIP]美国-极速专线 1
+      - 🇺🇸 [VIP]美国-极速专线 2
+      - 🇺🇸 [VIP]美国-极速专线 3
+      - 🇺🇸 [VIP]美国-极速专线 4
+      - 🇬🇧 [VIP]英国-极速专线 1
+      - 🇩🇪 [VIP]德国-极速专线 1
+      - 🇹🇷 [VIP]土耳其-极速专线 1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 有问题截图反馈A
-      - 🇭🇰 [高速]香港-节点 01
-      - 🇭🇰 [高速]香港-节点 02
-      - 🇭🇰 [高速]香港-节点 03
-      - 🇭🇰 [高速]香港-节点 04
-      - 🇭🇰 [高速]香港-节点 05
-      - 🇭🇰 [高速]香港-节点 06
-      - 🇭🇰 [高速]香港-节点 07
-      - 🇭🇰 [高速]香港-节点 08
-      - 🇯🇵 [高速]日本-节点 01
-      - 🇯🇵 [高速]日本-节点 02
-      - 🇯🇵 [高速]日本-节点 03
-      - 🇯🇵 [高速]日本-节点 04
-      - 🇯🇵 [高速]日本-节点 05
-      - 🇯🇵 [高速]日本-节点 06
-      - 🇯🇵 [高速]日本-节点 07
-      - 🇯🇵 [高速]日本-节点 08
-      - 🇺🇸 [高速]美国-节点 01
-      - 🇺🇸 [高速]美国-节点 02
-      - 🇺🇸 [高速]美国-节点 03
-      - 🇺🇸 [高速]美国-节点 04
-      - 🇺🇸 [高速]美国-节点 05
-      - 🇺🇸 [高速]美国-节点 06
-      - 🇺🇸 [高速]美国-节点 07
-      - 🇺🇸 [高速]美国-节点 08
-      - 🇺🇸 [高速]美国-节点 09
-      - 🇺🇸 [高速]美国-节点 10
-      - 🇺🇸 [高速]美国-节点 11
-      - 🇺🇸 [高速]美国-节点 12
-      - 🇺🇸 [高速]美国-节点 13
-      - 🇸🇬 [高速]新加坡-节点 01
-      - 🇸🇬 [高速]新加坡-节点 02
-      - 🇸🇬 [高速]新加坡-节点 03
-      - 🇸🇬 [高速]新加坡-节点 04
-      - 🇸🇬 [高速]新加坡-节点 05
-      - 🇸🇬 [高速]新加坡-节点 06
-      - 🇸🇬 [高速]新加坡-节点 07
-      - 🇸🇬 [高速]新加坡-节点 08
-      - 🇸🇬 [高速]新加坡-节点 09
-      - 🇸🇬 [高速]新加坡-节点 10
-      - 🇸🇬 [高速]新加坡-节点 11
-      - 🇸🇬 [高速]新加坡-节点 12
-      - 🇸🇬 [高速]新加坡-节点 13
-      - 🇨🇳 [高速]台湾-节点 01
-      - 🇨🇳 [高速]台湾-节点 02
-      - 🇨🇳 [高速]台湾-节点 03
-      - 🇨🇳 [高速]台湾-节点 04
-      - 🇨🇳 [高速]台湾-节点 05
-      - 🇯🇵 [高速]日本-节点 11
-      - 🇯🇵 [高速]日本-节点 12
-      - 🇯🇵 [高速]日本-节点 13
-      - 🇰🇷 [高速]韩国-节点 01
-      - 🇩🇪 [高速]德国-节点 01
+      - 推荐客户下单返红包
+      - 有问题截图反馈Q
+      - 🇭🇰 [VIP]香港-极速专线 1
+      - 🇭🇰 [VIP]香港-极速专线 2
+      - 🇭🇰 [VIP]香港-极速专线 3
+      - 🇭🇰 [VIP]香港-极速专线 4
+      - 🇭🇰 [VIP]香港-极速专线 5
+      - 🇭🇰 [VIP]香港-极速专线 6
+      - 🇭🇰 [VIP]香港-极速专线 7
+      - 🇭🇰 [VIP]香港-极速专线 8
+      - 🇭🇰 [VIP]香港-极速专线 9
+      - 🇭🇰 [VIP]香港-极速专线 10
+      - 🇨🇳 [VIP]台湾-极速专线 1
+      - 🇨🇳 [VIP]台湾-极速专线 2
+      - 🇨🇳 [VIP]台湾-极速专线 3
+      - 🇨🇳 [VIP]台湾-极速专线 4
+      - 🇨🇳 [VIP]台湾-极速专线 5
+      - 🇨🇳 [VIP]台湾-极速专线 6
+      - 🇸🇬 [VIP]新加坡-极速专线 1
+      - 🇸🇬 [VIP]新加坡-极速专线 2
+      - 🇸🇬 [VIP]新加坡-极速专线 3
+      - 🇸🇬 [VIP]新加坡-极速专线 4
+      - 🇸🇬 [VIP]新加坡-极速专线 5
+      - 🇸🇬 [VIP]新加坡-极速专线 6
+      - 🇯🇵 [VIP]日本-极速专线 1
+      - 🇯🇵 [VIP]日本-极速专线 2
+      - 🇯🇵 [VIP]日本-极速专线 3
+      - 🇯🇵 [VIP]日本-极速专线 4
+      - 🇯🇵 [VIP]日本-极速专线 5
+      - 🇯🇵 [VIP]日本-极速专线 6
+      - 🇺🇸 [VIP]美国-极速专线 1
+      - 🇺🇸 [VIP]美国-极速专线 2
+      - 🇺🇸 [VIP]美国-极速专线 3
+      - 🇺🇸 [VIP]美国-极速专线 4
+      - 🇬🇧 [VIP]英国-极速专线 1
+      - 🇩🇪 [VIP]德国-极速专线 1
+      - 🇹🇷 [VIP]土耳其-极速专线 1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 有问题截图反馈A
-      - 🇭🇰 [高速]香港-节点 01
-      - 🇭🇰 [高速]香港-节点 02
-      - 🇭🇰 [高速]香港-节点 03
-      - 🇭🇰 [高速]香港-节点 04
-      - 🇭🇰 [高速]香港-节点 05
-      - 🇭🇰 [高速]香港-节点 06
-      - 🇭🇰 [高速]香港-节点 07
-      - 🇭🇰 [高速]香港-节点 08
-      - 🇯🇵 [高速]日本-节点 01
-      - 🇯🇵 [高速]日本-节点 02
-      - 🇯🇵 [高速]日本-节点 03
-      - 🇯🇵 [高速]日本-节点 04
-      - 🇯🇵 [高速]日本-节点 05
-      - 🇯🇵 [高速]日本-节点 06
-      - 🇯🇵 [高速]日本-节点 07
-      - 🇯🇵 [高速]日本-节点 08
-      - 🇺🇸 [高速]美国-节点 01
-      - 🇺🇸 [高速]美国-节点 02
-      - 🇺🇸 [高速]美国-节点 03
-      - 🇺🇸 [高速]美国-节点 04
-      - 🇺🇸 [高速]美国-节点 05
-      - 🇺🇸 [高速]美国-节点 06
-      - 🇺🇸 [高速]美国-节点 07
-      - 🇺🇸 [高速]美国-节点 08
-      - 🇺🇸 [高速]美国-节点 09
-      - 🇺🇸 [高速]美国-节点 10
-      - 🇺🇸 [高速]美国-节点 11
-      - 🇺🇸 [高速]美国-节点 12
-      - 🇺🇸 [高速]美国-节点 13
-      - 🇸🇬 [高速]新加坡-节点 01
-      - 🇸🇬 [高速]新加坡-节点 02
-      - 🇸🇬 [高速]新加坡-节点 03
-      - 🇸🇬 [高速]新加坡-节点 04
-      - 🇸🇬 [高速]新加坡-节点 05
-      - 🇸🇬 [高速]新加坡-节点 06
-      - 🇸🇬 [高速]新加坡-节点 07
-      - 🇸🇬 [高速]新加坡-节点 08
-      - 🇸🇬 [高速]新加坡-节点 09
-      - 🇸🇬 [高速]新加坡-节点 10
-      - 🇸🇬 [高速]新加坡-节点 11
-      - 🇸🇬 [高速]新加坡-节点 12
-      - 🇸🇬 [高速]新加坡-节点 13
-      - 🇨🇳 [高速]台湾-节点 01
-      - 🇨🇳 [高速]台湾-节点 02
-      - 🇨🇳 [高速]台湾-节点 03
-      - 🇨🇳 [高速]台湾-节点 04
-      - 🇨🇳 [高速]台湾-节点 05
-      - 🇯🇵 [高速]日本-节点 11
-      - 🇯🇵 [高速]日本-节点 12
-      - 🇯🇵 [高速]日本-节点 13
-      - 🇰🇷 [高速]韩国-节点 01
-      - 🇩🇪 [高速]德国-节点 01
+      - 推荐客户下单返红包
+      - 有问题截图反馈Q
+      - 🇭🇰 [VIP]香港-极速专线 1
+      - 🇭🇰 [VIP]香港-极速专线 2
+      - 🇭🇰 [VIP]香港-极速专线 3
+      - 🇭🇰 [VIP]香港-极速专线 4
+      - 🇭🇰 [VIP]香港-极速专线 5
+      - 🇭🇰 [VIP]香港-极速专线 6
+      - 🇭🇰 [VIP]香港-极速专线 7
+      - 🇭🇰 [VIP]香港-极速专线 8
+      - 🇭🇰 [VIP]香港-极速专线 9
+      - 🇭🇰 [VIP]香港-极速专线 10
+      - 🇨🇳 [VIP]台湾-极速专线 1
+      - 🇨🇳 [VIP]台湾-极速专线 2
+      - 🇨🇳 [VIP]台湾-极速专线 3
+      - 🇨🇳 [VIP]台湾-极速专线 4
+      - 🇨🇳 [VIP]台湾-极速专线 5
+      - 🇨🇳 [VIP]台湾-极速专线 6
+      - 🇸🇬 [VIP]新加坡-极速专线 1
+      - 🇸🇬 [VIP]新加坡-极速专线 2
+      - 🇸🇬 [VIP]新加坡-极速专线 3
+      - 🇸🇬 [VIP]新加坡-极速专线 4
+      - 🇸🇬 [VIP]新加坡-极速专线 5
+      - 🇸🇬 [VIP]新加坡-极速专线 6
+      - 🇯🇵 [VIP]日本-极速专线 1
+      - 🇯🇵 [VIP]日本-极速专线 2
+      - 🇯🇵 [VIP]日本-极速专线 3
+      - 🇯🇵 [VIP]日本-极速专线 4
+      - 🇯🇵 [VIP]日本-极速专线 5
+      - 🇯🇵 [VIP]日本-极速专线 6
+      - 🇺🇸 [VIP]美国-极速专线 1
+      - 🇺🇸 [VIP]美国-极速专线 2
+      - 🇺🇸 [VIP]美国-极速专线 3
+      - 🇺🇸 [VIP]美国-极速专线 4
+      - 🇬🇧 [VIP]英国-极速专线 1
+      - 🇩🇪 [VIP]德国-极速专线 1
+      - 🇹🇷 [VIP]土耳其-极速专线 1
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 有问题截图反馈A
-      - 🇭🇰 [高速]香港-节点 01
-      - 🇭🇰 [高速]香港-节点 02
-      - 🇭🇰 [高速]香港-节点 03
-      - 🇭🇰 [高速]香港-节点 04
-      - 🇭🇰 [高速]香港-节点 05
-      - 🇭🇰 [高速]香港-节点 06
-      - 🇭🇰 [高速]香港-节点 07
-      - 🇭🇰 [高速]香港-节点 08
-      - 🇯🇵 [高速]日本-节点 01
-      - 🇯🇵 [高速]日本-节点 02
-      - 🇯🇵 [高速]日本-节点 03
-      - 🇯🇵 [高速]日本-节点 04
-      - 🇯🇵 [高速]日本-节点 05
-      - 🇯🇵 [高速]日本-节点 06
-      - 🇯🇵 [高速]日本-节点 07
-      - 🇯🇵 [高速]日本-节点 08
-      - 🇺🇸 [高速]美国-节点 01
-      - 🇺🇸 [高速]美国-节点 02
-      - 🇺🇸 [高速]美国-节点 03
-      - 🇺🇸 [高速]美国-节点 04
-      - 🇺🇸 [高速]美国-节点 05
-      - 🇺🇸 [高速]美国-节点 06
-      - 🇺🇸 [高速]美国-节点 07
-      - 🇺🇸 [高速]美国-节点 08
-      - 🇺🇸 [高速]美国-节点 09
-      - 🇺🇸 [高速]美国-节点 10
-      - 🇺🇸 [高速]美国-节点 11
-      - 🇺🇸 [高速]美国-节点 12
-      - 🇺🇸 [高速]美国-节点 13
-      - 🇸🇬 [高速]新加坡-节点 01
-      - 🇸🇬 [高速]新加坡-节点 02
-      - 🇸🇬 [高速]新加坡-节点 03
-      - 🇸🇬 [高速]新加坡-节点 04
-      - 🇸🇬 [高速]新加坡-节点 05
-      - 🇸🇬 [高速]新加坡-节点 06
-      - 🇸🇬 [高速]新加坡-节点 07
-      - 🇸🇬 [高速]新加坡-节点 08
-      - 🇸🇬 [高速]新加坡-节点 09
-      - 🇸🇬 [高速]新加坡-节点 10
-      - 🇸🇬 [高速]新加坡-节点 11
-      - 🇸🇬 [高速]新加坡-节点 12
-      - 🇸🇬 [高速]新加坡-节点 13
-      - 🇨🇳 [高速]台湾-节点 01
-      - 🇨🇳 [高速]台湾-节点 02
-      - 🇨🇳 [高速]台湾-节点 03
-      - 🇨🇳 [高速]台湾-节点 04
-      - 🇨🇳 [高速]台湾-节点 05
-      - 🇯🇵 [高速]日本-节点 11
-      - 🇯🇵 [高速]日本-节点 12
-      - 🇯🇵 [高速]日本-节点 13
-      - 🇰🇷 [高速]韩国-节点 01
-      - 🇩🇪 [高速]德国-节点 01
+      - 推荐客户下单返红包
+      - 有问题截图反馈Q
+      - 🇭🇰 [VIP]香港-极速专线 1
+      - 🇭🇰 [VIP]香港-极速专线 2
+      - 🇭🇰 [VIP]香港-极速专线 3
+      - 🇭🇰 [VIP]香港-极速专线 4
+      - 🇭🇰 [VIP]香港-极速专线 5
+      - 🇭🇰 [VIP]香港-极速专线 6
+      - 🇭🇰 [VIP]香港-极速专线 7
+      - 🇭🇰 [VIP]香港-极速专线 8
+      - 🇭🇰 [VIP]香港-极速专线 9
+      - 🇭🇰 [VIP]香港-极速专线 10
+      - 🇨🇳 [VIP]台湾-极速专线 1
+      - 🇨🇳 [VIP]台湾-极速专线 2
+      - 🇨🇳 [VIP]台湾-极速专线 3
+      - 🇨🇳 [VIP]台湾-极速专线 4
+      - 🇨🇳 [VIP]台湾-极速专线 5
+      - 🇨🇳 [VIP]台湾-极速专线 6
+      - 🇸🇬 [VIP]新加坡-极速专线 1
+      - 🇸🇬 [VIP]新加坡-极速专线 2
+      - 🇸🇬 [VIP]新加坡-极速专线 3
+      - 🇸🇬 [VIP]新加坡-极速专线 4
+      - 🇸🇬 [VIP]新加坡-极速专线 5
+      - 🇸🇬 [VIP]新加坡-极速专线 6
+      - 🇯🇵 [VIP]日本-极速专线 1
+      - 🇯🇵 [VIP]日本-极速专线 2
+      - 🇯🇵 [VIP]日本-极速专线 3
+      - 🇯🇵 [VIP]日本-极速专线 4
+      - 🇯🇵 [VIP]日本-极速专线 5
+      - 🇯🇵 [VIP]日本-极速专线 6
+      - 🇺🇸 [VIP]美国-极速专线 1
+      - 🇺🇸 [VIP]美国-极速专线 2
+      - 🇺🇸 [VIP]美国-极速专线 3
+      - 🇺🇸 [VIP]美国-极速专线 4
+      - 🇬🇧 [VIP]英国-极速专线 1
+      - 🇩🇪 [VIP]德国-极速专线 1
+      - 🇹🇷 [VIP]土耳其-极速专线 1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -516,59 +388,43 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 有问题截图反馈A
-      - 🇭🇰 [高速]香港-节点 01
-      - 🇭🇰 [高速]香港-节点 02
-      - 🇭🇰 [高速]香港-节点 03
-      - 🇭🇰 [高速]香港-节点 04
-      - 🇭🇰 [高速]香港-节点 05
-      - 🇭🇰 [高速]香港-节点 06
-      - 🇭🇰 [高速]香港-节点 07
-      - 🇭🇰 [高速]香港-节点 08
-      - 🇯🇵 [高速]日本-节点 01
-      - 🇯🇵 [高速]日本-节点 02
-      - 🇯🇵 [高速]日本-节点 03
-      - 🇯🇵 [高速]日本-节点 04
-      - 🇯🇵 [高速]日本-节点 05
-      - 🇯🇵 [高速]日本-节点 06
-      - 🇯🇵 [高速]日本-节点 07
-      - 🇯🇵 [高速]日本-节点 08
-      - 🇺🇸 [高速]美国-节点 01
-      - 🇺🇸 [高速]美国-节点 02
-      - 🇺🇸 [高速]美国-节点 03
-      - 🇺🇸 [高速]美国-节点 04
-      - 🇺🇸 [高速]美国-节点 05
-      - 🇺🇸 [高速]美国-节点 06
-      - 🇺🇸 [高速]美国-节点 07
-      - 🇺🇸 [高速]美国-节点 08
-      - 🇺🇸 [高速]美国-节点 09
-      - 🇺🇸 [高速]美国-节点 10
-      - 🇺🇸 [高速]美国-节点 11
-      - 🇺🇸 [高速]美国-节点 12
-      - 🇺🇸 [高速]美国-节点 13
-      - 🇸🇬 [高速]新加坡-节点 01
-      - 🇸🇬 [高速]新加坡-节点 02
-      - 🇸🇬 [高速]新加坡-节点 03
-      - 🇸🇬 [高速]新加坡-节点 04
-      - 🇸🇬 [高速]新加坡-节点 05
-      - 🇸🇬 [高速]新加坡-节点 06
-      - 🇸🇬 [高速]新加坡-节点 07
-      - 🇸🇬 [高速]新加坡-节点 08
-      - 🇸🇬 [高速]新加坡-节点 09
-      - 🇸🇬 [高速]新加坡-节点 10
-      - 🇸🇬 [高速]新加坡-节点 11
-      - 🇸🇬 [高速]新加坡-节点 12
-      - 🇸🇬 [高速]新加坡-节点 13
-      - 🇨🇳 [高速]台湾-节点 01
-      - 🇨🇳 [高速]台湾-节点 02
-      - 🇨🇳 [高速]台湾-节点 03
-      - 🇨🇳 [高速]台湾-节点 04
-      - 🇨🇳 [高速]台湾-节点 05
-      - 🇯🇵 [高速]日本-节点 11
-      - 🇯🇵 [高速]日本-节点 12
-      - 🇯🇵 [高速]日本-节点 13
-      - 🇰🇷 [高速]韩国-节点 01
-      - 🇩🇪 [高速]德国-节点 01
+      - 推荐客户下单返红包
+      - 有问题截图反馈Q
+      - 🇭🇰 [VIP]香港-极速专线 1
+      - 🇭🇰 [VIP]香港-极速专线 2
+      - 🇭🇰 [VIP]香港-极速专线 3
+      - 🇭🇰 [VIP]香港-极速专线 4
+      - 🇭🇰 [VIP]香港-极速专线 5
+      - 🇭🇰 [VIP]香港-极速专线 6
+      - 🇭🇰 [VIP]香港-极速专线 7
+      - 🇭🇰 [VIP]香港-极速专线 8
+      - 🇭🇰 [VIP]香港-极速专线 9
+      - 🇭🇰 [VIP]香港-极速专线 10
+      - 🇨🇳 [VIP]台湾-极速专线 1
+      - 🇨🇳 [VIP]台湾-极速专线 2
+      - 🇨🇳 [VIP]台湾-极速专线 3
+      - 🇨🇳 [VIP]台湾-极速专线 4
+      - 🇨🇳 [VIP]台湾-极速专线 5
+      - 🇨🇳 [VIP]台湾-极速专线 6
+      - 🇸🇬 [VIP]新加坡-极速专线 1
+      - 🇸🇬 [VIP]新加坡-极速专线 2
+      - 🇸🇬 [VIP]新加坡-极速专线 3
+      - 🇸🇬 [VIP]新加坡-极速专线 4
+      - 🇸🇬 [VIP]新加坡-极速专线 5
+      - 🇸🇬 [VIP]新加坡-极速专线 6
+      - 🇯🇵 [VIP]日本-极速专线 1
+      - 🇯🇵 [VIP]日本-极速专线 2
+      - 🇯🇵 [VIP]日本-极速专线 3
+      - 🇯🇵 [VIP]日本-极速专线 4
+      - 🇯🇵 [VIP]日本-极速专线 5
+      - 🇯🇵 [VIP]日本-极速专线 6
+      - 🇺🇸 [VIP]美国-极速专线 1
+      - 🇺🇸 [VIP]美国-极速专线 2
+      - 🇺🇸 [VIP]美国-极速专线 3
+      - 🇺🇸 [VIP]美国-极速专线 4
+      - 🇬🇧 [VIP]英国-极速专线 1
+      - 🇩🇪 [VIP]德国-极速专线 1
+      - 🇹🇷 [VIP]土耳其-极速专线 1
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
