@@ -17,14 +17,14 @@ unified-delay: true
 proxies:
   - type: vmess
     name: gcp-hk.bika.hk
-    server: 34.92.208.172
+    server: 35.220.230.251
     port: 30251
     uuid: 86c9c119-c46d-45a9-82a6-75a886e5e795
     alterId: 0
     cipher: auto
   - type: vmess
     name: gcp-ja.bika.hk
-    server: 34.97.135.220
+    server: 34.97.245.204
     port: 30251
     uuid: 86c9c119-c46d-45a9-82a6-75a886e5e795
     alterId: 0
